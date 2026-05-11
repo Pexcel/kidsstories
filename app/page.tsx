@@ -250,7 +250,7 @@ export default function KidsStoriesWebsite() {
     <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg">
       <iframe
         className="w-full h-full"
-        src="https://youtu.be/dtzx_qFUwVg?si=liDBHfTH-Nm_Ry2n"
+        src="https://www.youtube.com/watch?v=dtzx_qFUwVg&t=1s"
         title="Kids Bible Story"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
