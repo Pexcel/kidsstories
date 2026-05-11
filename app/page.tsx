@@ -1,9 +1,25 @@
-'use client'
-import React, { useMemo, useState } from "react";
+"use client";
+
+import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
-const Icon = ({ name, size = 24, className = "" }) => {
-  const common = {
+type IconName = "upload" | "play" | "book" | "mail" | "star" | "shield" | "search" | "menu";
+
+type IconProps = {
+  name: IconName;
+  size?: number;
+  className?: string;
+};
+
+type Story = {
+  title: string;
+  category: string;
+  age: string;
+  description: string;
+};
+
+const Icon = ({ name, size = 24, className = "" }: IconProps) => {
+  const common: SVGProps<SVGSVGElement> = {
     width: size,
     height: size,
     viewBox: "0 0 24 24",
@@ -15,7 +31,7 @@ const Icon = ({ name, size = 24, className = "" }) => {
     className
   };
 
-  const icons = {
+  const icons: Record<IconName, ReactNode> = {
     upload: (
       <svg {...common}>
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -67,15 +83,18 @@ const Icon = ({ name, size = 24, className = "" }) => {
     )
   };
 
-  return icons[name] || null;
+  return icons[name];
 };
 
-const Button = ({ children, className = "", variant = "solid", type = "button", ...props }) => {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  children: ReactNode;
+  className?: string;
+  variant?: "solid" | "outline";
+};
+
+const Button = ({ children, className = "", variant = "solid", type = "button", ...props }: ButtonProps) => {
   const base = "inline-flex items-center justify-center font-semibold transition focus:outline-none focus:ring-2 focus:ring-orange-300 disabled:opacity-60";
-  const styles =
-    variant === "outline"
-      ? "border bg-white text-slate-900 hover:bg-orange-50"
-      : "text-white";
+  const styles = variant === "outline" ? "border bg-white text-slate-900 hover:bg-orange-50" : "text-white";
 
   return (
     <button type={type} className={`${base} ${styles} ${className}`} {...props}>
@@ -84,13 +103,15 @@ const Button = ({ children, className = "", variant = "solid", type = "button", 
   );
 };
 
-const Card = ({ children, className = "" }) => (
+const Card = ({ children, className = "" }: { children: ReactNode; className?: string }) => (
   <div className={`bg-white border ${className}`}>{children}</div>
 );
 
-const CardContent = ({ children, className = "" }) => <div className={className}>{children}</div>;
+const CardContent = ({ children, className = "" }: { children: ReactNode; className?: string }) => (
+  <div className={className}>{children}</div>
+);
 
-const stories = [
+const stories: Story[] = [
   {
     title: "King Jehoshaphat Trusts God",
     category: "Bible Animation",
@@ -111,7 +132,7 @@ const stories = [
   }
 ];
 
-export function filterStories(items, query) {
+export function filterStories(items: Story[], query: string): Story[] {
   const cleanQuery = String(query || "").trim().toLowerCase();
 
   if (!cleanQuery) return items;
@@ -271,7 +292,7 @@ export default function KidsStoriesWebsite() {
             <input className="w-full p-3 rounded-2xl border" placeholder="Video title" aria-label="Video title" />
             <select className="w-full p-3 rounded-2xl border bg-white" aria-label="Content category">
               <option>Bible Animation</option>
-              <option>Children's Song</option>
+              <option>Children&apos;s Song</option>
               <option>Storytelling Video</option>
               <option>Teaching Content</option>
             </select>
