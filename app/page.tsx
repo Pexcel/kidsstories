@@ -395,16 +395,26 @@ export default function KidsStoriesWebsite() {
       </section>
 
       <section id="contact" className="bg-orange-500 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <Icon name="mail" className="mx-auto mb-4" size={44} />
-          <h2 className="text-3xl font-bold">Partner With JanetBambiStudio</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-orange-50">
-            For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <Button className="rounded-2xl bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 text-base">Contact Us</Button>
-          </div>
-        </div>
+        <form className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4">
+  <input
+    className="w-full p-3 rounded-2xl border"
+    placeholder="Your name"
+  />
+
+  <input
+    className="w-full p-3 rounded-2xl border"
+    placeholder="Email address"
+  />
+
+  <textarea
+    className="w-full p-3 rounded-2xl border min-h-32"
+    placeholder="Your message"
+  />
+
+  <Button className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4">
+    Send Message
+  </Button>
+</form>
       </section>
 
       <footer className="bg-slate-950 text-white py-8">
