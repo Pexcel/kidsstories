@@ -280,6 +280,34 @@ export default function KidsStoriesWebsite() {
     </div>
   </div>
 </section>
+<section className="max-w-7xl mx-auto px-4 py-10">
+  <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
+    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      <div>
+        <h2 className="text-3xl font-bold text-slate-900">
+          Latest Bible Animation
+        </h2>
+        <p className="text-slate-600 mt-2">
+          Watch inspiring Bible stories for children from JanetBambiStudio.
+        </p>
+      </div>
+
+      <Button className="rounded-2xl bg-red-600 hover:bg-red-700 px-6 py-3">
+        Visit YouTube Channel
+      </Button>
+    </div>
+
+    <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg bg-black">
+      <iframe
+        className="w-full h-full"
+        src="https://www.youtube.com/embed/dtzx_qFUwVg?start=1"
+        title="Kids Bible Story Animation"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      />
+    </div>
+  </div>
+</section>
 <section id="stories" className="max-w-7xl mx-auto px-4 py-16">
   <section className="max-w-7xl mx-auto px-4 py-10">
   <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
