@@ -434,9 +434,9 @@ export default function KidsStoriesWebsite() {
 
 <textarea name="message" className="w-full p-3 rounded-2xl border min-h-32" placeholder="Your message" />
 
-  <Button className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4">
-    Send Message
-  </Button>
+  <Button type="submit">
+  Send Message
+</Button>
 </form>
       </section>
 
