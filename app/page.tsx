@@ -423,21 +423,16 @@ export default function KidsStoriesWebsite() {
       </section>
 
       <section id="contact" className="bg-orange-500 text-white py-16">
-        <form className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4">
-  <input
-    className="w-full p-3 rounded-2xl border"
-    placeholder="Your name"
-  />
+        <form
+  action="https://formspree.io/f/xaqvkdoq"
+  method="POST"
+  className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
+>
+  <input name="name" className="w-full p-3 rounded-2xl border" placeholder="Your name" />
 
-  <input
-    className="w-full p-3 rounded-2xl border"
-    placeholder="Email address"
-  />
+<input name="email" type="email" className="w-full p-3 rounded-2xl border" placeholder="Email address" />
 
-  <textarea
-    className="w-full p-3 rounded-2xl border min-h-32"
-    placeholder="Your message"
-  />
+<textarea name="message" className="w-full p-3 rounded-2xl border min-h-32" placeholder="Your message" />
 
   <Button className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4">
     Send Message
