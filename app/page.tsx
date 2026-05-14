@@ -177,6 +177,7 @@ export default function KidsStoriesWebsite() {
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <a href="/videos" className="hover:text-orange-600">Videos</a>
             <a href="#stories" className="hover:text-orange-600">Stories</a>
             <a href="#upload" className="hover:text-orange-600">Upload</a>
             <a href="#about" className="hover:text-orange-600">About</a>
