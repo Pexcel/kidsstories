@@ -214,13 +214,13 @@ export default function KidsStoriesWebsite() {
 
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
           <div className="relative bg-white rounded-[2rem] shadow-2xl p-6 border">
-            <div className="aspect-video rounded-[1.5rem] bg-gradient-to-br from-orange-200 via-yellow-100 to-sky-200 flex items-center justify-center">
-              <div className="text-center p-8">
-                <Icon name="book" className="mx-auto mb-4 text-orange-600" size={64} />
-                <h3 className="text-2xl font-bold">Faith-filled Stories</h3>
-                <p className="mt-2 text-slate-600">Animated Bible lessons children will love.</p>
-              </div>
-            </div>
+            <div className="aspect-video rounded-[1.5rem] overflow-hidden shadow-lg">
+  <img
+    src="/banner.jpg"
+    alt="Kids Bible Stories"
+    className="w-full h-full object-cover"
+  />
+</div>
             <div className="grid grid-cols-3 gap-3 mt-4 text-center text-sm">
               <div className="bg-yellow-50 rounded-2xl p-3 font-semibold">Animations</div>
               <div className="bg-sky-50 rounded-2xl p-3 font-semibold">Videos</div>
