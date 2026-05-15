@@ -111,6 +111,21 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
   <div className={className}>{children}</div>
 );
 
+const trendingVideos = [
+  {
+    title: "David and Goliath",
+    image: "/banner.jpg"
+  },
+  {
+    title: "Noah and the Ark",
+    image: "/banner.jpg"
+  },
+  {
+    title: "Daniel in the Lions' Den",
+    image: "/banner.jpg"
+  }
+];
+
 const stories: Story[] = [
   {
     title: "King Jehoshaphat Trusts God",
@@ -215,13 +230,13 @@ export default function KidsStoriesWebsite() {
 
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
           <div className="relative bg-white rounded-[2rem] shadow-2xl p-6 border">
-            <div className="aspect-video rounded-[1.5rem] overflow-hidden shadow-lg">
-  <img
-    src="/banner.jpg"
-    alt="Kids Bible Stories"
-    className="w-full h-full object-cover"
-  />
-</div>
+            <div className="aspect-video rounded-[1.5rem] bg-gradient-to-br from-orange-200 via-yellow-100 to-sky-200 flex items-center justify-center">
+              <div className="text-center p-8">
+                <Icon name="book" className="mx-auto mb-4 text-orange-600" size={64} />
+                <h3 className="text-2xl font-bold">Faith-filled Stories</h3>
+                <p className="mt-2 text-slate-600">Animated Bible lessons children will love.</p>
+              </div>
+            </div>
             <div className="grid grid-cols-3 gap-3 mt-4 text-center text-sm">
               <div className="bg-yellow-50 rounded-2xl p-3 font-semibold">Animations</div>
               <div className="bg-sky-50 rounded-2xl p-3 font-semibold">Videos</div>
@@ -232,106 +247,21 @@ export default function KidsStoriesWebsite() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 py-10">
-  <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-      <div>
-        <h2 className="text-3xl font-bold text-slate-900">
-          Latest Bible Animation
-        </h2>
-        <p className="text-slate-600 mt-2">
-          Watch inspiring Bible stories for children from JanetBambiStudio.
-        </p>
-      </div>
+        <h2 className="text-3xl font-bold mb-6">Trending Videos</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          {trendingVideos.map((video) => (
+            <Card key={video.title} className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl">
+              <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
+              <CardContent className="p-5">
+                <h3 className="font-bold text-lg">{video.title}</h3>
+                <Button className="mt-4 w-full rounded-2xl bg-orange-500 py-3">Watch Now</Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
 
-      <Button className="rounded-2xl bg-red-600 hover:bg-red-700 px-6 py-3">
-        Visit YouTube Channel
-      </Button>
-    </div>
-
-    <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/dtzx_qFUwVg?start=1"
-        title="Kids Bible Story"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
-  </div>
-</section>
-<section className="max-w-7xl mx-auto px-4 py-10">
-  <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
-    <div className="mb-6">
-      <h2 className="text-3xl font-bold text-slate-900">
-        Latest Bible Animation
-      </h2>
-      <p className="text-slate-600 mt-2">
-        Watch inspiring Bible stories for children from JanetBambiStudio.
-      </p>
-    </div>
-
-    <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg bg-black">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/dtzx_qFUwVg?start=1"
-        title="Kids Bible Story Animation"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-    </div>
-  </div>
-</section>
-<section className="max-w-7xl mx-auto px-4 py-10">
-  <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-      <div>
-        <h2 className="text-3xl font-bold text-slate-900">
-          Latest Bible Animation
-        </h2>
-        <p className="text-slate-600 mt-2">
-          Watch inspiring Bible stories for children from JanetBambiStudio.
-        </p>
-      </div>
-
-      <Button className="rounded-2xl bg-red-600 hover:bg-red-700 px-6 py-3">
-        Visit YouTube Channel
-      </Button>
-    </div>
-
-    <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg bg-black">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/dtzx_qFUwVg?start=1"
-        title="Kids Bible Story Animation"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-    </div>
-  </div>
-</section>
-<section id="stories" className="max-w-7xl mx-auto px-4 py-16">
-  <section className="max-w-7xl mx-auto px-4 py-10">
-  <div className="bg-white rounded-[2rem] shadow-xl border p-6 md:p-10">
-    <div className="mb-6">
-      <h2 className="text-3xl font-bold text-slate-900">
-        Latest Bible Animation
-      </h2>
-      <p className="text-slate-600 mt-2">
-        Watch inspiring Bible stories for children from JanetBambiStudio.
-      </p>
-    </div>
-
-    <div className="aspect-video rounded-[2rem] overflow-hidden shadow-lg bg-black">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/dtzx_qFUwVg?start=1"
-        title="Kids Bible Story Animation"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-    </div>
-  </div>
-</section>
+      <section id="stories" className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
           <div>
             <h2 className="text-3xl font-bold">Featured Children’s Bible Stories</h2>
@@ -424,24 +354,44 @@ export default function KidsStoriesWebsite() {
       </section>
 
       <section id="contact" className="bg-orange-500 text-white py-16">
-        <form
-  action="https://formspree.io/f/xaqvkdoq"
-  method="POST"
-  className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
->
-  <input name="name" className="w-full p-3 rounded-2xl border" placeholder="Your name" />
-
-<input name="email" type="email" className="w-full p-3 rounded-2xl border" placeholder="Email address" />
-
-<textarea name="message" className="w-full p-3 rounded-2xl border min-h-32" placeholder="Your message" />
-
- <Button
-  type="submit"
-  className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4"
->
-  Send Message
-</Button>
-</form>
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <Icon name="mail" className="mx-auto mb-4" size={44} />
+          <h2 className="text-3xl font-bold">Partner With JanetBambiStudio</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-orange-50">
+            For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
+          </p>
+          <form
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
+          >
+            <input
+              name="name"
+              className="w-full p-3 rounded-2xl border"
+              placeholder="Your name"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              className="w-full p-3 rounded-2xl border"
+              placeholder="Email address"
+              required
+            />
+            <textarea
+              name="message"
+              className="w-full p-3 rounded-2xl border min-h-32"
+              placeholder="Your message"
+              required
+            />
+            <Button
+              type="submit"
+              className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4"
+            >
+              Send Message
+            </Button>
+          </form>
+        </div>
       </section>
 
       <footer className="bg-slate-950 text-white py-8">
