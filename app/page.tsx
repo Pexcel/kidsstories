@@ -114,15 +114,18 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
 const trendingVideos = [
   {
     title: "David and Goliath",
-    image: "/banner.jpg"
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=vpJF0BnbTT4"
   },
   {
     title: "Noah and the Ark",
-    image: "/banner.jpg"
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   },
   {
     title: "Daniel in the Lions' Den",
-    image: "/banner.jpg"
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=X_x_evFyjeU"
   }
 ];
 
@@ -254,7 +257,14 @@ export default function KidsStoriesWebsite() {
               <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
               <CardContent className="p-5">
                 <h3 className="font-bold text-lg">{video.title}</h3>
-                <Button className="mt-4 w-full rounded-2xl bg-orange-500 py-3">Watch Now</Button>
+                <a
+                  href={video.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
+                >
+                  Watch Now
+                </a>
               </CardContent>
             </Card>
           ))}
