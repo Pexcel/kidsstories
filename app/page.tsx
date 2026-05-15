@@ -202,7 +202,12 @@ export default function KidsStoriesWebsite() {
             <a href="#contact" className="hover:text-orange-600">Contact</a>
           </nav>
 
-          <Button className="hidden md:flex rounded-2xl bg-orange-500 hover:bg-orange-600 px-5 py-3">Watch Videos</Button>
+          <a
+  href="/videos"
+  className="hidden md:flex rounded-2xl bg-orange-500 hover:bg-orange-600 px-5 py-3 text-white font-semibold"
+>
+  Watch Videos
+</a>
           <Icon name="menu" className="md:hidden text-slate-800" />
         </div>
       </header>
