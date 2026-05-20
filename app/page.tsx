@@ -254,27 +254,22 @@ export default function KidsStoriesWebsite() {
         </motion.div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-6">Trending Videos</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {trendingVideos.map((video) => (
-            <Card key={video.title} className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl">
-              <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
-              <CardContent className="p-5">
-                <h3 className="font-bold text-lg">{video.title}</h3>
-                <a
-                  href={video.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
-                >
-                  Watch Now
-                </a>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+      <section className="max-w-7xl mx-auto px-4 py-8">
+  <div className="bg-white rounded-3xl border shadow-sm p-6 text-center">
+    <p className="text-xs uppercase tracking-wide text-slate-400 mb-3">
+      Advertisement
+    </p>
+
+    <ins
+      className="adsbygoogle"
+      style={{ display: "block" }}
+      data-ad-client="ca-pub-4663946431005155"
+      data-ad-slot="3228947531"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    />
+  </div>
+</section>
 
       <section id="stories" className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
@@ -376,7 +371,7 @@ export default function KidsStoriesWebsite() {
             For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
           </p>
           <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action="https://formspree.io/f/JPGD64l"
             method="POST"
             className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
           >
