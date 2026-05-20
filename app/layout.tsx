@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Animated Stories for Kids with Janet Bambi",
-  description: "kidsstories.com.ng",
+  title: "KidsStories | JanetBambiStudio",
+  description: "Bible Stories Animations for Children",
 };
 
 export default function RootLayout({
@@ -23,11 +24,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+    <html lang="en">
+  <head>
+    <Script
+      async
+      strategy="afterInteractive"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4663946431005155"
+      crossOrigin="anonymous"
+    />
+  </head>
+
+  <body>
+    {children}
+  </body>
+</html>
   );
 }
