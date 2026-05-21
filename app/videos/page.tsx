@@ -1,20 +1,20 @@
 export default function VideosPage() {
   const videos = [
-    {
-      title: "David and Goliath",
-      image: "/banner.jpg",
-      link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
-    },
-    {
-      title: "Noah and the Ark",
-      image: "/banner.jpg",
-      link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
-    },
-    {
-      title: "Daniel in the Lions' Den",
-      image: "/banner.jpg",
-      link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
-    }
+   {
+    title: "El-Roi. The God who sees",
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=jjeudBocn8g"
+  },
+  {
+    title: "Don’t follow the crowd… follow the truth. 2 cchronicles 18",
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=vpJF0BnbTT4"
+  },
+  {
+    title: "Don’t Switch Your Source | 2 Chronicles 16",
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=zXjvNv0iDvFn3oJi"
+  }
   ];
 
   return (
