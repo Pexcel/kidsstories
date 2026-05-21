@@ -119,7 +119,7 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
 
 const trendingVideos: Video[] = [
   {
-    title: "David and Goliath",
+    title: "2 Chronicles 20. Jehoshaphat’s Victory",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   },
