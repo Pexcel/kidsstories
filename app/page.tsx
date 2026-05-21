@@ -124,14 +124,14 @@ const trendingVideos: Video[] = [
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   },
   {
-    title: "Noah and the Ark",
+    title: "El-Roi. The God who sees",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
+    link: "https://www.youtube.com/watch?3p7Wl-_jn1GIX9pO"
   },
   {
-    title: "Daniel in the Lions' Den",
+    title: "Don’t follow the crowd… follow the truth. 2 cchronicles 18",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
+    link: "https://www.youtube.com/watch?v=zIBRTnlD9nfseRJP"
   }
 ];
 
