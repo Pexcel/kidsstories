@@ -126,12 +126,12 @@ const trendingVideos: Video[] = [
   {
     title: "El-Roi. The God who sees",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?3p7Wl-_jn1GIX9pO"
+    link: "https://www.youtube.com/watch?v=jjeudBocn8g"
   },
   {
     title: "Don’t follow the crowd… follow the truth. 2 cchronicles 18",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=zIBRTnlD9nfseRJP"
+    link: "https://www.youtube.com/watch?v=vpJF0BnbTT4"
   }
   {
     title: "Don’t Switch Your Source | 2 Chronicles 16",
