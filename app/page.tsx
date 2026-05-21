@@ -119,24 +119,19 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
 
 const trendingVideos: Video[] = [
   {
-    title: "2 Chronicles 20. Jehoshaphat’s Victory",
+    title: "David and Goliath",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   },
   {
-    title: "El-Roi. The God who sees",
+    title: "Noah and the Ark",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=jjeudBocn8g"
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   },
   {
-    title: "Don’t follow the crowd… follow the truth. 2 cchronicles 18",
+    title: "Daniel in the Lions' Den",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=vpJF0BnbTT4"
-  }
-  {
-    title: "Don’t Switch Your Source | 2 Chronicles 16",
-    image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=zXjvNv0iDvFn3oJi"
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
   }
 ];
 
@@ -375,33 +370,52 @@ export default function KidsStoriesWebsite() {
       <section id="upload" className="max-w-7xl mx-auto px-4 py-16">
         <div className="bg-white rounded-[2rem] shadow-xl border p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-3xl font-bold">Upload Bible Story Animations</h2>
+            <h2 className="text-3xl font-bold">Suggest a Bible Story or Video</h2>
             <p className="text-slate-600 mt-4 leading-relaxed">
-              Content creators, teachers, and ministry teams can submit Bible animations, children’s worship videos, storytelling videos, and educational Christian media for review.
+              KidsStories is currently curated by JanetBambiStudio. Visitors may suggest Bible stories, children’s songs, animation ideas, or YouTube video links for possible review and inclusion.
             </p>
             <div className="mt-6 flex items-start gap-3 text-slate-700">
               <Icon name="shield" className="text-green-600 mt-1 shrink-0" />
-              <p>All uploaded content should be child-friendly, Bible-based, safe, and suitable for Christian learning.</p>
+              <p>For children’s safety, suggested content will be reviewed before it is considered for the website.</p>
             </div>
           </div>
 
-          <form className="bg-slate-50 rounded-3xl p-6 space-y-4">
-            <input className="w-full p-3 rounded-2xl border" placeholder="Your name" aria-label="Your name" />
-            <input className="w-full p-3 rounded-2xl border" placeholder="Email address" aria-label="Email address" />
-            <input className="w-full p-3 rounded-2xl border" placeholder="Video title" aria-label="Video title" />
-            <select className="w-full p-3 rounded-2xl border bg-white" aria-label="Content category">
-              <option>Bible Animation</option>
-              <option>Children&apos;s Song</option>
-              <option>Storytelling Video</option>
-              <option>Teaching Content</option>
+          <form
+            action="https://formspree.io/f/xaqvkdoq"
+            method="POST"
+            className="bg-slate-50 rounded-3xl p-6 space-y-4"
+          >
+            <input name="name" className="w-full p-3 rounded-2xl border" placeholder="Your name" aria-label="Your name" required />
+            <input name="email" type="email" className="w-full p-3 rounded-2xl border" placeholder="Email address" aria-label="Email address" required />
+            <input name="title" className="w-full p-3 rounded-2xl border" placeholder="Suggested story or video title" aria-label="Suggested story or video title" required />
+            <select name="category" className="w-full p-3 rounded-2xl border bg-white" aria-label="Content category">
+              <option>Old Testament Story</option>
+              <option>New Testament Story</option>
+              <option>Children&apos;s Bible Song</option>
+              <option>Memory Verse</option>
+              <option>Bedtime Bible Story</option>
+              <option>Other Christian Children&apos;s Content</option>
             </select>
-            <label className="flex flex-col items-center justify-center gap-3 border-2 border-dashed border-orange-300 rounded-3xl p-8 bg-white cursor-pointer">
-              <Icon name="upload" className="text-orange-500" size={40} />
-              <span className="font-semibold">Click to upload video file</span>
-              <span className="text-xs text-slate-500">MP4, MOV, or video link accepted</span>
-              <input type="file" className="hidden" accept="video/*" aria-label="Upload video file" />
-            </label>
-            <Button className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-4">Submit for Review</Button>
+            <input
+              name="videoLink"
+              type="url"
+              className="w-full p-3 rounded-2xl border"
+              placeholder="Optional YouTube or video link"
+              aria-label="Optional YouTube or video link"
+            />
+            <textarea
+              name="message"
+              className="w-full p-3 rounded-2xl border min-h-32"
+              placeholder="Tell us why this suggestion will bless children"
+              aria-label="Suggestion message"
+              required
+            />
+            <button
+              type="submit"
+              className="w-full rounded-2xl bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 transition"
+            >
+              Send Suggestion
+            </button>
           </form>
         </div>
       </section>
@@ -429,7 +443,7 @@ export default function KidsStoriesWebsite() {
             For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
           </p>
           <form
-            action="https://formspree.io/f/JPGD64ld"
+            action="https://formspree.io/f/xaqvkdoq"
             method="POST"
             className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
           >
