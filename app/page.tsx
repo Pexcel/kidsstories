@@ -424,7 +424,7 @@ export default function KidsStoriesWebsite() {
             For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
           </p>
           <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action="https://formspree.io/f/JPGD64ld"
             method="POST"
             className="mt-8 max-w-xl mx-auto bg-white text-slate-900 rounded-3xl p-6 space-y-4"
           >
