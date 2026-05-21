@@ -133,6 +133,11 @@ const trendingVideos: Video[] = [
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=zIBRTnlD9nfseRJP"
   }
+  {
+    title: "Don’t Switch Your Source | 2 Chronicles 16",
+    image: "/banner.jpg",
+    link: "https://www.youtube.com/watch?v=zXjvNv0iDvFn3oJi"
+  }
 ];
 
 const categories = ["Old Testament", "New Testament", "Bible Songs", "Memory Verses", "Bedtime Stories"];
