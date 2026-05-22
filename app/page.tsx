@@ -23,6 +23,9 @@ type Video = {
   image: string;
   link: string;
   embed: string;
+  description: string;
+  lesson: string;
+  age: string;
 };
 
 const Icon = ({ name, size = 24, className = "" }: IconProps) => {
@@ -123,19 +126,28 @@ const trendingVideos: Video[] = [
     title: "David and Goliath",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
+    description: "A colorful children’s Bible animation about young David trusting God when facing the giant Goliath.",
+    lesson: "Children learn that courage comes from trusting God, not from size, strength, or fear.",
+    age: "Ages 4–10"
   },
   {
     title: "Noah and the Ark",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
+    description: "A gentle Bible story showing Noah obeying God and caring for his family and the animals.",
+    lesson: "Children learn obedience, patience, and faith in God’s promises.",
+    age: "Ages 3–9"
   },
   {
     title: "Daniel in the Lions' Den",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
+    description: "An inspiring animation about Daniel remaining faithful to God even when facing a difficult challenge.",
+    lesson: "Children learn to pray, stay faithful, and trust God in every situation.",
+    age: "Ages 5–12"
   }
 ];
 
@@ -470,9 +482,12 @@ export default function KidsStoriesWebsite() {
 
       {selectedVideo && (
         <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl overflow-hidden max-w-4xl w-full shadow-2xl">
+          <div className="bg-white rounded-3xl overflow-hidden max-w-6xl w-full shadow-2xl">
             <div className="flex items-center justify-between p-4 border-b">
-              <h3 className="text-xl font-bold">{selectedVideo.title}</h3>
+              <div>
+                <h3 className="text-xl font-bold">{selectedVideo.title}</h3>
+                <p className="text-sm text-slate-500">{selectedVideo.age}</p>
+              </div>
               <button
                 onClick={() => setSelectedVideo(null)}
                 className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl font-semibold"
@@ -481,14 +496,33 @@ export default function KidsStoriesWebsite() {
               </button>
             </div>
 
-            <div className="aspect-video bg-black">
-              <iframe
-                className="w-full h-full"
-                src={selectedVideo.embed}
-                title={selectedVideo.title}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+            <div className="grid lg:grid-cols-3 gap-0">
+              <div className="lg:col-span-2 aspect-video bg-black">
+                <iframe
+                  className="w-full h-full"
+                  src={selectedVideo.embed}
+                  title={selectedVideo.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+
+              <div className="p-6 bg-orange-50 text-slate-800">
+                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Video Description</p>
+                <p className="leading-relaxed text-slate-700">{selectedVideo.description}</p>
+
+                <div className="mt-5 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Bible Lesson</p>
+                  <p className="leading-relaxed text-slate-700">{selectedVideo.lesson}</p>
+                </div>
+
+                <a
+                  href="/videos"
+                  className="mt-5 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
+                >
+                  More Videos
+                </a>
+              </div>
             </div>
           </div>
         </div>
