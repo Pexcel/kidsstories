@@ -22,6 +22,7 @@ type Video = {
   title: string;
   image: string;
   link: string;
+  embed: string;
 };
 
 const Icon = ({ name, size = 24, className = "" }: IconProps) => {
@@ -121,17 +122,20 @@ const trendingVideos: Video[] = [
   {
     title: "David and Goliath",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
   },
   {
     title: "Noah and the Ark",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
   },
   {
     title: "Daniel in the Lions' Den",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg"
+    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
+    embed: "https://www.youtube.com/embed/dtzx_qFUwVg"
   }
 ];
 
@@ -191,6 +195,7 @@ export const filterStoryTests = [
 
 export default function KidsStoriesWebsite() {
   const [search, setSearch] = useState("");
+  const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
   const filteredStories = useMemo(() => filterStories(stories, search), [search]);
 
   return (
@@ -291,14 +296,12 @@ export default function KidsStoriesWebsite() {
               <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
               <CardContent className="p-5">
                 <h3 className="font-bold text-lg">{video.title}</h3>
-                <a
-                  href={video.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  onClick={() => setSelectedVideo(video)}
                   className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
                 >
                   Watch Now
-                </a>
+                </button>
               </CardContent>
             </Card>
           ))}
@@ -317,10 +320,10 @@ export default function KidsStoriesWebsite() {
             data-full-width-responsive="true"
           />
           <script
-  dangerouslySetInnerHTML={{
-    __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-  }}
-/>
+            dangerouslySetInnerHTML={{
+              __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+            }}
+          />
         </div>
       </section>
 
@@ -464,6 +467,32 @@ export default function KidsStoriesWebsite() {
           </form>
         </div>
       </section>
+
+      {selectedVideo && (
+        <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl overflow-hidden max-w-4xl w-full shadow-2xl">
+            <div className="flex items-center justify-between p-4 border-b">
+              <h3 className="text-xl font-bold">{selectedVideo.title}</h3>
+              <button
+                onClick={() => setSelectedVideo(null)}
+                className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-xl font-semibold"
+              >
+                Close
+              </button>
+            </div>
+
+            <div className="aspect-video bg-black">
+              <iframe
+                className="w-full h-full"
+                src={selectedVideo.embed}
+                title={selectedVideo.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       <footer className="bg-slate-950 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-4 text-sm">
