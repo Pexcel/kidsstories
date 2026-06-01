@@ -320,22 +320,26 @@ export default function KidsStoriesWebsite() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-3xl border shadow-sm p-6 text-center">
-          <p className="text-xs uppercase tracking-wide text-slate-400 mb-3">Advertisement</p>
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client="ca-pub-4663946431005155"
-            data-ad-slot="3228947531"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-            }}
-          />
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="bg-white rounded-[2rem] border shadow-sm p-8 md:p-12">
+          <h2 className="text-3xl font-bold text-slate-900">Why KidsStories Exists</h2>
+          <p className="mt-4 text-slate-600 leading-relaxed">
+            KidsStories was created to help children learn Bible stories in a simple, joyful, and age-appropriate way. Every story is designed to point children to faith, obedience, prayer, kindness, courage, and trust in God.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="rounded-3xl bg-orange-50 p-6">
+              <h3 className="font-bold text-lg text-orange-700">For Children</h3>
+              <p className="mt-2 text-slate-600">Short, colorful, and easy-to-understand Bible lessons for young hearts.</p>
+            </div>
+            <div className="rounded-3xl bg-sky-50 p-6">
+              <h3 className="font-bold text-lg text-sky-700">For Parents</h3>
+              <p className="mt-2 text-slate-600">Safe Christian video content that families can watch and discuss together.</p>
+            </div>
+            <div className="rounded-3xl bg-green-50 p-6">
+              <h3 className="font-bold text-lg text-green-700">For Churches</h3>
+              <p className="mt-2 text-slate-600">Helpful Bible story ideas for Sabbath School, children’s ministry, and family worship.</p>
+            </div>
+          </div>
         </div>
       </section>
 
