@@ -51,6 +51,13 @@ type BibleChapter = {
   verses: BibleVerse[];
 };
 
+type ChapterTeaching = {
+  summary: string;
+  lesson: string;
+  memoryVerse: string;
+  prayer: string;
+};
+
 const bibleBookCatalog: BibleBookSection[] = [
   {
     testament: "Old Testament",
@@ -286,6 +293,30 @@ function getVideosForChapter(testament: "Old Testament" | "New Testament", book:
   );
 }
 
+function generateChapterTeaching(chapter: BibleChapter | null, selectedPassage: string, currentVideo?: Video): ChapterTeaching {
+  if (!chapter || chapter.verses.length === 0) {
+    return {
+      summary: currentVideo?.passageReading || `A child-friendly summary for ${selectedPassage} will appear here once the Bible reading loads.`,
+      lesson: currentVideo?.lesson || "Children will learn to listen to God, trust Him, obey His word, and live with kindness and courage.",
+      memoryVerse: `${selectedPassage}`,
+      prayer: "Dear God, help me to understand Your word, love You more, and obey You every day. Amen."
+    };
+  }
+
+  const firstVerse = chapter.verses[0];
+  const middleVerse = chapter.verses[Math.floor(chapter.verses.length / 2)];
+  const selectedMemoryVerse = chapter.verses.find((verse) => verse.text.length <= 150) || firstVerse;
+  const plainFirst = firstVerse.text.trim();
+  const plainMiddle = middleVerse.text.trim();
+
+  return {
+    summary: currentVideo?.passageReading || `${chapter.reference} teaches an important Bible message. The chapter begins by saying, “${plainFirst}” and continues to show how God works with people, gives instruction, reveals His power, or calls His people to faithfulness.`,
+    lesson: currentVideo?.lesson || `Children can learn from ${chapter.reference} that God wants us to trust Him, listen carefully to His word, and choose what is right. This chapter reminds us that God sees us, guides us, and helps us live in a way that pleases Him.`,
+    memoryVerse: `${chapter.reference}:${selectedMemoryVerse.verse} — ${selectedMemoryVerse.text.trim()}`,
+    prayer: `Dear God, thank You for the message in ${chapter.reference}. Help me to understand Your word, trust You, obey You, and share Your love with others. Amen.`
+  };
+}
+
 const categories = ["Old Testament", "New Testament", "Bible Songs", "Memory Verses", "Bedtime Stories"];
 
 const stories: Story[] = [
@@ -357,6 +388,10 @@ export default function KidsStoriesWebsite() {
   const currentVideos = getVideosForChapter(selectedTestament, selectedBook, selectedChapter);
   const currentReading = currentVideos[0];
   const selectedPassage = `${selectedBook} ${selectedChapter}`;
+  const chapterTeaching = useMemo(
+    () => generateChapterTeaching(bibleChapter, selectedPassage, currentReading),
+    [bibleChapter, selectedPassage, currentReading]
+  );
 
   function handleTestamentChange(testament: "Old Testament" | "New Testament") {
     const section = bibleLibrary.find((item) => item.testament === testament);
@@ -622,10 +657,23 @@ export default function KidsStoriesWebsite() {
                 )}
 
                 <div className="mt-6 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-sky-700 mb-2">Chapter Summary</p>
+                  <p className="text-slate-700 leading-relaxed">{chapterTeaching.summary}</p>
+                </div>
+
+                <div className="mt-4 rounded-2xl bg-white border p-4">
                   <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Children’s Lesson</p>
-                  <p className="text-slate-700 leading-relaxed">
-                    {currentReading?.lesson || "Lesson note coming soon. Add a short lesson that helps children understand what this chapter teaches about God, faith, obedience, prayer, kindness, or courage."}
-                  </p>
+                  <p className="text-slate-700 leading-relaxed">{chapterTeaching.lesson}</p>
+                </div>
+
+                <div className="mt-4 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-purple-700 mb-2">Memory Verse</p>
+                  <p className="text-slate-700 leading-relaxed font-semibold">{chapterTeaching.memoryVerse}</p>
+                </div>
+
+                <div className="mt-4 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-orange-700 mb-2">Prayer</p>
+                  <p className="text-slate-700 leading-relaxed">{chapterTeaching.prayer}</p>
                 </div>
 
                 <p className="mt-4 text-sm font-semibold text-slate-500">{currentReading?.age || "Recommended age will be added with the animation."}</p>
