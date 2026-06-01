@@ -232,46 +232,46 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
 
 const bibleVideos: Video[] = [
   {
-    title: "David and Goliath",
+    title: "THE STORY OF HAGAR",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
-    description: "A colorful children’s Bible animation about young David trusting God when facing the giant Goliath.",
-    lesson: "Children learn that courage comes from trusting God, not from size, strength, or fear.",
+    link: "https://www.youtube.com/watch?v=jjeudBocn8g",
+    embed: "https://www.youtube.com/embed/jjeudBocn8g",
+    description: "Hagar Encounters God in the Wilderness",
+    lesson: "No matter how lonely, sad, or forgotten you feel, God sees you, cares about you, and is always with you.",
     age: "Ages 4–10",
     testament: "Old Testament",
-    book: "1 Samuel",
-    chapter: 17,
-    passage: "1 Samuel 17:1–58",
-    passageReading: "This chapter tells how David trusted God and faced Goliath when others were afraid. It teaches children that God can use a faithful heart to do great things."
+    book: "Genesis",
+    chapter: 16,
+    passage: "Genesis 16",
+    passageReading: "Hagar runs away into the wilderness, but God finds her, comforts her, and reminds her that He sees and cares for her."
   },
   {
-    title: "Noah and the Ark",
+    title: "They Won Without Fighting",
     image: "/banner.jpg",
     link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
     embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
-    description: "A gentle Bible story showing Noah obeying God and caring for his family and the animals.",
-    lesson: "Children learn obedience, patience, and faith in God’s promises.",
+    description: "In this animated Bible story, we see a powerful truth—sometimes victory comes through trust and obedience, not human strength.",
+    lesson: "This message is simple: not every battle is yours to fight.",
     age: "Ages 3–9",
     testament: "Old Testament",
-    book: "Genesis",
-    chapter: 6,
-    passage: "Genesis 6–8",
-    passageReading: "These chapters tell how Noah obeyed God, built the ark, and trusted God through the flood. Children learn that obedience and faith are important even when others do not understand."
+    book: "2 Chronicles",
+    chapter: 20,
+    passage: "2 Chronicles 20",
+    passageReading: "This 2 Chronicles 20 summary shows how King Jehoshaphat faced a massive enemy army. Fear came—but instead of panicking, the people prayed and sought God together."
   },
   {
-    title: "Daniel in the Lions' Den",
+    title: "Jehoram wanted power",
     image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
-    description: "An inspiring animation about Daniel remaining faithful to God even when facing a difficult challenge.",
-    lesson: "Children learn to pray, stay faithful, and trust God in every situation.",
+    link: "https://www.youtube.com/watch?v=oWNpcGzmyUk",
+    embed: "https://www.youtube.com/embed/oWNpcGzmyUk",
+    description: "Jehoram wanted power so badly that he hurt the people closest to him.",
+    lesson: "This story teaches us that pride and bad influences can lead people away from God.",
     age: "Ages 5–12",
     testament: "Old Testament",
-    book: "Daniel",
-    chapter: 6,
-    passage: "Daniel 6:1–28",
-    passageReading: "This chapter tells how Daniel continued to pray faithfully to God. Even in danger, God protected him and showed that He is powerful and trustworthy."
+    book: "2 Chronicles",
+    chapter: 21,
+    passage: "2 Chronicles 21",
+    passageReading: "Jehoram wanted power so badly that he hurt the people closest to him."
   }
 ];
 
