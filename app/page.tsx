@@ -266,7 +266,35 @@ export const filterStoryTests = [
 export default function KidsStoriesWebsite() {
   const [search, setSearch] = useState("");
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
+  const [selectedTestament, setSelectedTestament] = useState<"Old Testament" | "New Testament">("Old Testament");
+  const [selectedBook, setSelectedBook] = useState("Genesis");
+  const [selectedChapter, setSelectedChapter] = useState(6);
   const filteredStories = useMemo(() => filterStories(stories, search), [search]);
+
+  const currentBooks = bibleLibrary.find((section) => section.testament === selectedTestament)?.books || [];
+  const currentBook = currentBooks.find((book) => book.name === selectedBook) || currentBooks[0];
+  const currentChapters = currentBook?.chapters || [];
+  const currentChapter = currentChapters.find((chapter) => chapter.chapter === selectedChapter) || currentChapters[0];
+  const currentVideos = currentChapter?.videos || [];
+  const currentReading = currentVideos[0];
+
+  function handleTestamentChange(testament: "Old Testament" | "New Testament") {
+    const section = bibleLibrary.find((item) => item.testament === testament);
+    const firstBook = section?.books[0];
+    const firstChapter = firstBook?.chapters[0];
+
+    setSelectedTestament(testament);
+    setSelectedBook(firstBook?.name || "");
+    setSelectedChapter(firstChapter?.chapter || 1);
+  }
+
+  function handleBookChange(bookName: string) {
+    const book = currentBooks.find((item) => item.name === bookName);
+    const firstChapter = book?.chapters[0];
+
+    setSelectedBook(bookName);
+    setSelectedChapter(firstChapter?.chapter || 1);
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-slate-900">
@@ -361,51 +389,121 @@ export default function KidsStoriesWebsite() {
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-3">Bible Video Library</h2>
         <p className="text-slate-600 mb-8">
-          Browse videos by Testament, Bible book, and chapter. Each video includes the Bible passage, description, and lesson for children.
+          Choose a Testament, Bible book, and chapter. The Bible passage reading and children’s animation will appear together.
         </p>
 
-        <div className="space-y-10">
-          {bibleLibrary.map((section) => (
-            <div key={section.testament} className="bg-white rounded-[2rem] border shadow-sm p-6 md:p-8">
-              <h3 className="text-2xl font-bold text-orange-600 mb-6">{section.testament}</h3>
+        <div className="grid lg:grid-cols-4 gap-6">
+          <div className="bg-white rounded-[2rem] border shadow-sm p-5 lg:col-span-1">
+            <h3 className="text-lg font-bold text-slate-900 mb-4">1. Choose Testament</h3>
+            <div className="grid gap-3">
+              {["Old Testament", "New Testament"].map((testament) => (
+                <button
+                  key={testament}
+                  onClick={() => handleTestamentChange(testament as "Old Testament" | "New Testament")}
+                  className={`rounded-2xl px-4 py-3 text-left font-semibold border transition ${
+                    selectedTestament === testament
+                      ? "bg-orange-500 text-white border-orange-500"
+                      : "bg-orange-50 text-slate-700 hover:bg-orange-100"
+                  }`}
+                >
+                  {testament}
+                </button>
+              ))}
+            </div>
 
-              <div className="space-y-8">
-                {section.books.map((book) => (
-                  <div key={book.name} className="rounded-3xl bg-orange-50/60 border p-5">
-                    <h4 className="text-xl font-bold text-slate-900 mb-4">{book.name}</h4>
+            <h3 className="text-lg font-bold text-slate-900 mt-8 mb-4">2. Choose Book</h3>
+            <div className="grid gap-3 max-h-80 overflow-y-auto pr-1">
+              {currentBooks.map((book) => (
+                <button
+                  key={book.name}
+                  onClick={() => handleBookChange(book.name)}
+                  className={`rounded-2xl px-4 py-3 text-left font-semibold border transition ${
+                    selectedBook === book.name
+                      ? "bg-sky-500 text-white border-sky-500"
+                      : "bg-sky-50 text-slate-700 hover:bg-sky-100"
+                  }`}
+                >
+                  {book.name}
+                </button>
+              ))}
+            </div>
+          </div>
 
-                    <div className="space-y-6">
-                      {book.chapters.map((chapterGroup) => (
-                        <div key={`${book.name}-${chapterGroup.chapter}`}>
-                          <p className="font-bold text-slate-700 mb-3">Chapter {chapterGroup.chapter}</p>
+          <div className="bg-white rounded-[2rem] border shadow-sm p-5 lg:col-span-3">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wide text-orange-600">{selectedTestament}</p>
+                <h3 className="text-2xl font-bold text-slate-900">{selectedBook}</h3>
+              </div>
 
-                          <div className="grid md:grid-cols-3 gap-6">
-                            {chapterGroup.videos.map((video) => (
-                              <Card key={video.title} className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition">
-                                <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
-                                <CardContent className="p-5">
-                                  <p className="text-xs font-bold uppercase tracking-wide text-orange-600">{video.passage}</p>
-                                  <h5 className="font-bold text-lg mt-2">{video.title}</h5>
-                                  <p className="text-sm text-slate-500 mt-1">{video.age}</p>
-                                  <p className="text-slate-600 mt-3 line-clamp-3">{video.description}</p>
-                                  <button
-                                    onClick={() => setSelectedVideo(video)}
-                                    className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
-                                  >
-                                    Watch Now
-                                  </button>
-                                </CardContent>
-                              </Card>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+              <div>
+                <label className="block text-sm font-semibold text-slate-600 mb-2">3. Choose Chapter</label>
+                <select
+                  value={selectedChapter}
+                  onChange={(event) => setSelectedChapter(Number(event.target.value))}
+                  className="rounded-2xl border px-4 py-3 bg-white font-semibold"
+                >
+                  {currentChapters.map((chapterGroup) => (
+                    <option key={chapterGroup.chapter} value={chapterGroup.chapter}>
+                      Chapter {chapterGroup.chapter}
+                    </option>
+                  ))}
+                </select>
               </div>
             </div>
-          ))}
+
+            {currentReading ? (
+              <div className="grid lg:grid-cols-3 gap-6">
+                <div className="lg:col-span-2 rounded-3xl overflow-hidden bg-black shadow-lg aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src={currentReading.embed}
+                    title={currentReading.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+
+                <div className="rounded-3xl bg-orange-50 border p-6">
+                  <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Passage Reading</p>
+                  <h4 className="text-xl font-bold text-slate-900">{currentReading.passage}</h4>
+                  <p className="mt-4 text-slate-700 leading-relaxed">{currentReading.description}</p>
+
+                  <div className="mt-5 rounded-2xl bg-white border p-4">
+                    <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Children’s Lesson</p>
+                    <p className="text-slate-700 leading-relaxed">{currentReading.lesson}</p>
+                  </div>
+
+                  <p className="mt-4 text-sm font-semibold text-slate-500">Recommended: {currentReading.age}</p>
+                </div>
+              </div>
+            ) : (
+              <div className="rounded-3xl bg-orange-50 border p-8 text-center text-slate-600">
+                No animation has been added for this chapter yet.
+              </div>
+            )}
+
+            {currentVideos.length > 1 && (
+              <div className="mt-8">
+                <h4 className="font-bold text-lg mb-4">More videos in this chapter</h4>
+                <div className="grid md:grid-cols-3 gap-4">
+                  {currentVideos.map((video) => (
+                    <button
+                      key={video.title}
+                      onClick={() => setSelectedVideo(video)}
+                      className="text-left bg-white border rounded-3xl overflow-hidden hover:shadow-lg transition"
+                    >
+                      <img src={video.image} alt={video.title} className="h-32 w-full object-cover" />
+                      <div className="p-4">
+                        <p className="font-bold">{video.title}</p>
+                        <p className="text-xs text-slate-500 mt-1">{video.passage}</p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
