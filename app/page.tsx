@@ -30,18 +30,95 @@ type Video = {
   book: string;
   chapter: number;
   passage: string;
+  passageReading: string;
 };
 
 type BibleBookSection = {
   testament: "Old Testament" | "New Testament";
   books: {
     name: string;
-    chapters: {
-      chapter: number;
-      videos: Video[];
-    }[];
+    chapterCount: number;
   }[];
 };
+
+const bibleBookCatalog: BibleBookSection[] = [
+  {
+    testament: "Old Testament",
+    books: [
+      { name: "Genesis", chapterCount: 50 },
+      { name: "Exodus", chapterCount: 40 },
+      { name: "Leviticus", chapterCount: 27 },
+      { name: "Numbers", chapterCount: 36 },
+      { name: "Deuteronomy", chapterCount: 34 },
+      { name: "Joshua", chapterCount: 24 },
+      { name: "Judges", chapterCount: 21 },
+      { name: "Ruth", chapterCount: 4 },
+      { name: "1 Samuel", chapterCount: 31 },
+      { name: "2 Samuel", chapterCount: 24 },
+      { name: "1 Kings", chapterCount: 22 },
+      { name: "2 Kings", chapterCount: 25 },
+      { name: "1 Chronicles", chapterCount: 29 },
+      { name: "2 Chronicles", chapterCount: 36 },
+      { name: "Ezra", chapterCount: 10 },
+      { name: "Nehemiah", chapterCount: 13 },
+      { name: "Esther", chapterCount: 10 },
+      { name: "Job", chapterCount: 42 },
+      { name: "Psalms", chapterCount: 150 },
+      { name: "Proverbs", chapterCount: 31 },
+      { name: "Ecclesiastes", chapterCount: 12 },
+      { name: "Song of Solomon", chapterCount: 8 },
+      { name: "Isaiah", chapterCount: 66 },
+      { name: "Jeremiah", chapterCount: 52 },
+      { name: "Lamentations", chapterCount: 5 },
+      { name: "Ezekiel", chapterCount: 48 },
+      { name: "Daniel", chapterCount: 12 },
+      { name: "Hosea", chapterCount: 14 },
+      { name: "Joel", chapterCount: 3 },
+      { name: "Amos", chapterCount: 9 },
+      { name: "Obadiah", chapterCount: 1 },
+      { name: "Jonah", chapterCount: 4 },
+      { name: "Micah", chapterCount: 7 },
+      { name: "Nahum", chapterCount: 3 },
+      { name: "Habakkuk", chapterCount: 3 },
+      { name: "Zephaniah", chapterCount: 3 },
+      { name: "Haggai", chapterCount: 2 },
+      { name: "Zechariah", chapterCount: 14 },
+      { name: "Malachi", chapterCount: 4 }
+    ]
+  },
+  {
+    testament: "New Testament",
+    books: [
+      { name: "Matthew", chapterCount: 28 },
+      { name: "Mark", chapterCount: 16 },
+      { name: "Luke", chapterCount: 24 },
+      { name: "John", chapterCount: 21 },
+      { name: "Acts", chapterCount: 28 },
+      { name: "Romans", chapterCount: 16 },
+      { name: "1 Corinthians", chapterCount: 16 },
+      { name: "2 Corinthians", chapterCount: 13 },
+      { name: "Galatians", chapterCount: 6 },
+      { name: "Ephesians", chapterCount: 6 },
+      { name: "Philippians", chapterCount: 4 },
+      { name: "Colossians", chapterCount: 4 },
+      { name: "1 Thessalonians", chapterCount: 5 },
+      { name: "2 Thessalonians", chapterCount: 3 },
+      { name: "1 Timothy", chapterCount: 6 },
+      { name: "2 Timothy", chapterCount: 4 },
+      { name: "Titus", chapterCount: 3 },
+      { name: "Philemon", chapterCount: 1 },
+      { name: "Hebrews", chapterCount: 13 },
+      { name: "James", chapterCount: 5 },
+      { name: "1 Peter", chapterCount: 5 },
+      { name: "2 Peter", chapterCount: 3 },
+      { name: "1 John", chapterCount: 5 },
+      { name: "2 John", chapterCount: 1 },
+      { name: "3 John", chapterCount: 1 },
+      { name: "Jude", chapterCount: 1 },
+      { name: "Revelation", chapterCount: 22 }
+    ]
+  }
+];
 
 const Icon = ({ name, size = 24, className = "" }: IconProps) => {
   const common: SVGProps<SVGSVGElement> = {
@@ -148,7 +225,8 @@ const bibleVideos: Video[] = [
     testament: "Old Testament",
     book: "1 Samuel",
     chapter: 17,
-    passage: "1 Samuel 17:1–58"
+    passage: "1 Samuel 17:1–58",
+    passageReading: "This chapter tells how David trusted God and faced Goliath when others were afraid. It teaches children that God can use a faithful heart to do great things."
   },
   {
     title: "Noah and the Ark",
@@ -161,7 +239,8 @@ const bibleVideos: Video[] = [
     testament: "Old Testament",
     book: "Genesis",
     chapter: 6,
-    passage: "Genesis 6:9–22; Genesis 7:1–24; Genesis 8:1–22"
+    passage: "Genesis 6–8",
+    passageReading: "These chapters tell how Noah obeyed God, built the ark, and trusted God through the flood. Children learn that obedience and faith are important even when others do not understand."
   },
   {
     title: "Daniel in the Lions' Den",
@@ -174,40 +253,28 @@ const bibleVideos: Video[] = [
     testament: "Old Testament",
     book: "Daniel",
     chapter: 6,
-    passage: "Daniel 6:1–28"
+    passage: "Daniel 6:1–28",
+    passageReading: "This chapter tells how Daniel continued to pray faithfully to God. Even in danger, God protected him and showed that He is powerful and trustworthy."
   }
 ];
 
 const trendingVideos: Video[] = bibleVideos;
 
-function buildBibleLibrary(videos: Video[]): BibleBookSection[] {
-  const testamentOrder: Array<"Old Testament" | "New Testament"> = ["Old Testament", "New Testament"];
+const bibleLibrary = bibleBookCatalog;
 
-  return testamentOrder
-    .map((testament) => {
-      const testamentVideos = videos.filter((video) => video.testament === testament);
-      const bookNames = Array.from(new Set(testamentVideos.map((video) => video.book)));
+function getChapterNumbers(bookName: string, testament: "Old Testament" | "New Testament"): number[] {
+  const section = bibleBookCatalog.find((item) => item.testament === testament);
+  const book = section?.books.find((item) => item.name === bookName);
+  const chapterCount = book?.chapterCount || 1;
 
-      return {
-        testament,
-        books: bookNames.map((bookName) => {
-          const bookVideos = testamentVideos.filter((video) => video.book === bookName);
-          const chapters = Array.from(new Set(bookVideos.map((video) => video.chapter))).sort((a, b) => a - b);
-
-          return {
-            name: bookName,
-            chapters: chapters.map((chapter) => ({
-              chapter,
-              videos: bookVideos.filter((video) => video.chapter === chapter)
-            }))
-          };
-        })
-      };
-    })
-    .filter((section) => section.books.length > 0);
+  return Array.from({ length: chapterCount }, (_, index) => index + 1);
 }
 
-const bibleLibrary = buildBibleLibrary(bibleVideos);
+function getVideosForChapter(testament: "Old Testament" | "New Testament", book: string, chapter: number): Video[] {
+  return bibleVideos.filter(
+    (video) => video.testament === testament && video.book === book && video.chapter === chapter
+  );
+}
 
 const categories = ["Old Testament", "New Testament", "Bible Songs", "Memory Verses", "Bedtime Stories"];
 
@@ -273,27 +340,23 @@ export default function KidsStoriesWebsite() {
 
   const currentBooks = bibleLibrary.find((section) => section.testament === selectedTestament)?.books || [];
   const currentBook = currentBooks.find((book) => book.name === selectedBook) || currentBooks[0];
-  const currentChapters = currentBook?.chapters || [];
-  const currentChapter = currentChapters.find((chapter) => chapter.chapter === selectedChapter) || currentChapters[0];
-  const currentVideos = currentChapter?.videos || [];
+  const currentChapters = getChapterNumbers(currentBook?.name || selectedBook, selectedTestament);
+  const currentVideos = getVideosForChapter(selectedTestament, selectedBook, selectedChapter);
   const currentReading = currentVideos[0];
+  const selectedPassage = `${selectedBook} ${selectedChapter}`;
 
   function handleTestamentChange(testament: "Old Testament" | "New Testament") {
     const section = bibleLibrary.find((item) => item.testament === testament);
     const firstBook = section?.books[0];
-    const firstChapter = firstBook?.chapters[0];
-
     setSelectedTestament(testament);
     setSelectedBook(firstBook?.name || "");
-    setSelectedChapter(firstChapter?.chapter || 1);
+    setSelectedChapter(1);
   }
 
   function handleBookChange(bookName: string) {
     const book = currentBooks.find((item) => item.name === bookName);
-    const firstChapter = book?.chapters[0];
-
     setSelectedBook(bookName);
-    setSelectedChapter(firstChapter?.chapter || 1);
+    setSelectedChapter(1);
   }
 
   return (
@@ -443,18 +506,18 @@ export default function KidsStoriesWebsite() {
                   onChange={(event) => setSelectedChapter(Number(event.target.value))}
                   className="rounded-2xl border px-4 py-3 bg-white font-semibold"
                 >
-                  {currentChapters.map((chapterGroup) => (
-                    <option key={chapterGroup.chapter} value={chapterGroup.chapter}>
-                      Chapter {chapterGroup.chapter}
+                  {currentChapters.map((chapter) => (
+                    <option key={chapter} value={chapter}>
+                      Chapter {chapter}
                     </option>
                   ))}
                 </select>
               </div>
             </div>
 
-            {currentReading ? (
-              <div className="grid lg:grid-cols-3 gap-6">
-                <div className="lg:col-span-2 rounded-3xl overflow-hidden bg-black shadow-lg aspect-video">
+            <div className="grid lg:grid-cols-3 gap-6">
+              <div className="lg:col-span-2 rounded-3xl overflow-hidden bg-black shadow-lg aspect-video flex items-center justify-center">
+                {currentReading ? (
                   <iframe
                     className="w-full h-full"
                     src={currentReading.embed}
@@ -462,26 +525,33 @@ export default function KidsStoriesWebsite() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   />
-                </div>
-
-                <div className="rounded-3xl bg-orange-50 border p-6">
-                  <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Passage Reading</p>
-                  <h4 className="text-xl font-bold text-slate-900">{currentReading.passage}</h4>
-                  <p className="mt-4 text-slate-700 leading-relaxed">{currentReading.description}</p>
-
-                  <div className="mt-5 rounded-2xl bg-white border p-4">
-                    <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Children’s Lesson</p>
-                    <p className="text-slate-700 leading-relaxed">{currentReading.lesson}</p>
+                ) : (
+                  <div className="text-center text-white p-8">
+                    <Icon name="book" className="mx-auto mb-4 text-orange-300" size={56} />
+                    <h4 className="text-2xl font-bold">Animation Coming Soon</h4>
+                    <p className="mt-2 text-slate-300">A video for {selectedPassage} will appear here once uploaded.</p>
                   </div>
+                )}
+              </div>
 
-                  <p className="mt-4 text-sm font-semibold text-slate-500">Recommended: {currentReading.age}</p>
+              <div className="rounded-3xl bg-orange-50 border p-6">
+                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Passage Reading</p>
+                <h4 className="text-xl font-bold text-slate-900">{currentReading?.passage || selectedPassage}</h4>
+                <p className="mt-4 text-slate-700 leading-relaxed">
+                  {currentReading?.passageReading ||
+                    `Bible reading content for ${selectedPassage} will appear here. You can add a child-friendly summary, memory verse, and lesson for this chapter before or after the animation is uploaded.`}
+                </p>
+
+                <div className="mt-5 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Children’s Lesson</p>
+                  <p className="text-slate-700 leading-relaxed">
+                    {currentReading?.lesson || "Lesson note coming soon. Add a short lesson that helps children understand what this chapter teaches about God, faith, obedience, prayer, kindness, or courage."}
+                  </p>
                 </div>
+
+                <p className="mt-4 text-sm font-semibold text-slate-500">{currentReading?.age || "Recommended age will be added with the animation."}</p>
               </div>
-            ) : (
-              <div className="rounded-3xl bg-orange-50 border p-8 text-center text-slate-600">
-                No animation has been added for this chapter yet.
-              </div>
-            )}
+            </div>
 
             {currentVideos.length > 1 && (
               <div className="mt-8">
