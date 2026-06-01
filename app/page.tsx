@@ -26,6 +26,21 @@ type Video = {
   description: string;
   lesson: string;
   age: string;
+  testament: "Old Testament" | "New Testament";
+  book: string;
+  chapter: number;
+  passage: string;
+};
+
+type BibleBookSection = {
+  testament: "Old Testament" | "New Testament";
+  books: {
+    name: string;
+    chapters: {
+      chapter: number;
+      videos: Video[];
+    }[];
+  }[];
 };
 
 const Icon = ({ name, size = 24, className = "" }: IconProps) => {
@@ -121,7 +136,7 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
   <div className={className}>{children}</div>
 );
 
-const trendingVideos: Video[] = [
+const bibleVideos: Video[] = [
   {
     title: "David and Goliath",
     image: "/banner.jpg",
@@ -129,7 +144,11 @@ const trendingVideos: Video[] = [
     embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
     description: "A colorful children’s Bible animation about young David trusting God when facing the giant Goliath.",
     lesson: "Children learn that courage comes from trusting God, not from size, strength, or fear.",
-    age: "Ages 4–10"
+    age: "Ages 4–10",
+    testament: "Old Testament",
+    book: "1 Samuel",
+    chapter: 17,
+    passage: "1 Samuel 17:1–58"
   },
   {
     title: "Noah and the Ark",
@@ -138,7 +157,11 @@ const trendingVideos: Video[] = [
     embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
     description: "A gentle Bible story showing Noah obeying God and caring for his family and the animals.",
     lesson: "Children learn obedience, patience, and faith in God’s promises.",
-    age: "Ages 3–9"
+    age: "Ages 3–9",
+    testament: "Old Testament",
+    book: "Genesis",
+    chapter: 6,
+    passage: "Genesis 6:9–22; Genesis 7:1–24; Genesis 8:1–22"
   },
   {
     title: "Daniel in the Lions' Den",
@@ -147,9 +170,44 @@ const trendingVideos: Video[] = [
     embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
     description: "An inspiring animation about Daniel remaining faithful to God even when facing a difficult challenge.",
     lesson: "Children learn to pray, stay faithful, and trust God in every situation.",
-    age: "Ages 5–12"
+    age: "Ages 5–12",
+    testament: "Old Testament",
+    book: "Daniel",
+    chapter: 6,
+    passage: "Daniel 6:1–28"
   }
 ];
+
+const trendingVideos: Video[] = bibleVideos;
+
+function buildBibleLibrary(videos: Video[]): BibleBookSection[] {
+  const testamentOrder: Array<"Old Testament" | "New Testament"> = ["Old Testament", "New Testament"];
+
+  return testamentOrder
+    .map((testament) => {
+      const testamentVideos = videos.filter((video) => video.testament === testament);
+      const bookNames = Array.from(new Set(testamentVideos.map((video) => video.book)));
+
+      return {
+        testament,
+        books: bookNames.map((bookName) => {
+          const bookVideos = testamentVideos.filter((video) => video.book === bookName);
+          const chapters = Array.from(new Set(bookVideos.map((video) => video.chapter))).sort((a, b) => a - b);
+
+          return {
+            name: bookName,
+            chapters: chapters.map((chapter) => ({
+              chapter,
+              videos: bookVideos.filter((video) => video.chapter === chapter)
+            }))
+          };
+        })
+      };
+    })
+    .filter((section) => section.books.length > 0);
+}
+
+const bibleLibrary = buildBibleLibrary(bibleVideos);
 
 const categories = ["Old Testament", "New Testament", "Bible Songs", "Memory Verses", "Bedtime Stories"];
 
@@ -301,21 +359,52 @@ export default function KidsStoriesWebsite() {
       </section>
 
       <section className="max-w-7xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-6">Trending Videos</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {trendingVideos.map((video) => (
-            <Card key={video.title} className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition">
-              <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
-              <CardContent className="p-5">
-                <h3 className="font-bold text-lg">{video.title}</h3>
-                <button
-                  onClick={() => setSelectedVideo(video)}
-                  className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
-                >
-                  Watch Now
-                </button>
-              </CardContent>
-            </Card>
+        <h2 className="text-3xl font-bold mb-3">Bible Video Library</h2>
+        <p className="text-slate-600 mb-8">
+          Browse videos by Testament, Bible book, and chapter. Each video includes the Bible passage, description, and lesson for children.
+        </p>
+
+        <div className="space-y-10">
+          {bibleLibrary.map((section) => (
+            <div key={section.testament} className="bg-white rounded-[2rem] border shadow-sm p-6 md:p-8">
+              <h3 className="text-2xl font-bold text-orange-600 mb-6">{section.testament}</h3>
+
+              <div className="space-y-8">
+                {section.books.map((book) => (
+                  <div key={book.name} className="rounded-3xl bg-orange-50/60 border p-5">
+                    <h4 className="text-xl font-bold text-slate-900 mb-4">{book.name}</h4>
+
+                    <div className="space-y-6">
+                      {book.chapters.map((chapterGroup) => (
+                        <div key={`${book.name}-${chapterGroup.chapter}`}>
+                          <p className="font-bold text-slate-700 mb-3">Chapter {chapterGroup.chapter}</p>
+
+                          <div className="grid md:grid-cols-3 gap-6">
+                            {chapterGroup.videos.map((video) => (
+                              <Card key={video.title} className="rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition">
+                                <img src={video.image} alt={video.title} className="h-48 w-full object-cover" />
+                                <CardContent className="p-5">
+                                  <p className="text-xs font-bold uppercase tracking-wide text-orange-600">{video.passage}</p>
+                                  <h5 className="font-bold text-lg mt-2">{video.title}</h5>
+                                  <p className="text-sm text-slate-500 mt-1">{video.age}</p>
+                                  <p className="text-slate-600 mt-3 line-clamp-3">{video.description}</p>
+                                  <button
+                                    onClick={() => setSelectedVideo(video)}
+                                    className="mt-4 w-full rounded-2xl bg-orange-500 hover:bg-orange-600 py-3 text-white font-semibold inline-flex items-center justify-center"
+                                  >
+                                    Watch Now
+                                  </button>
+                                </CardContent>
+                              </Card>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -490,7 +579,7 @@ export default function KidsStoriesWebsite() {
             <div className="flex items-center justify-between p-4 border-b">
               <div>
                 <h3 className="text-xl font-bold">{selectedVideo.title}</h3>
-                <p className="text-sm text-slate-500">{selectedVideo.age}</p>
+                <p className="text-sm text-slate-500">{selectedVideo.passage} • {selectedVideo.age}</p>
               </div>
               <button
                 onClick={() => setSelectedVideo(null)}
@@ -512,8 +601,13 @@ export default function KidsStoriesWebsite() {
               </div>
 
               <div className="p-6 bg-orange-50 text-slate-800">
-                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Video Description</p>
-                <p className="leading-relaxed text-slate-700">{selectedVideo.description}</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Passage</p>
+                <p className="font-bold text-slate-800">{selectedVideo.passage}</p>
+
+                <div className="mt-5 rounded-2xl bg-white border p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Video Description</p>
+                  <p className="leading-relaxed text-slate-700">{selectedVideo.description}</p>
+                </div>
 
                 <div className="mt-5 rounded-2xl bg-white border p-4">
                   <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Bible Lesson</p>
