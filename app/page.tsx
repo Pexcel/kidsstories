@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useMemo, useState } from "react";
+import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
 type IconName = "upload" | "play" | "book" | "mail" | "star" | "shield" | "search" | "menu";
@@ -39,6 +39,16 @@ type BibleBookSection = {
     name: string;
     chapterCount: number;
   }[];
+};
+
+type BibleVerse = {
+  verse: number;
+  text: string;
+};
+
+type BibleChapter = {
+  reference: string;
+  verses: BibleVerse[];
 };
 
 const bibleBookCatalog: BibleBookSection[] = [
@@ -333,6 +343,9 @@ export const filterStoryTests = [
 export default function KidsStoriesWebsite() {
   const [search, setSearch] = useState("");
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
+  const [bibleChapter, setBibleChapter] = useState<BibleChapter | null>(null);
+  const [isBibleLoading, setIsBibleLoading] = useState(false);
+  const [bibleError, setBibleError] = useState("");
   const [selectedTestament, setSelectedTestament] = useState<"Old Testament" | "New Testament">("Old Testament");
   const [selectedBook, setSelectedBook] = useState("Genesis");
   const [selectedChapter, setSelectedChapter] = useState(6);
@@ -354,10 +367,56 @@ export default function KidsStoriesWebsite() {
   }
 
   function handleBookChange(bookName: string) {
-    const book = currentBooks.find((item) => item.name === bookName);
+    currentBooks.find((item) => item.name === bookName);
     setSelectedBook(bookName);
     setSelectedChapter(1);
   }
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadBibleChapter() {
+      setIsBibleLoading(true);
+      setBibleError("");
+      setBibleChapter(null);
+
+      try {
+        const reference = encodeURIComponent(`${selectedBook} ${selectedChapter}`);
+        const response = await fetch(`https://bible-api.com/${reference}?translation=kjv`);
+
+        if (!response.ok) {
+          throw new Error("Bible passage could not be loaded");
+        }
+
+        const data = await response.json();
+
+        if (!isMounted) return;
+
+        setBibleChapter({
+          reference: data.reference || `${selectedBook} ${selectedChapter}`,
+          verses: Array.isArray(data.verses)
+            ? data.verses.map((verse: { verse: number; text: string }) => ({
+                verse: verse.verse,
+                text: verse.text
+              }))
+            : []
+        });
+      } catch {
+        if (!isMounted) return;
+        setBibleError("Bible text is not available right now. Please check your internet connection or try again later.");
+      } finally {
+        if (isMounted) {
+          setIsBibleLoading(false);
+        }
+      }
+    }
+
+    loadBibleChapter();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [selectedBook, selectedChapter]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-slate-900">
@@ -452,7 +511,7 @@ export default function KidsStoriesWebsite() {
       <section className="max-w-7xl mx-auto px-4 py-10">
         <h2 className="text-3xl font-bold mb-3">Bible Video Library</h2>
         <p className="text-slate-600 mb-8">
-          Choose a Testament, Bible book, and chapter. The Bible passage reading and children’s animation will appear together.
+          Choose a Testament, Bible book, and chapter. The Bible reading and children’s animation will appear together.
         </p>
 
         <div className="grid lg:grid-cols-4 gap-6">
@@ -534,15 +593,35 @@ export default function KidsStoriesWebsite() {
                 )}
               </div>
 
-              <div className="rounded-3xl bg-orange-50 border p-6">
-                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Passage Reading</p>
-                <h4 className="text-xl font-bold text-slate-900">{currentReading?.passage || selectedPassage}</h4>
-                <p className="mt-4 text-slate-700 leading-relaxed">
-                  {currentReading?.passageReading ||
-                    `Bible reading content for ${selectedPassage} will appear here. You can add a child-friendly summary, memory verse, and lesson for this chapter before or after the animation is uploaded.`}
-                </p>
+              <div className="rounded-3xl bg-orange-50 border p-6 max-h-[520px] overflow-y-auto">
+                <p className="text-xs font-bold uppercase tracking-wide text-orange-600 mb-2">Bible Reading</p>
+                <h4 className="text-xl font-bold text-slate-900">{bibleChapter?.reference || selectedPassage}</h4>
 
-                <div className="mt-5 rounded-2xl bg-white border p-4">
+                {isBibleLoading && (
+                  <p className="mt-4 text-slate-600">Loading Bible chapter...</p>
+                )}
+
+                {bibleError && (
+                  <div className="mt-4 rounded-2xl bg-white border p-4">
+                    <p className="text-slate-700">{bibleError}</p>
+                    <p className="mt-3 text-sm text-slate-500">
+                      You can still add your child-friendly Bible summary, lesson, and animation for {selectedPassage}.
+                    </p>
+                  </div>
+                )}
+
+                {bibleChapter && bibleChapter.verses.length > 0 && (
+                  <div className="mt-4 space-y-3 text-left">
+                    {bibleChapter.verses.map((verse) => (
+                      <p key={verse.verse} className="leading-relaxed text-slate-700">
+                        <sup className="font-bold text-orange-600 mr-1">{verse.verse}</sup>
+                        {verse.text.trim()}
+                      </p>
+                    ))}
+                  </div>
+                )}
+
+                <div className="mt-6 rounded-2xl bg-white border p-4">
                   <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-2">Children’s Lesson</p>
                   <p className="text-slate-700 leading-relaxed">
                     {currentReading?.lesson || "Lesson note coming soon. Add a short lesson that helps children understand what this chapter teaches about God, faith, obedience, prayer, kindness, or courage."}
