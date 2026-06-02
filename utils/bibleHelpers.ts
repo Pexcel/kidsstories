@@ -1,6 +1,6 @@
 import { BibleChapter, ChapterTeaching, Testament, Video } from "@/types";
 import { bibleBookCatalog } from "@/data/bibleBooks";
-import { bibleVideos } from "@/data/bibleVideos";
+import { bibleVideos } from "../data/bibleVideos";
 
 export function getChapterNumbers(bookName: string, testament: Testament): number[] {
   const section = bibleBookCatalog.find((item) => item.testament === testament);
