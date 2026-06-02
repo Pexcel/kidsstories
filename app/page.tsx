@@ -3,6 +3,15 @@
 import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
+import { bibleBookCatalog } from "@/data/bibleBooks";
+import { bibleVideos } from "../data/bibleVideos";
+import { BibleChapter, Video, Testament } from "@/types";
+import {
+  getChapterNumbers,
+  getVideosForChapter,
+  generateChapterTeaching,
+} from "@/utils/bibleHelpers";
+
 type IconName = "upload" | "play" | "book" | "mail" | "star" | "shield" | "search" | "menu";
 
 type IconProps = {
@@ -18,38 +27,9 @@ type Story = {
   description: string;
 };
 
-type Video = {
-  title: string;
-  image: string;
-  link: string;
-  embed: string;
-  description: string;
-  lesson: string;
-  age: string;
-  testament: "Old Testament" | "New Testament";
-  book: string;
-  chapter: number;
-  passage: string;
-  passageReading: string;
-};
+ 
 
-type BibleBookSection = {
-  testament: "Old Testament" | "New Testament";
-  books: {
-    name: string;
-    chapterCount: number;
-  }[];
-};
 
-type BibleVerse = {
-  verse: number;
-  text: string;
-};
-
-type BibleChapter = {
-  reference: string;
-  verses: BibleVerse[];
-};
 
 type ChapterTeaching = {
   summary: string;
@@ -58,84 +38,6 @@ type ChapterTeaching = {
   prayer: string;
 };
 
-const bibleBookCatalog: BibleBookSection[] = [
-  {
-    testament: "Old Testament",
-    books: [
-      { name: "Genesis", chapterCount: 50 },
-      { name: "Exodus", chapterCount: 40 },
-      { name: "Leviticus", chapterCount: 27 },
-      { name: "Numbers", chapterCount: 36 },
-      { name: "Deuteronomy", chapterCount: 34 },
-      { name: "Joshua", chapterCount: 24 },
-      { name: "Judges", chapterCount: 21 },
-      { name: "Ruth", chapterCount: 4 },
-      { name: "1 Samuel", chapterCount: 31 },
-      { name: "2 Samuel", chapterCount: 24 },
-      { name: "1 Kings", chapterCount: 22 },
-      { name: "2 Kings", chapterCount: 25 },
-      { name: "1 Chronicles", chapterCount: 29 },
-      { name: "2 Chronicles", chapterCount: 36 },
-      { name: "Ezra", chapterCount: 10 },
-      { name: "Nehemiah", chapterCount: 13 },
-      { name: "Esther", chapterCount: 10 },
-      { name: "Job", chapterCount: 42 },
-      { name: "Psalms", chapterCount: 150 },
-      { name: "Proverbs", chapterCount: 31 },
-      { name: "Ecclesiastes", chapterCount: 12 },
-      { name: "Song of Solomon", chapterCount: 8 },
-      { name: "Isaiah", chapterCount: 66 },
-      { name: "Jeremiah", chapterCount: 52 },
-      { name: "Lamentations", chapterCount: 5 },
-      { name: "Ezekiel", chapterCount: 48 },
-      { name: "Daniel", chapterCount: 12 },
-      { name: "Hosea", chapterCount: 14 },
-      { name: "Joel", chapterCount: 3 },
-      { name: "Amos", chapterCount: 9 },
-      { name: "Obadiah", chapterCount: 1 },
-      { name: "Jonah", chapterCount: 4 },
-      { name: "Micah", chapterCount: 7 },
-      { name: "Nahum", chapterCount: 3 },
-      { name: "Habakkuk", chapterCount: 3 },
-      { name: "Zephaniah", chapterCount: 3 },
-      { name: "Haggai", chapterCount: 2 },
-      { name: "Zechariah", chapterCount: 14 },
-      { name: "Malachi", chapterCount: 4 }
-    ]
-  },
-  {
-    testament: "New Testament",
-    books: [
-      { name: "Matthew", chapterCount: 28 },
-      { name: "Mark", chapterCount: 16 },
-      { name: "Luke", chapterCount: 24 },
-      { name: "John", chapterCount: 21 },
-      { name: "Acts", chapterCount: 28 },
-      { name: "Romans", chapterCount: 16 },
-      { name: "1 Corinthians", chapterCount: 16 },
-      { name: "2 Corinthians", chapterCount: 13 },
-      { name: "Galatians", chapterCount: 6 },
-      { name: "Ephesians", chapterCount: 6 },
-      { name: "Philippians", chapterCount: 4 },
-      { name: "Colossians", chapterCount: 4 },
-      { name: "1 Thessalonians", chapterCount: 5 },
-      { name: "2 Thessalonians", chapterCount: 3 },
-      { name: "1 Timothy", chapterCount: 6 },
-      { name: "2 Timothy", chapterCount: 4 },
-      { name: "Titus", chapterCount: 3 },
-      { name: "Philemon", chapterCount: 1 },
-      { name: "Hebrews", chapterCount: 13 },
-      { name: "James", chapterCount: 5 },
-      { name: "1 Peter", chapterCount: 5 },
-      { name: "2 Peter", chapterCount: 3 },
-      { name: "1 John", chapterCount: 5 },
-      { name: "2 John", chapterCount: 1 },
-      { name: "3 John", chapterCount: 1 },
-      { name: "Jude", chapterCount: 1 },
-      { name: "Revelation", chapterCount: 22 }
-    ]
-  }
-];
 
 const Icon = ({ name, size = 24, className = "" }: IconProps) => {
   const common: SVGProps<SVGSVGElement> = {
@@ -230,92 +132,13 @@ const CardContent = ({ children, className = "" }: { children: ReactNode; classN
   <div className={className}>{children}</div>
 );
 
-const bibleVideos: Video[] = [
-  {
-    title: "THE STORY OF HAGAR",
-    image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=jjeudBocn8g",
-    embed: "https://www.youtube.com/embed/jjeudBocn8g",
-    description: "Hagar Encounters God in the Wilderness",
-    lesson: "No matter how lonely, sad, or forgotten you feel, God sees you, cares about you, and is always with you.",
-    age: "Ages 4–10",
-    testament: "Old Testament",
-    book: "Genesis",
-    chapter: 16,
-    passage: "Genesis 16",
-    passageReading: "Hagar runs away into the wilderness, but God finds her, comforts her, and reminds her that He sees and cares for her."
-  },
-  {
-    title: "They Won Without Fighting",
-    image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=dtzx_qFUwVg",
-    embed: "https://www.youtube.com/embed/dtzx_qFUwVg",
-    description: "In this animated Bible story, we see a powerful truth—sometimes victory comes through trust and obedience, not human strength.",
-    lesson: "This message is simple: not every battle is yours to fight.",
-    age: "Ages 3–9",
-    testament: "Old Testament",
-    book: "2 Chronicles",
-    chapter: 20,
-    passage: "2 Chronicles 20",
-    passageReading: "This 2 Chronicles 20 summary shows how King Jehoshaphat faced a massive enemy army. Fear came—but instead of panicking, the people prayed and sought God together."
-  },
-  {
-    title: "Jehoram wanted power",
-    image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=oWNpcGzmyUk",
-    embed: "https://www.youtube.com/embed/oWNpcGzmyUk",
-    description: "Jehoram wanted power so badly that he hurt the people closest to him.",
-    lesson: "This story teaches us that pride and bad influences can lead people away from God.",
-    age: "Ages 5–12",
-    testament: "Old Testament",
-    book: "2 Chronicles",
-    chapter: 21,
-    passage: "2 Chronicles 21",
-    passageReading: "Jehoram wanted power so badly that he hurt the people closest to him."
-  }
-];
 
 const trendingVideos: Video[] = bibleVideos;
 
 const bibleLibrary = bibleBookCatalog;
 
-function getChapterNumbers(bookName: string, testament: "Old Testament" | "New Testament"): number[] {
-  const section = bibleBookCatalog.find((item) => item.testament === testament);
-  const book = section?.books.find((item) => item.name === bookName);
-  const chapterCount = book?.chapterCount || 1;
 
-  return Array.from({ length: chapterCount }, (_, index) => index + 1);
-}
 
-function getVideosForChapter(testament: "Old Testament" | "New Testament", book: string, chapter: number): Video[] {
-  return bibleVideos.filter(
-    (video) => video.testament === testament && video.book === book && video.chapter === chapter
-  );
-}
-
-function generateChapterTeaching(chapter: BibleChapter | null, selectedPassage: string, currentVideo?: Video): ChapterTeaching {
-  if (!chapter || chapter.verses.length === 0) {
-    return {
-      summary: currentVideo?.passageReading || `A child-friendly summary for ${selectedPassage} will appear here once the Bible reading loads.`,
-      lesson: currentVideo?.lesson || "Children will learn to listen to God, trust Him, obey His word, and live with kindness and courage.",
-      memoryVerse: `${selectedPassage}`,
-      prayer: "Dear God, help me to understand Your word, love You more, and obey You every day. Amen."
-    };
-  }
-
-  const firstVerse = chapter.verses[0];
-  const middleVerse = chapter.verses[Math.floor(chapter.verses.length / 2)];
-  const selectedMemoryVerse = chapter.verses.find((verse) => verse.text.length <= 150) || firstVerse;
-  const plainFirst = firstVerse.text.trim();
-  const plainMiddle = middleVerse.text.trim();
-
-  return {
-    summary: currentVideo?.passageReading || `${chapter.reference} teaches an important Bible message. The chapter begins by saying, “${plainFirst}” and continues to show how God works with people, gives instruction, reveals His power, or calls His people to faithfulness.`,
-    lesson: currentVideo?.lesson || `Children can learn from ${chapter.reference} that God wants us to trust Him, listen carefully to His word, and choose what is right. This chapter reminds us that God sees us, guides us, and helps us live in a way that pleases Him.`,
-    memoryVerse: `${chapter.reference}:${selectedMemoryVerse.verse} — ${selectedMemoryVerse.text.trim()}`,
-    prayer: `Dear God, thank You for the message in ${chapter.reference}. Help me to understand Your word, trust You, obey You, and share Your love with others. Amen.`
-  };
-}
 
 const categories = ["Old Testament", "New Testament", "Bible Songs", "Memory Verses", "Bedtime Stories"];
 
