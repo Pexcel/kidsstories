@@ -4,6 +4,7 @@ import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useEffect, useMemo, u
 import { motion } from "framer-motion";
 
 import { bibleBookCatalog } from "@/data/bibleBooks";
+import { getUploadedCount, getBookGroup } from "@/utils/bibleProgress";
 import { bibleVideos } from "../data/bibleVideos";
 import { BibleChapter, Video, Testament } from "@/types";
 import {
@@ -393,19 +394,47 @@ export default function KidsStoriesWebsite() {
 
             <h3 className="text-lg font-bold text-slate-900 mt-8 mb-4">2. Choose Book</h3>
             <div className="grid gap-3 max-h-80 overflow-y-auto pr-1">
-              {currentBooks.map((book) => (
-                <button
-                  key={book.name}
-                  onClick={() => handleBookChange(book.name)}
-                  className={`rounded-2xl px-4 py-3 text-left font-semibold border transition ${
-                    selectedBook === book.name
-                      ? "bg-sky-500 text-white border-sky-500"
-                      : "bg-sky-50 text-slate-700 hover:bg-sky-100"
-                  }`}
-                >
-                  {book.name}
-                </button>
-              ))}
+             {Object.entries(
+  currentBooks.reduce<Record<string, typeof currentBooks>>((groups, book) => {
+    const group = getBookGroup(book.name);
+
+    if (!groups[group]) {
+      groups[group] = [];
+    }
+
+    groups[group].push(book);
+    return groups;
+  }, {})
+).map(([group, books]) => (
+  <div key={group} className="mb-5">
+    <p className="text-xs font-bold uppercase tracking-wide text-slate-400 mb-2">
+      {group}
+    </p>
+
+    <div className="grid gap-3">
+      {books.map((book) => {
+        const uploaded = getUploadedCount(selectedTestament, book.name);
+
+        return (
+          <button
+            key={book.name}
+            onClick={() => handleBookChange(book.name)}
+            className={`rounded-2xl px-4 py-3 text-left font-semibold border transition ${
+              selectedBook === book.name
+                ? "bg-sky-500 text-white border-sky-500"
+                : "bg-sky-50 text-slate-700 hover:bg-sky-100"
+            }`}
+          >
+            <span className="block">{book.name}</span>
+            <span className="block text-xs opacity-80 mt-1">
+              {uploaded}/{book.chapterCount} chapters uploaded
+            </span>
+          </button>
+        );
+      })}
+    </div>
+  </div>
+))}
             </div>
           </div>
 
