@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "KidsStories",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://kidsstories.com.ng/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "KidsStories Bible Animations for Children",
