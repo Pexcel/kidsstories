@@ -14,8 +14,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KidsStories | JanetBambiStudio",
-  description: "Bible Stories Animations for Children",
+ 
+  title: "KidsStories with Janet Bambi",
+
+  description:
+    "Bible stories, animations, memory verses, lessons and prayers for children.",
+
+  openGraph: {
+    title: "KidsStories with Janet Bambi",
+    description:
+      "Bible stories, animations, memory verses, lessons and prayers for children.",
+    url: "https://kidsstories.com.ng",
+    siteName: "KidsStories",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "KidsStories Bible Animations for Children",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "KidsStories with Janet Bambi",
+    description:
+      "Bible stories, animations, memory verses, lessons and prayers for children.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({
