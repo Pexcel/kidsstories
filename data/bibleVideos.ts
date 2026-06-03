@@ -189,6 +189,20 @@ export const bibleVideos: Video[] = [
   chapter: 9,
   passage: "Ezra 9",
   passageReading: "Ezra humbly prays to God on behalf of the people and seeks His mercy."
+},
+{
+  title: "Ezra Chapter 10",
+  image: "/banner.jpg",
+  link: "https://youtu.be/RZk5TKTmrNQ",
+  embed: "https://www.youtube.com/embed/RZk5TKTmrNQ",
+  description: "In Ezra Chapter 10, the people did not only cry over their sin—they decided to obey God again.",
+  lesson: "The people wept before God, but they also chose to change.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 10,
+  passage: "Ezra 10",
+  passageReading: "Returning to God may require difficult decisions."
 }
 
 
