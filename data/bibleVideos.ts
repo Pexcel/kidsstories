@@ -218,7 +218,23 @@ export const bibleVideos: Video[] = [
   chapter: 1,
   passage: "Nehemiah 1",
   passageReading: "Nehemiah learns that Jerusalem's walls are broken down. He weeps, fasts, and prays, asking God to forgive His people and help him bring restoration.",
+},
+
+{
+  title: "Nehemiah Chapter 2",
+  image: "/banner.jpg",
+  link: "https://youtu.be/qjtbYicSQeQ",
+  embed: "https://www.youtube.com/embed/qjtbYicSQeQ",
+  description: "Nehemiah receives permission from the king to travel to Jerusalem and begin rebuilding the broken walls.",
+  lesson: "When God places a burden on our hearts, we should pray, plan carefully, and trust Him to open doors.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 2,
+  passage: "Nehemiah 2",
+  passageReading: "After praying for many days, Nehemiah speaks to King Artaxerxes. The king grants his request, and Nehemiah travels to Jerusalem to inspect the damaged walls and encourage the people to rebuild."
 }
+
 
 
 
