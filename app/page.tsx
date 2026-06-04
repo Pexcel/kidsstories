@@ -203,13 +203,24 @@ export default function KidsStoriesWebsite() {
   const [bibleError, setBibleError] = useState("");
   const [selectedTestament, setSelectedTestament] = useState<"Old Testament" | "New Testament">("Old Testament");
   const [selectedBook, setSelectedBook] = useState("Genesis");
-  const [selectedChapter, setSelectedChapter] = useState(6);
+  const [selectedChapter, setSelectedChapter] = useState(1);
+  const [librarySearch, setLibrarySearch] = useState("");
   const filteredStories = useMemo(() => filterStories(stories, search), [search]);
 
   const currentBooks = bibleLibrary.find((section) => section.testament === selectedTestament)?.books || [];
   const currentBook = currentBooks.find((book) => book.name === selectedBook) || currentBooks[0];
   const currentChapters = getChapterNumbers(currentBook?.name || selectedBook, selectedTestament);
   const currentVideos = getVideosForChapter(selectedTestament, selectedBook, selectedChapter);
+  const searchResults = bibleVideos.filter((video) => {
+  const search = librarySearch.toLowerCase();
+
+  return (
+    video.title.toLowerCase().includes(search) ||
+    video.book.toLowerCase().includes(search) ||
+    video.passage.toLowerCase().includes(search) ||
+    video.description.toLowerCase().includes(search)
+  );
+});
   const currentReading = currentVideos[0];
   const selectedPassage = `${selectedBook} ${selectedChapter}`;
   const chapterTeaching = useMemo(
@@ -372,6 +383,60 @@ export default function KidsStoriesWebsite() {
         <p className="text-slate-600 mb-8">
           Choose a Testament, Bible book, and chapter. The Bible reading and children’s animation will appear together.
         </p>
+
+        <div className="mb-8">
+          <label className="block text-sm font-bold text-slate-700 mb-2">
+            Search Bible Videos
+          </label>
+
+          <input
+            value={librarySearch}
+            onChange={(e) => setLibrarySearch(e.target.value)}
+            placeholder="Search Ezra, Nehemiah, Genesis 16, Hagar..."
+            className="w-full rounded-2xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-300"
+          />
+        </div>
+
+        {librarySearch && (
+          <div className="mb-8 bg-orange-50 rounded-3xl border p-4">
+            <p className="text-sm font-bold text-orange-700 mb-3">
+              Search Results
+            </p>
+
+            <div className="space-y-3">
+              {searchResults.length > 0 ? (
+                searchResults.map((video) => (
+                  <button
+                    key={`${video.book}-${video.chapter}-${video.title}`}
+                    onClick={() => {
+                      setSelectedTestament(video.testament);
+                      setSelectedBook(video.book);
+                      setSelectedChapter(video.chapter);
+                      setLibrarySearch("");
+                    }}
+                    className="w-full text-left bg-white border rounded-2xl p-4 hover:bg-orange-100 transition"
+                  >
+                    <span className="block font-bold">
+                      {video.book} Chapter {video.chapter}
+                    </span>
+
+                    <span className="block text-sm text-slate-500 mt-1">
+                      {video.title}
+                    </span>
+
+                    <span className="block text-xs text-orange-600 font-semibold mt-1">
+                      {video.passage}
+                    </span>
+                  </button>
+                ))
+              ) : (
+                <p className="text-slate-500">
+                  No uploaded video found.
+                </p>
+              )}
+            </div>
+          </div>
+        )}
 
         <div className="grid lg:grid-cols-4 gap-6">
           <div className="bg-white rounded-[2rem] border shadow-sm p-5 lg:col-span-1">
