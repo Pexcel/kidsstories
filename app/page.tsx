@@ -203,7 +203,7 @@ export default function KidsStoriesWebsite() {
   const [bibleError, setBibleError] = useState("");
   const [selectedTestament, setSelectedTestament] = useState<"Old Testament" | "New Testament">("Old Testament");
   const [selectedBook, setSelectedBook] = useState("Genesis");
-  const [selectedChapter, setSelectedChapter] = useState(1);
+  const [selectedChapter, setSelectedChapter] = useState(16);
   const [librarySearch, setLibrarySearch] = useState("");
   const filteredStories = useMemo(() => filterStories(stories, search), [search]);
 
