@@ -203,7 +203,24 @@ export const bibleVideos: Video[] = [
   chapter: 10,
   passage: "Ezra 10",
   passageReading: "Returning to God may require difficult decisions."
+},
+
+{
+  title: "Nehemiah Chapter 1",
+  image: "/banner.jpg",
+  link: "https://youtu.be/gxf4yic2FJk",
+  embed: "https://www.youtube.com/embed/gxf4yic2FJk",
+  description: "Nehemiah hears about the broken walls of Jerusalem and is deeply moved to pray for God's people.",
+  lesson: "When we see problems around us, we should pray first and ask God how we can help make things better.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 1,
+  passage: "Nehemiah 1",
+  passageReading: "Nehemiah learns that Jerusalem's walls are broken down. He weeps, fasts, and prays, asking God to forgive His people and help him bring restoration.",
 }
+
+
 
 
 ];
