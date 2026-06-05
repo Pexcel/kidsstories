@@ -301,7 +301,7 @@ export default function KidsStoriesWebsite() {
             <a href="/videos" className="hover:text-orange-600">Videos</a>
             <a href="#stories" className="hover:text-orange-600">Stories</a>
             <a href="#upload" className="hover:text-orange-600">Upload</a>
-            <a href="#about" className="hover:text-orange-600">About</a>
+            <a href="/about" className="hover:text-orange-600">About</a>
             <a href="#contact" className="hover:text-orange-600">Contact</a>
           </nav>
 
