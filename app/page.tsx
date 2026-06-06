@@ -205,6 +205,7 @@ export default function KidsStoriesWebsite() {
   const [selectedBook, setSelectedBook] = useState("Genesis");
   const [selectedChapter, setSelectedChapter] = useState(16);
   const [librarySearch, setLibrarySearch] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const filteredStories = useMemo(() => filterStories(stories, search), [search]);
 
   const currentBooks = bibleLibrary.find((section) => section.testament === selectedTestament)?.books || [];
@@ -290,6 +291,31 @@ export default function KidsStoriesWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-slate-900">
+      {mobileMenuOpen && (
+  <div className="md:hidden border-t bg-white px-4 py-4 space-y-3">
+    <a href="/videos" className="block font-semibold hover:text-orange-600">
+      Videos
+    </a>
+    <a href="#stories" className="block font-semibold hover:text-orange-600">
+      Stories
+    </a>
+    <a href="#upload" className="block font-semibold hover:text-orange-600">
+      Suggest
+    </a>
+    <a href="/about" className="block font-semibold hover:text-orange-600">
+      About
+    </a>
+    <a href="/privacy" className="block font-semibold hover:text-orange-600">
+      Privacy Policy
+    </a>
+    <a href="/terms" className="block font-semibold hover:text-orange-600">
+      Terms
+    </a>
+    <a href="#contact" className="block font-semibold hover:text-orange-600">
+      Contact
+    </a>
+  </div>
+)}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="/" className="block">
@@ -311,7 +337,12 @@ export default function KidsStoriesWebsite() {
           >
             Watch Videos
           </a>
-          <Icon name="menu" className="md:hidden text-slate-800" />
+          <button
+  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+  className="md:hidden text-slate-800"
+>
+  <Icon name="menu" />
+</button>
         </div>
       </header>
 
