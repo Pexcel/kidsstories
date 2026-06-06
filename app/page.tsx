@@ -837,13 +837,29 @@ export default function KidsStoriesWebsite() {
           </div>
         </div>
       )}
+<footer className="bg-slate-950 text-white py-8">
+  <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
 
-      <footer className="bg-slate-950 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-4 text-sm">
-          <p>© 2026 KidsStories.com.ng. All rights reserved.</p>
-          <p>Produced by JanetBambiStudio</p>
-        </div>
-      </footer>
+    <p>© 2026 KidsStories.com.ng. All rights reserved.</p>
+
+    <div className="flex gap-6">
+      <a href="/about" className="hover:text-orange-400">
+        About
+      </a>
+
+      <a href="/privacy" className="hover:text-orange-400">
+        Privacy Policy
+      </a>
+
+      <a href="/terms" className="hover:text-orange-400">
+        Terms
+      </a>
+    </div>
+
+    <p>Produced by JanetBambiStudio</p>
+
+  </div>
+</footer>
     </div>
   );
 }
