@@ -252,7 +252,7 @@ export default function KidsStoriesWebsite() {
 
       try {
         const reference = encodeURIComponent(`${selectedBook} ${selectedChapter}`);
-        const response = await fetch(`https://bible-api.com/${reference}?translation=kjv`);
+        const response = await fetch(`https://bible-api.com/${reference}?translation=web`);
 
         if (!response.ok) {
           throw new Error("Bible passage could not be loaded");
