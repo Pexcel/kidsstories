@@ -39,3 +39,19 @@ export type ChapterTeaching = {
   memoryVerse: string;
   prayer: string;
 };
+export type BibleStory = {
+  id: string;
+  title: string;
+  image: string;
+  link: string;
+  embed: string;
+  description: string;
+  lesson: string;
+  memoryVerse: string;
+  prayer: string;
+  age: string;
+  testament: "Old Testament" | "New Testament";
+  book: string;
+  passage: string;
+  passageReading: string;
+};
