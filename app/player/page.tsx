@@ -1,10 +1,14 @@
-"use client";
+type PlayerPageProps = {
+  searchParams: Promise<{
+    videoId?: string;
+  }>;
+};
 
-import { useSearchParams } from "next/navigation";
-
-export default function PlayerPage() {
-  const searchParams = useSearchParams();
-  const videoId = searchParams.get("videoId");
+export default async function PlayerPage({
+  searchParams,
+}: PlayerPageProps) {
+  const params = await searchParams;
+  const videoId = params.videoId;
 
   if (!videoId) {
     return (
@@ -16,6 +20,7 @@ export default function PlayerPage() {
           minHeight: "100vh",
           display: "grid",
           placeItems: "center",
+          fontFamily: "Arial, sans-serif",
         }}
       >
         Video unavailable.
