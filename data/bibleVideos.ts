@@ -739,6 +739,170 @@ export const bibleVideos: Video[] = [
   passage: "1 Samuel 17",
   passageReading: "David courageously faces Goliath, trusting God instead of his own strength, and God gives him victory."
 },
+{
+  title: "Nehemiah Chapter 3",
+  image: "/banner.jpg",
+  link: "https://youtu.be/uk4AC3kLK_4",
+  embed: "https://www.youtube.com/embed/uk4AC3kLK_4",
+  description: "The people work together to rebuild Jerusalem's walls, with every family doing its part.",
+  lesson: "God can do great things when everyone faithfully does their part.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 3,
+  passage: "Nehemiah 3",
+  passageReading: "Families, priests, rulers, and workers unite to rebuild the walls of Jerusalem, each repairing a section."
+},
+
+{
+  title: "Nehemiah Chapter 4",
+  image: "/banner.jpg",
+  link: "https://youtu.be/03aQHT1FUAQ",
+  embed: "https://www.youtube.com/embed/03aQHT1FUAQ",
+  description: "Enemies mock the rebuilding, but God's people pray and continue working.",
+  lesson: "When people discourage us, we should pray and keep doing God's work.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 4,
+  passage: "Nehemiah 4",
+  passageReading: "The builders work with one hand and hold their weapons with the other as God protects them."
+},
+
+{
+  title: "Nehemiah Chapter 5",
+  image: "/banner.jpg",
+  link: "https://youtu.be/PmJwYUkG5F8",
+  embed: "https://www.youtube.com/embed/PmJwYUkG5F8",
+  description: "Nehemiah helps the poor and teaches the people to treat one another fairly.",
+  lesson: "God wants us to love others and never take advantage of people in need.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 5,
+  passage: "Nehemiah 5",
+  passageReading: "Nehemiah confronts injustice and restores fairness among God's people."
+},
+
+{
+  title: "Nehemiah Chapter 6",
+  image: "/banner.jpg",
+  link: "https://youtu.be/vIsSGrREMPA",
+  embed: "https://www.youtube.com/embed/vIsSGrREMPA",
+  description: "Nehemiah refuses to be distracted until the wall is completed.",
+  lesson: "Stay focused on the work God gives you and do not allow distractions to stop you.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 6,
+  passage: "Nehemiah 6",
+  passageReading: "Despite threats and false accusations, Nehemiah finishes rebuilding Jerusalem's wall."
+},
+
+{
+  title: "Nehemiah Chapter 7",
+  image: "/banner.jpg",
+  link: "https://youtu.be/XD0f_r14mH4",
+  embed: "https://www.youtube.com/embed/XD0f_r14mH4",
+  description: "The city is organized, and the families returning from exile are recorded.",
+  lesson: "Every person is important to God, and He knows each of us by name.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 7,
+  passage: "Nehemiah 7",
+  passageReading: "Nehemiah appoints leaders and records the families who returned to Jerusalem."
+},
+
+{
+  title: "Nehemiah Chapter 8",
+  image: "/banner.jpg",
+  link: "https://youtu.be/6lekywlLN8g",
+  embed: "https://www.youtube.com/embed/6lekywlLN8g",
+  description: "Ezra reads God's Word, and the people rejoice as they understand it.",
+  lesson: "Reading and understanding God's Word brings joy and changes our lives.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 8,
+  passage: "Nehemiah 8",
+  passageReading: "Ezra reads the Law to the people, and they celebrate because the joy of the Lord is their strength."
+},
+
+{
+  title: "Nehemiah Chapter 9",
+  image: "/banner.jpg",
+  link: "https://youtu.be/M1V59x0Zj34",
+  embed: "https://www.youtube.com/embed/M1V59x0Zj34",
+  description: "The people confess their sins and remember God's faithfulness through history.",
+  lesson: "God is always faithful, and He forgives those who sincerely return to Him.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 9,
+  passage: "Nehemiah 9",
+  passageReading: "The Israelites worship, confess their sins, and praise God's unfailing mercy."
+},
+
+{
+  title: "Nehemiah Chapter 10",
+  image: "/banner.jpg",
+  link: "https://youtu.be/RXn3CMNCLO8",
+  embed: "https://www.youtube.com/embed/RXn3CMNCLO8",
+  description: "The people promise to obey God and faithfully keep His commandments.",
+  lesson: "Keeping our promises to God shows our love and commitment to Him.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 10,
+  passage: "Nehemiah 10",
+  passageReading: "The people make a covenant to obey God and support His house faithfully."
+},
+
+{
+  title: "Nehemiah Chapter 11",
+  image: "/banner.jpg",
+  link: "https://youtu.be/MKJcT2ZBBfs",
+  embed: "https://www.youtube.com/embed/MKJcT2ZBBfs",
+  description: "Families move to Jerusalem so the city can grow strong again.",
+  lesson: "Serving God sometimes means being willing to go where He needs us.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 11,
+  passage: "Nehemiah 11",
+  passageReading: "The people willingly settle in Jerusalem to strengthen God's city."
+},
+
+{
+  title: "Nehemiah Chapter 12",
+  image: "/banner.jpg",
+  link: "https://youtu.be/VUb7lXFDkVQ",
+  embed: "https://www.youtube.com/embed/VUb7lXFDkVQ",
+  description: "The rebuilt wall is dedicated with joyful worship, singing, and thanksgiving.",
+  lesson: "We should always thank God when He helps us accomplish great things.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 12,
+  passage: "Nehemiah 12",
+  passageReading: "The people dedicate Jerusalem's wall with praise, music, and great rejoicing."
+},
+
+{
+  title: "Nehemiah Chapter 13",
+  image: "/banner.jpg",
+  link: "https://youtu.be/PxbRuCOrRqU",
+  embed: "https://www.youtube.com/embed/PxbRuCOrRqU",
+  description: "Nehemiah returns and restores proper worship and obedience to God.",
+  lesson: "Following God faithfully requires continual commitment and obedience.",
+  age: "Ages 5–12",
+  testament: "Old Testament",
+  book: "Nehemiah",
+  chapter: 13,
+  passage: "Nehemiah 13",
+  passageReading: "Nehemiah corrects wrong practices and encourages the people to remain faithful to God."
+}
 
 
 
