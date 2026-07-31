@@ -724,7 +724,21 @@ export const bibleVideos: Video[] = [
   chapter: 36,
   passage: "2 Chronicles 36",
   passageReading: "Judah is taken into captivity, but God later moves Cyrus to allow the people to return."
-}
+},
+{
+  title: "David and Goliath",
+  image: "/banner.jpg",
+  link: "https://youtu.be/AwV7o5jOXdc",
+  embed: "https://www.youtube.com/embed/AwV7o5jOXdc",
+  description: "A young shepherd named David trusts God and defeats the giant Goliath with only a sling and a stone.",
+  lesson: "With God on our side, no challenge is too great to overcome.",
+  age: "Ages 4–12",
+  testament: "Old Testament",
+  book: "1 Samuel",
+  chapter: 17,
+  passage: "1 Samuel 17",
+  passageReading: "David courageously faces Goliath, trusting God instead of his own strength, and God gives him victory."
+},
 
 
 
