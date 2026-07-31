@@ -7,7 +7,6 @@ export type Video = {
   embed: string;
   description: string;
   lesson: string;
-  age: string;
   testament: Testament;
   book: string;
   chapter: number;
@@ -49,7 +48,6 @@ export type BibleStory = {
   lesson: string;
   memoryVerse: string;
   prayer: string;
-  age: string;
   testament: "Old Testament" | "New Testament";
   book: string;
   passage: string;

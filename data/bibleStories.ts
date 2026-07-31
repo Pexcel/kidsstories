@@ -2,6 +2,26 @@ import type { BibleStory } from "@/types";
 
 export const bibleStories: BibleStory[] = [
   {
+    id: "david-and-goliath",
+    title: "David and Goliath",
+    image: "/banner.jpg",
+    link: "https://youtu.be/AwV7o5jOXdc",
+    embed: "https://www.youtube.com/embed/AwV7o5jOXdc",
+    description:
+      "A young shepherd named David trusts God and faces the giant Goliath with courage.",
+    lesson:
+      "Victory does not depend on our size or strength; trusting God gives us courage to face great challenges.",
+    memoryVerse:
+      "The battle is the Lord's. — 1 Samuel 17:47",
+    prayer:
+      "Dear God, give me courage to trust You when I face difficult challenges. Amen.",
+    testament: "Old Testament",
+    book: "1 Samuel",
+    passage: "1 Samuel 17",
+    passageReading:
+      "David courageously faces Goliath, trusting God instead of his own strength, and God gives him victory."
+  },
+  {
     id: "the-story-of-hagar",
     title: "The Story of Hagar",
     image: "/banner.jpg",
@@ -15,7 +35,6 @@ export const bibleStories: BibleStory[] = [
       "You are the God who sees me. — Genesis 16:13",
     prayer:
       "Dear God, thank You for seeing me and caring about me. Help me remember that I am never alone. Amen.",
-    age: "Ages 4–10",
     testament: "Old Testament",
     book: "Genesis",
     passage: "Genesis 16",

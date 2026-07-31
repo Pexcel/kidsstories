@@ -41,7 +41,7 @@ export default async function PlayerPage({
     >
       <iframe
         src={`https://www.youtube.com/embed/${videoId}?playsinline=1&controls=1&rel=0`}
-        title="KidsStories video player"
+        title="Animated Bible TV video player"
         style={{
           width: "100%",
           height: "100%",

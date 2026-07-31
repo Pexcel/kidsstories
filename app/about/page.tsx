@@ -7,15 +7,15 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-6 text-slate-700 leading-relaxed">
-          KidsStories is a children’s Bible learning platform produced by
-          JanetBambiStudio. It was created to help children learn Bible stories
-          through animations, Bible readings, memory verses, simple lessons, and
-          prayers.
+          KidsStories is a Bible learning platform produced by
+          JanetBambiStudio. It was created to help people of all ages understand
+          Bible stories through animations, Bible readings, memory verses, practical
+          lessons, and prayers.
         </p>
 
         <p className="mt-4 text-slate-700 leading-relaxed">
-          Our goal is to provide safe, joyful, and faith-building content for
-          children, parents, churches, and schools.
+          Our goal is to provide clear, joyful, and faith-building content for
+          individuals, families, churches, schools, and Bible learners everywhere.
         </p>
 
         <h2 className="text-2xl font-bold text-slate-900 mt-8">
@@ -23,11 +23,11 @@ export default function AboutPage() {
         </h2>
 
         <ul className="list-disc pl-6 mt-4 space-y-2 text-slate-700">
-          <li>Bible chapter animations for children</li>
+          <li>Bible chapter animations for all ages</li>
           <li>Simple Bible readings and summaries</li>
-          <li>Children’s lessons from each Bible chapter</li>
+          <li>Practical lessons from each Bible chapter</li>
           <li>Memory verses and short prayers</li>
-          <li>Safe Christian video content for families</li>
+          <li>Faith-building Christian video content for everyone</li>
         </ul>
 
         <h2 className="text-2xl font-bold text-slate-900 mt-8">

@@ -24,7 +24,6 @@ type IconProps = {
 type Story = {
   title: string;
   category: string;
-  age: string;
   description: string;
 };
 
@@ -147,19 +146,16 @@ const stories: Story[] = [
   {
     title: "King Jehoshaphat Trusts God",
     category: "Bible Animation",
-    age: "Ages 4–10",
     description: "A child-friendly story about prayer, faith, and victory through God."
   },
   {
     title: "Joash and the Brave Priest",
     category: "Bible Story Video",
-    age: "Ages 5–12",
     description: "A colorful lesson on courage, obedience, and godly leadership."
   },
   {
     title: "A Child Who Loves the Bible",
     category: "Short Animation",
-    age: "Ages 3–8",
     description: "A warm story encouraging children to read and love God's Word."
   }
 ];
@@ -624,7 +620,7 @@ export default function KidsStoriesWebsite() {
                   <p className="text-slate-700 leading-relaxed">{chapterTeaching.prayer}</p>
                 </div>
 
-                <p className="mt-4 text-sm font-semibold text-slate-500">{currentReading?.age || "Recommended age will be added with the animation."}</p>
+                <p className="mt-4 text-sm font-semibold text-slate-500">Suitable for personal study, families, churches, and learners of all ages.</p>
               </div>
             </div>
 
@@ -656,7 +652,7 @@ export default function KidsStoriesWebsite() {
         <div className="bg-white rounded-[2rem] border shadow-sm p-8 md:p-12">
           <h2 className="text-3xl font-bold text-slate-900">Why KidsStories Exists</h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
-            KidsStories was created to help children learn Bible stories in a simple, joyful, and age-appropriate way. Every story is designed to point children to faith, obedience, prayer, kindness, courage, and trust in God.
+            KidsStories was created to help people of all ages understand Bible stories in a simple, joyful, and meaningful way. Every story is designed to point viewers to faith, obedience, prayer, kindness, courage, and trust in God.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             <div className="rounded-3xl bg-orange-50 p-6">
@@ -679,7 +675,7 @@ export default function KidsStoriesWebsite() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
           <div>
             <h2 className="text-3xl font-bold">Featured Children’s Bible Stories</h2>
-            <p className="text-slate-600 mt-2">Watch inspiring, colorful, and age-appropriate Bible animations.</p>
+            <p className="text-slate-600 mt-2">Watch inspiring, colourful, and faith-building Bible animations for all ages.</p>
           </div>
 
           <div className="relative max-w-sm w-full">
@@ -703,7 +699,6 @@ export default function KidsStoriesWebsite() {
               <CardContent className="p-6">
                 <p className="text-xs font-bold uppercase tracking-wide text-orange-600">{story.category}</p>
                 <h3 className="text-xl font-bold mt-2">{story.title}</h3>
-                <p className="text-sm text-slate-500 mt-1">{story.age}</p>
                 <p className="text-slate-600 mt-4">{story.description}</p>
                 <a
                   href="/videos"
@@ -728,11 +723,11 @@ export default function KidsStoriesWebsite() {
           <div>
             <h2 className="text-3xl font-bold">Suggest a Bible Story or Video</h2>
             <p className="text-slate-600 mt-4 leading-relaxed">
-              KidsStories is currently curated by JanetBambiStudio. Visitors may suggest Bible stories, children’s songs, animation ideas, or YouTube video links for possible review and inclusion.
+              KidsStories is curated by JanetBambiStudio. Visitors may suggest Bible stories, Christian songs, animation ideas, or YouTube video links for possible review and inclusion.
             </p>
             <div className="mt-6 flex items-start gap-3 text-slate-700">
               <Icon name="shield" className="text-green-600 mt-1 shrink-0" />
-              <p>For children’s safety, suggested content will be reviewed before it is considered for the website.</p>
+              <p>Suggested content is carefully reviewed before it is considered for the website.</p>
             </div>
           </div>
 
@@ -747,10 +742,10 @@ export default function KidsStoriesWebsite() {
             <select name="category" className="w-full p-3 rounded-2xl border bg-white" aria-label="Content category">
               <option>Old Testament Story</option>
               <option>New Testament Story</option>
-              <option>Children&apos;s Bible Song</option>
+              <option>Christian Bible Song</option>
               <option>Memory Verse</option>
               <option>Bedtime Bible Story</option>
-              <option>Other Christian Children&apos;s Content</option>
+              <option>Other Christian Content</option>
             </select>
             <input
               name="videoLink"
@@ -762,7 +757,7 @@ export default function KidsStoriesWebsite() {
             <textarea
               name="message"
               className="w-full p-3 rounded-2xl border min-h-32"
-              placeholder="Tell us why this suggestion will bless children"
+              placeholder="Tell us why this suggestion will bless viewers"
               aria-label="Suggestion message"
               required
             />
@@ -778,9 +773,9 @@ export default function KidsStoriesWebsite() {
 
       <section id="about" className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-6">
         {[
-          ["Bible-Based", "Stories are designed to help children know God, love the Bible, and develop godly values."],
-          ["Child-Friendly", "Simple language, bright visuals, and safe content for children, families, churches, and schools."],
-          ["Creative Ministry", "A platform for Christian animation, storytelling, songs, and digital evangelism for children."]
+          ["Bible-Based", "Stories are designed to help people know God, love the Bible, and develop godly values."],
+          ["Family-Friendly", "Clear language, engaging visuals, and meaningful content for individuals, families, churches, and schools."],
+          ["Creative Ministry", "A platform for Christian animation, storytelling, songs, and digital evangelism for all ages."]
         ].map(([title, text]) => (
           <Card key={title} className="rounded-3xl shadow-md">
             <CardContent className="p-7">
@@ -796,7 +791,7 @@ export default function KidsStoriesWebsite() {
           <Icon name="mail" className="mx-auto mb-4" size={44} />
           <h2 className="text-3xl font-bold">Partner With JanetBambiStudio</h2>
           <p className="mt-4 max-w-2xl mx-auto text-orange-50">
-            For children’s Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
+            For Bible animations, video uploads, partnerships, and Christian media productions, connect with KidsStories today.
           </p>
           <form
             action="https://formspree.io/f/xaqvkdoq"
@@ -822,7 +817,7 @@ export default function KidsStoriesWebsite() {
             <div className="flex items-center justify-between p-4 border-b">
               <div>
                 <h3 className="text-xl font-bold">{selectedVideo.title}</h3>
-                <p className="text-sm text-slate-500">{selectedVideo.passage} • {selectedVideo.age}</p>
+                <p className="text-sm text-slate-500">{selectedVideo.passage}</p>
               </div>
               <button
                 onClick={() => setSelectedVideo(null)}
