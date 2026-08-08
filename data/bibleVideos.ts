@@ -1400,6 +1400,20 @@ book: "Psalms",
 chapter: 1,
 passage: "Psalm 1",
 passageReading: "The blessed person rejects ungodly counsel, delights in God's law, and becomes like a fruitful tree planted by streams of water."
+},
+
+{
+title: "Psalms Chapter 2",
+image: "/banner.jpg",
+link: "https://youtu.be/3c1YSsueFqU",
+embed: "https://www.youtube.com/embed/3c1YSsueFqU",
+description: "The nations rebel against God and His Anointed, but God declares that His chosen King will reign.",
+lesson: "No opposition can defeat God's purpose, so we should trust Him, honor His Son, and take refuge in Him.",
+testament: "Old Testament",
+book: "Psalms",
+chapter: 2,
+passage: "Psalm 2",
+passageReading: "The nations and rulers plot against the Lord and His Anointed, but God establishes His King and calls everyone to serve Him with reverence. Blessed are all who put their trust in Him."
 }
 
 
