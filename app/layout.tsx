@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
  
-  title: "KidsStories with Janet Bambi",
+  title: "Animated Bible TV",
 
   description:
     "Bible stories, animations, memory verses, lessons and prayers for children.",
 
   openGraph: {
-    title: "KidsStories with Janet Bambi",
+    title: "Animated Bible TV",
     description:
       "Bible stories, animations, memory verses, lessons and prayers for children.",
     url: "https://kidsstories.com.ng",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: "https://kidsstories.com.ng/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "KidsStories Bible Animations for Children",
+        alt: "Animated Bible TV",
       },
     ],
     locale: "en_US",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "KidsStories with Janet Bambi",
+    title: "Animated Bible TV",
     description:
-      "Bible stories, animations, memory verses, lessons and prayers for children.",
+      "Bible stories, animations, memory verses, lessons and prayers.",
     images: ["/og-image.jpg"],
   },
 };
