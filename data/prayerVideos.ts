@@ -19,4 +19,17 @@ import type { PrayerVideo } from "@/types";
 
   Keep each id unique. The Android app and notification deep-link system use this id.
 */
-export const prayerVideos: PrayerVideo[] = [];
+export const prayerVideos: PrayerVideo[] = [
+
+  {
+    id: "psalm-3-prayer",
+    title: "Prayer from Psalm 3",
+    image: "/banner.jpg",
+    link: "https://youtube.com/shorts/kjATIXXdeDc?feature=share",
+    embed: "https://www.youtube.com/embed/kjATIXXdeDc",
+    description: "A Scripture-based prayer from Psalm 3, trusting God for protection, peace, strength and deliverance in times of trouble.",
+    scripture: "Psalm 3",
+    prayerFocus: "Protection, peace, strength, confidence in God and deliverance",
+    publishedAt: "2026-08-10"
+  },
+];

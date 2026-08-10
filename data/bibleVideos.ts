@@ -1414,7 +1414,7 @@ book: "Psalms",
 chapter: 2,
 passage: "Psalm 2",
 passageReading: "The nations and rulers plot against the Lord and His Anointed, but God establishes His King and calls everyone to serve Him with reverence. Blessed are all who put their trust in Him."
-}
+},
 
 
 
@@ -1428,7 +1428,7 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
     embed: "https://www.youtube.com/embed/R4DUZ9jlt6o",
     description: "David prays to God while surrounded by trouble and declares his confidence in the Lord's protection and help.",
     lesson: "Even when we feel surrounded by problems, we can pray, trust God, and rest in His protection.",
-    age: "All ages",
+    
     testament: "Old Testament",
     book: "Psalms",
     chapter: 3,
