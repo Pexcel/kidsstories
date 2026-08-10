@@ -1420,4 +1420,20 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
 
 
 
+
+  {
+    title: "Psalms Chapter 3",
+    image: "/banner.jpg",
+    link: "https://youtu.be/R4DUZ9jlt6o",
+    embed: "https://www.youtube.com/embed/R4DUZ9jlt6o",
+    description: "David prays to God while surrounded by trouble and declares his confidence in the Lord's protection and help.",
+    lesson: "Even when we feel surrounded by problems, we can pray, trust God, and rest in His protection.",
+    age: "All ages",
+    testament: "Old Testament",
+    book: "Psalms",
+    chapter: 3,
+    passage: "Psalm 3",
+    passageReading: "Psalm 3 is David's prayer of trust in God during a time of danger, declaring that the Lord is his shield, his glory, and the One who sustains him."
+  },
+
 ];

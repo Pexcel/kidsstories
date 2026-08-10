@@ -53,3 +53,15 @@ export type BibleStory = {
   passage: string;
   passageReading: string;
 };
+
+export type PrayerVideo = {
+  id: string;
+  title: string;
+  image: string;
+  link: string;
+  embed: string;
+  description: string;
+  scripture: string;
+  prayerFocus: string;
+  publishedAt?: string;
+};

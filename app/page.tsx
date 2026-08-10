@@ -292,6 +292,9 @@ export default function KidsStoriesWebsite() {
     <a href="/videos" className="block font-semibold hover:text-orange-600">
       Videos
     </a>
+    <a href="/prayers" className="block font-semibold hover:text-orange-600">
+      Prayer Videos
+    </a>
     <a href="#stories" className="block font-semibold hover:text-orange-600">
       Stories
     </a>
@@ -320,7 +323,7 @@ export default function KidsStoriesWebsite() {
           </a>
 
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="/videos" className="hover:text-orange-600">Videos</a>
+            <a href="/videos" className="hover:text-orange-600">Videos</a>\n            <a href="/prayers" className="hover:text-orange-600">Prayer Videos</a>
             <a href="#stories" className="hover:text-orange-600">Stories</a>
             <a href="#upload" className="hover:text-orange-600">Upload</a>
             <a href="/about" className="hover:text-orange-600">About</a>
