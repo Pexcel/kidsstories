@@ -22,32 +22,43 @@ export default function NotifyPage() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-notify-secret": secret
+          "x-notify-secret": secret,
         },
         body: JSON.stringify({
           title,
           body,
           contentType,
-          contentId
-        })
+          contentId,
+        }),
       });
 
-      const result = await response.json();
+      const raw = await response.text();
 
-      if (!response.ok || !result.success) {
-        throw new Error(result.error || "Notification could not be sent.");
+      let result: any = {};
+
+      try {
+        result = JSON.parse(raw);
+      } catch {
+        result = { error: raw };
       }
 
-      setStatus("Notification sent successfully.");
-      setTitle("");
-      setBody("");
-      setContentType("");
-      setContentId("");
+      if (!response.ok || !result.success) {
+        setStatus(
+          `ERROR ${response.status}: ${
+            result.error || raw || "Unknown server error"
+          }`
+        );
+        return;
+      }
+
+      setStatus(
+        `SUCCESS: Notification sent. Message ID: ${result.messageId || "sent"}`
+      );
     } catch (error) {
       setStatus(
-        error instanceof Error
-          ? error.message
-          : "Notification could not be sent."
+        `BROWSER ERROR: ${
+          error instanceof Error ? error.message : String(error)
+        }`
       );
     } finally {
       setSending(false);
@@ -57,6 +68,7 @@ export default function NotifyPage() {
   return (
     <main className="mx-auto min-h-screen max-w-2xl px-5 py-10">
       <h1 className="text-3xl font-bold">Send App Notification</h1>
+
       <p className="mt-2 text-slate-600">
         Send an update to Animated Bible TV users.
       </p>
@@ -69,9 +81,8 @@ export default function NotifyPage() {
           <span className="font-semibold">Notification title</span>
           <input
             value={title}
-            onChange={(event) => setTitle(event.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
             className="mt-2 w-full rounded-xl border px-4 py-3"
-            placeholder="New Prayer: Psalm 3"
             required
           />
         </label>
@@ -80,9 +91,8 @@ export default function NotifyPage() {
           <span className="font-semibold">Message</span>
           <textarea
             value={body}
-            onChange={(event) => setBody(event.target.value)}
+            onChange={(e) => setBody(e.target.value)}
             className="mt-2 min-h-28 w-full rounded-xl border px-4 py-3"
-            placeholder="A new Scripture-based prayer is now available."
             required
           />
         </label>
@@ -91,7 +101,7 @@ export default function NotifyPage() {
           <span className="font-semibold">Open this section when tapped</span>
           <select
             value={contentType}
-            onChange={(event) => setContentType(event.target.value)}
+            onChange={(e) => setContentType(e.target.value)}
             className="mt-2 w-full rounded-xl border px-4 py-3"
           >
             <option value="">Just open the app</option>
@@ -106,14 +116,9 @@ export default function NotifyPage() {
           <span className="font-semibold">Content ID</span>
           <input
             value={contentId}
-            onChange={(event) => setContentId(event.target.value)}
+            onChange={(e) => setContentId(e.target.value)}
             className="mt-2 w-full rounded-xl border px-4 py-3"
-            placeholder="psalm-3-prayer"
           />
-          <small className="mt-1 block text-slate-500">
-            Prayer/story: use its unique id. Chapter/Bible: use Book|Chapter,
-            for example Psalms|3 or John|3.
-          </small>
         </label>
 
         <label className="block">
@@ -121,9 +126,8 @@ export default function NotifyPage() {
           <input
             type="password"
             value={secret}
-            onChange={(event) => setSecret(event.target.value)}
+            onChange={(e) => setSecret(e.target.value)}
             className="mt-2 w-full rounded-xl border px-4 py-3"
-            placeholder="Your private notification password"
             required
           />
         </label>
@@ -136,9 +140,11 @@ export default function NotifyPage() {
           {sending ? "Sending..." : "Send Notification"}
         </button>
 
-        {status ? (
-          <p className="rounded-xl bg-slate-100 p-3 text-sm">{status}</p>
-        ) : null}
+        {status && (
+          <pre className="whitespace-pre-wrap rounded-xl bg-slate-100 p-4 text-sm">
+            {status}
+          </pre>
+        )}
       </form>
     </main>
   );
