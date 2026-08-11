@@ -1436,4 +1436,22 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
     passageReading: "Psalm 3 is David's prayer of trust in God during a time of danger, declaring that the Lord is his shield, his glory, and the One who sustains him."
   },
 
+  {
+  title: "Psalms Chapter 4",
+  image: "/banner.jpg",
+  link: "https://youtu.be/ShP6yZscB6w",
+  embed: "https://www.youtube.com/embed/ShP6yZscB6w",
+  description:
+    "David calls on God in prayer, encourages trust in the Lord, and rests with confidence in the peace and safety that God provides.",
+  lesson:
+    "When we are troubled, we can pray, trust God, choose what is right, and rest peacefully because the Lord keeps us safe.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 4,
+  passage: "Psalm 4",
+  passageReading:
+    "Psalm 4 is David's evening prayer of trust, calling people to turn from empty ways, trust in the Lord, and rest in the peace and security that come from God."
+},
+
+
 ];
