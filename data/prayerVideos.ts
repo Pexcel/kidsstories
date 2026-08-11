@@ -1,35 +1,59 @@
 import type { PrayerVideo } from "@/types";
 
-/*
-  Add every prayer video here after you publish it on YouTube.
-
-  Example:
-
-  {
-    id: "psalm-1-prayer",
-    title: "Prayer from Psalm 1",
-    image: "/banner.jpg",
-    link: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
-    embed: "https://www.youtube.com/embed/YOUR_VIDEO_ID",
-    description: "A prayer based on Psalm 1.",
-    scripture: "Psalm 1",
-    prayerFocus: "Fruitfulness, godly choices and spiritual stability",
-    publishedAt: "2026-08-09"
-  }
-
-  Keep each id unique. The Android app and notification deep-link system use this id.
-*/
 export const prayerVideos: PrayerVideo[] = [
+  {
+    id: "psalm-4-prayer",
+    title: "Prayer from Psalm 4",
+    image: "/banner.jpg",
+    link: "https://youtu.be/7F5yGQYYggI",
+    embed: "https://www.youtube.com/embed/7F5yGQYYggI",
+    description:
+      "A Scripture-based prayer from Psalm 4, trusting God for peace, answered prayer, confidence and restful sleep.",
+    scripture: "Psalm 4",
+    prayerFocus:
+      "Answered prayer, peace, confidence in God, protection and restful sleep",
+    publishedAt: "2026-08-12"
+  },
 
   {
     id: "psalm-3-prayer",
     title: "Prayer from Psalm 3",
     image: "/banner.jpg",
+    link: "https://youtube.com/shorts/_ELpBxGVbng?feature=share",
+    embed: "https://www.youtube.com/embed/_ELpBxGVbng",
+    description:
+      "A Scripture-based prayer from Psalm 3, trusting God for protection, strength, peace and deliverance.",
+    scripture: "Psalm 3",
+    prayerFocus:
+      "Protection, strength, peace, confidence in God and deliverance",
+    publishedAt: "2026-08-12"
+  },
+
+  {
+    id: "psalm-2-prayer",
+    title: "Prayer from Psalm 2",
+    image: "/banner.jpg",
     link: "https://youtube.com/shorts/kjATIXXdeDc?feature=share",
     embed: "https://www.youtube.com/embed/kjATIXXdeDc",
-    description: "A Scripture-based prayer from Psalm 3, trusting God for protection, peace, strength and deliverance in times of trouble.",
-    scripture: "Psalm 3",
-    prayerFocus: "Protection, peace, strength, confidence in God and deliverance",
-    publishedAt: "2026-08-10"
+    description:
+      "A Scripture-based prayer from Psalm 2, declaring confidence in God's authority, purpose and victory.",
+    scripture: "Psalm 2",
+    prayerFocus:
+      "God's authority, divine purpose, victory, protection and confidence",
+    publishedAt: "2026-08-12"
   },
+
+  {
+    id: "psalm-1-prayer",
+    title: "Prayer from Psalm 1",
+    image: "/banner.jpg",
+    link: "https://youtube.com/shorts/OrIvzI_0DLo?feature=share",
+    embed: "https://www.youtube.com/embed/OrIvzI_0DLo",
+    description:
+      "A Scripture-based prayer from Psalm 1 for godly choices, spiritual stability and fruitfulness.",
+    scripture: "Psalm 1",
+    prayerFocus:
+      "Fruitfulness, godly choices, spiritual stability and delight in God's Word",
+    publishedAt: "2026-08-12"
+  }
 ];
