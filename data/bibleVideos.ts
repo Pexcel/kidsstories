@@ -1453,5 +1453,22 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
     "Psalm 4 is David's evening prayer of trust, calling people to turn from empty ways, trust in the Lord, and rest in the peace and security that come from God."
 },
 
+{
+  title: "Psalms Chapter 5",
+  image: "/banner.jpg",
+  link: "https://youtu.be/u2LBaTYH2aU",
+  embed: "https://www.youtube.com/embed/u2LBaTYH2aU",
+  description:
+    "Psalm 5 is a prayer for God's guidance, protection and help in the face of wickedness.",
+  lesson:
+    "We can begin each day by seeking God, asking Him to guide us, protect us and lead us in the right path.",
+  
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 5,
+  passage: "Psalms 5",
+  passageReading:
+    "David brings his prayer before God in the morning, asks for guidance and protection, and rejoices in God's favour over those who trust in Him."
+},
 
 ];
