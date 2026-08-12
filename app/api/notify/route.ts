@@ -7,12 +7,16 @@ function getFirebaseAdminApp() {
     return getApps()[0];
   }
 
-  const projectId = process.env.FIREBASE_PROJECT_ID?.trim();
-  const clientEmail = process.env.FIREBASE_CLIENT_EMAIL?.trim();
+  const projectId =
+    process.env.FIREBASE_PROJECT_ID?.trim();
 
-  const privateKey = process.env.FIREBASE_PRIVATE_KEY
-    ?.replace(/\\n/g, "\n")
-    .trim();
+  const clientEmail =
+    process.env.FIREBASE_CLIENT_EMAIL?.trim();
+
+  const privateKey =
+    process.env.FIREBASE_PRIVATE_KEY
+      ?.replace(/\\n/g, "\n")
+      .trim();
 
   if (!projectId || !clientEmail || !privateKey) {
     throw new Error(
@@ -47,7 +51,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           success: false,
-          error: "NOTIFY_SECRET is missing in Vercel.",
+          error:
+            "NOTIFY_SECRET is missing in Vercel.",
         },
         { status: 500 }
       );
@@ -67,7 +72,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const title = String(body.title || "").trim();
+    const title = String(
+      body.title || ""
+    ).trim();
 
     const messageBody = String(
       body.body || ""
@@ -94,6 +101,25 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const allowedTypes = new Set([
+      "",
+      "chapter",
+      "story",
+      "prayer",
+      "bible",
+    ]);
+
+    if (!allowedTypes.has(contentType)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "Invalid notification content type.",
+        },
+        { status: 400 }
+      );
+    }
+
     getFirebaseAdminApp();
 
     const data: Record<string, string> = {
@@ -113,25 +139,17 @@ export async function POST(request: NextRequest) {
       await getMessaging().send({
         topic: "all_users",
 
-        notification: {
-          title,
-          body: messageBody,
-        },
-
         data,
 
         android: {
           priority: "high",
-
-          notification: {
-            channelId: "bible_updates",
-          },
         },
       });
 
     return NextResponse.json({
       success: true,
-      message: "Notification sent successfully.",
+      message:
+        "Notification sent successfully.",
       messageId,
     });
   } catch (error) {
