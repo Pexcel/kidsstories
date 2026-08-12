@@ -1,6 +1,21 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
+
+  {
+  id: "psalm-5-prayer",
+  title: "Prayer from Psalm 5",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/_PSqNoDsCcI?feature=share",
+  embed: "https://www.youtube.com/embed/_PSqNoDsCcI",
+  description:
+    "A Scripture-based prayer from Psalm 5, seeking God's guidance, protection, favour and victory over every challenge.",
+  scripture: "Psalm 5",
+  prayerFocus:
+    "Divine guidance, protection, favour, answered prayer and victory",
+  publishedAt: "2026-08-12"
+},
+
   {
     id: "psalm-4-prayer",
     title: "Prayer from Psalm 4",
