@@ -2,6 +2,7 @@
 
 import React, { ButtonHTMLAttributes, ReactNode, SVGProps, useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { getBibleChapter } from "@/lib/offlineBible";
 
 import { bibleBookCatalog } from "@/data/bibleBooks";
 import { getUploadedCount, getBookGroup } from "@/utils/bibleProgress";
@@ -240,50 +241,49 @@ export default function KidsStoriesWebsite() {
   }
 
   useEffect(() => {
-    let isMounted = true;
+  let isMounted = true;
 
-    async function loadBibleChapter() {
-      setIsBibleLoading(true);
+  async function loadSelectedBibleChapter() {
+    setIsBibleLoading(true);
+    setBibleError("");
+
+    try {
+      const data = await getBibleChapter(
+        selectedBook,
+        selectedChapter
+      );
+
+      if (!isMounted) return;
+
+      setBibleChapter({
+        reference: data.reference,
+        verses: data.verses
+      });
+
       setBibleError("");
+    } catch (error) {
+      if (!isMounted) return;
+
       setBibleChapter(null);
 
-      try {
-        const reference = encodeURIComponent(`${selectedBook} ${selectedChapter}`);
-        const response = await fetch(`https://bible-api.com/${reference}?translation=web`);
-
-        if (!response.ok) {
-          throw new Error("Bible passage could not be loaded");
-        }
-
-        const data = await response.json();
-
-        if (!isMounted) return;
-
-        setBibleChapter({
-          reference: data.reference || `${selectedBook} ${selectedChapter}`,
-          verses: Array.isArray(data.verses)
-            ? data.verses.map((verse: { verse: number; text: string }) => ({
-                verse: verse.verse,
-                text: verse.text
-              }))
-            : []
-        });
-      } catch {
-        if (!isMounted) return;
-        setBibleError("Bible text is not available right now. Please check your internet connection or try again later.");
-      } finally {
-        if (isMounted) {
-          setIsBibleLoading(false);
-        }
+      setBibleError(
+        error instanceof Error
+          ? error.message
+          : "Bible passage could not be loaded."
+      );
+    } finally {
+      if (isMounted) {
+        setIsBibleLoading(false);
       }
     }
+  }
 
-    loadBibleChapter();
+  loadSelectedBibleChapter();
 
-    return () => {
-      isMounted = false;
-    };
-  }, [selectedBook, selectedChapter]);
+  return () => {
+    isMounted = false;
+  };
+}, [selectedBook, selectedChapter]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-white to-sky-50 text-slate-900">
