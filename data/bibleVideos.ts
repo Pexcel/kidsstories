@@ -1486,6 +1486,6 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
   passage: "Psalms 6",
   passageReading:
     "David cries to God for mercy and healing, expresses his sorrow and weakness, and ends with confidence that the Lord has heard his prayer."
-},
+}
 
 ];
