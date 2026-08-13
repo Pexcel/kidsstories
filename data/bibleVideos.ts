@@ -1470,5 +1470,22 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
   passageReading:
     "David brings his prayer before God in the morning, asks for guidance and protection, and rejoices in God's favour over those who trust in Him."
 },
+{
+  title: "Psalms Chapter 6",
+  image: "/banner.jpg",
+  link: "https://youtu.be/Tcj5RNl8qJ4",
+  embed: "https://www.youtube.com/embed/Tcj5RNl8qJ4",
+  description:
+    "Psalm 6 is a heartfelt prayer for mercy, healing, strength and deliverance in a time of deep trouble.",
+  lesson:
+    "When we are weak, troubled or afraid, we can cry to God for mercy and trust Him to hear our prayer.",
+ 
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 6,
+  passage: "Psalms 6",
+  passageReading:
+    "David cries to God for mercy and healing, expresses his sorrow and weakness, and ends with confidence that the Lord has heard his prayer."
+},
 
 ];
