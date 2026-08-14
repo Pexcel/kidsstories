@@ -3,6 +3,20 @@ import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
   {
+  id: "psalm-7-prayer",
+  title: "Prayer from Psalm 7",
+  image: "/banner.jpg",
+  link: "https://youtu.be/LZGS4q-gpwQ",
+  embed: "https://www.youtube.com/embed/LZGS4q-gpwQ",
+  description:
+    "A Scripture-based prayer from Psalm 7 for divine protection, justice, deliverance and victory over false accusations and opposition.",
+  scripture: "Psalm 7",
+  prayerFocus:
+    "Protection, divine justice, deliverance, vindication and victory",
+  publishedAt: "2026-08-14"
+},
+
+  {
   id: "psalm-5-prayer",
   title: "Prayer from Psalm 5",
   image: "/banner.jpg",

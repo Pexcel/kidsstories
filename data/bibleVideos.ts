@@ -1486,6 +1486,24 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
   passage: "Psalms 6",
   passageReading:
     "David cries to God for mercy and healing, expresses his sorrow and weakness, and ends with confidence that the Lord has heard his prayer."
-}
+},
+
+{
+  title: "Psalms Chapter 7",
+  image: "/banner.jpg",
+  link: "https://youtu.be/sCz9gk22UDc",
+  embed: "https://www.youtube.com/embed/sCz9gk22UDc",
+  description:
+    "Psalm 7 is a prayer of trust in God for protection, justice and deliverance from false accusations and wicked opposition.",
+  lesson:
+    "When we are wrongly accused or surrounded by opposition, we can trust God to defend us, judge rightly and bring justice.",
+ 
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 7,
+  passage: "Psalms 7",
+  passageReading:
+    "David asks God to save him from his enemies, declares his trust in God's righteous judgment and ends by praising the Lord for His justice."
+},
 
 ];
