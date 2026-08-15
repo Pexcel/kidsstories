@@ -29,7 +29,21 @@ export const prayerVideos: PrayerVideo[] = [
     "Protection, divine justice, deliverance, vindication and victory",
   publishedAt: "2026-08-14"
 },
-
+  
+{
+  id: "psalm-6-prayer",
+  title: "Prayer from Psalm 6",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/1b1jIc-dbKA?si=AIuV_fVe7Bd-MU8d",
+  embed: "https://www.youtube.com/embed/1b1jIc-dbKA",
+  description:
+    "A Scripture-based prayer from Psalm 6 for mercy, healing, strength, deliverance and renewed hope.",
+  scripture: "Psalm 6",
+  prayerFocus:
+    "Mercy, healing, strength, deliverance, restoration and answered prayer",
+  publishedAt: "2026-08-15"
+},
+  
   {
   id: "psalm-5-prayer",
   title: "Prayer from Psalm 5",
