@@ -1506,4 +1506,21 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
     "David asks God to save him from his enemies, declares his trust in God's righteous judgment and ends by praising the Lord for His justice."
 },
 
+  {
+  title: "Psalms Chapter 8",
+  image: "/banner.jpg",
+  link: "https://youtu.be/XwzSsgR9BS4?si=d59WL4IQLNhqhs1C",
+  embed: "https://www.youtube.com/embed/XwzSsgR9BS4",
+  description:
+    "Psalm 8 is a song of praise celebrating the majesty of God, the wonder of creation and the special place God has given humanity.",
+  lesson:
+    "God is great and worthy of praise, and even though we are small compared with His creation, He values us and gives us responsibility over His works.",
+
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 8,
+  passage: "Psalms 8",
+  passageReading:
+    "David praises the greatness of God's name, marvels at the heavens and wonders why God cares for humanity, yet celebrates the honor and responsibility God has given people over His creation."
+},
 ];
