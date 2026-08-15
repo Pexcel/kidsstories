@@ -3,6 +3,20 @@ import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
   {
+  id: "psalm-8-prayer",
+  title: "Prayer from Psalm 8",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/C3mvY8OwhnM?si=yYE6158E8fRdUl1Z",
+  embed: "https://www.youtube.com/embed/C3mvY8OwhnM",
+  description:
+    "A Scripture-based prayer from Psalm 8, praising God for His majesty and thanking Him for the value, honour and purpose He gives to our lives.",
+  scripture: "Psalm 8",
+  prayerFocus:
+    "Praise, divine purpose, dignity, gratitude and God's glory",
+  publishedAt: "2026-08-15"
+},
+  
+  {
   id: "psalm-7-prayer",
   title: "Prayer from Psalm 7",
   image: "/banner.jpg",
