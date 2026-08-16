@@ -2,7 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-
+{
+  title: "Psalms Chapter 9",
+  image: "/banner.jpg",
+  link: "https://youtu.be/j3whHt1aLXU?si=NQo8zPD6vDMI1Hv1",
+  embed: "https://www.youtube.com/embed/j3whHt1aLXU",
+  description:
+    "Psalm 9 is a song of thanksgiving and praise to God for His righteous judgment, protection and deliverance from enemies.",
+  lesson:
+    "We should praise God for His justice, remember His wonderful works and trust Him as a refuge in times of trouble.",
+  
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 9,
+  passage: "Psalms 9",
+  passageReading:
+    "David praises God with his whole heart, celebrates His righteous judgment, remembers His protection of the oppressed and calls everyone to trust and praise the Lord."
+},
+  
   {
     title: "THE STORY OF HAGAR",
     image: "/banner.jpg",
