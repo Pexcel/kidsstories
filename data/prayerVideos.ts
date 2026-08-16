@@ -2,6 +2,20 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 {
+  id: "psalm-10-prayer",
+  title: "Prayer from Psalm 10",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/CJkVhtpCoY4?si=BMVhdTWosbKH42bC",
+  embed: "https://www.youtube.com/embed/CJkVhtpCoY4",
+  description:
+    "A Scripture-based prayer from Psalm 10, asking God for protection, justice, deliverance and defence against wickedness.",
+  scripture: "Psalm 10",
+  prayerFocus:
+    "Protection, justice, deliverance, divine defence and help for the oppressed",
+  publishedAt: "2026-08-17"
+},
+  
+  {
   id: "psalm-9-prayer",
   title: "Prayer from Psalm 9",
   image: "/banner.jpg",
