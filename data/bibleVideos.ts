@@ -10,7 +10,6 @@ export const bibleVideos: Video[] = [
     "Psalm 10 is a prayer asking God to arise against wickedness, defend the helpless and bring justice to those who are oppressed.",
   lesson:
     "Even when evil seems strong, God sees everything, hears the cry of the afflicted and will defend those who trust in Him.",
-  age: "All Ages",
   testament: "Old Testament",
   book: "Psalms",
   chapter: 10,
