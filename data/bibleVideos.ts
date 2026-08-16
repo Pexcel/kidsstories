@@ -1,7 +1,23 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 10",
+  image: "/banner.jpg",
+  link: "https://youtu.be/2FJWYjrBbzc?si=IgpyX_Sqnkb_p7Hy",
+  embed: "https://www.youtube.com/embed/2FJWYjrBbzc",
+  description:
+    "Psalm 10 is a prayer asking God to arise against wickedness, defend the helpless and bring justice to those who are oppressed.",
+  lesson:
+    "Even when evil seems strong, God sees everything, hears the cry of the afflicted and will defend those who trust in Him.",
+  age: "All Ages",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 10,
+  passage: "Psalms 10",
+  passageReading:
+    "The psalmist describes the pride and wickedness of evil people, cries to God for help and ends with confidence that the Lord hears the afflicted and brings justice."
+},
 {
   title: "Psalms Chapter 9",
   image: "/banner.jpg",
