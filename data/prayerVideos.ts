@@ -1,22 +1,19 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
-  {
-  title: "Psalms Chapter 11",
-  image: "/banner.jpg",
-  link: "https://youtu.be/FTsZhC-jvCY",
-  embed: "https://www.youtube.com/embed/FTsZhC-jvCY",
-  description:
-    "Psalm 11 is a declaration of trust in God when danger and opposition arise.",
-  lesson:
-    "When fear surrounds us, we should not run from faith. God is still on His throne, He sees what is happening and He remains the righteous Judge.",
   
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 11,
-  passage: "Psalms 11",
-  passageReading:
-    "David refuses to give in to fear, declares that the Lord remains in His holy temple and trusts God's righteous judgment over both the wicked and the upright."
+  {
+  id: "psalm-11-prayer",
+  title: "Prayer from Psalm 11",
+  image: "/banner.jpg",
+  link: "https://youtu.be/OujBD4uyNMk",
+  embed: "https://www.youtube.com/embed/OujBD4uyNMk",
+  description:
+    "A Scripture-based prayer from Psalm 11 for courage, protection, confidence in God and victory over fear.",
+  scripture: "Psalm 11",
+  prayerFocus:
+    "Courage, protection, confidence in God, righteousness and victory over fear",
+  publishedAt: "2026-08-17"
 },
 {
   id: "psalm-10-prayer",
