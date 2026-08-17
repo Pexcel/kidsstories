@@ -1,6 +1,25 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+  
+  {
+  title: "Psalms Chapter 11",
+  image: "/banner.jpg",
+  link: "https://youtu.be/FTsZhC-jvCY",
+  embed: "https://www.youtube.com/embed/FTsZhC-jvCY",
+  description:
+    "Psalm 11 is a declaration of trust in God when danger and opposition arise.",
+  lesson:
+    "When fear surrounds us, we should not run from faith. God is still on His throne, He sees what is happening and He remains the righteous Judge.",
+  
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 11,
+  passage: "Psalms 11",
+  passageReading:
+    "David refuses to give in to fear, declares that the Lord remains in His holy temple and trusts God's righteous judgment over both the wicked and the upright."
+},
+  
 {
   title: "Psalms Chapter 10",
   image: "/banner.jpg",
