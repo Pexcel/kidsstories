@@ -1,6 +1,20 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
+  {
+  id: "psalm-12-prayer",
+  title: "Prayer from Psalm 12",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/2FUoYrbw2gc?si=Fky2wA9KyyqQYqEG",
+  embed: "https://www.youtube.com/embed/2FUoYrbw2gc",
+  description:
+    "A Scripture-based prayer from Psalm 12 for protection, truth, wisdom, faithful speech and confidence in God's Word.",
+  scripture: "Psalm 12",
+  prayerFocus:
+    "Protection, truth, wisdom, faithful speech and confidence in God's Word",
+  publishedAt: "2026-08-19"
+},
+
   
   {
   id: "psalm-11-prayer",
