@@ -1,6 +1,24 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+{
+  title: "Psalms Chapter 12",
+  image: "/banner.jpg",
+  link: "https://youtu.be/8z8UQMYNf5I?si=jmLYwlyUJZZ76ATz",
+  embed: "https://www.youtube.com/embed/8z8UQMYNf5I",
+  description:
+    "Psalm 12 is a prayer for God's help in a time when truth, faithfulness and godly speech seem to be disappearing.",
+  lesson:
+    "When dishonesty and harmful words surround us, we can trust God's pure Word and depend on Him to protect the faithful.",
+  
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 12,
+  passage: "Psalms 12",
+  passageReading:
+    "David cries to God because faithful people are disappearing, warns against flattering and boastful speech, and declares that the words of the Lord are pure and trustworthy."
+},
   
   {
   title: "Psalms Chapter 11",
