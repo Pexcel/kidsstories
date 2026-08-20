@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+
+  {
+  title: "Psalms Chapter 13",
+  image: "/banner.jpg",
+  link: "https://youtu.be/QTTJW1vRcJ8?si=IuCOiZHgpjZWmjqQ",
+  embed: "https://www.youtube.com/embed/QTTJW1vRcJ8",
+  description:
+    "Psalm 13 is a heartfelt prayer from a place of sorrow and waiting, ending with renewed trust in God's unfailing love.",
+  lesson:
+    "Even when answers seem delayed, we can bring our pain honestly to God and still choose to trust His love and salvation.",
+
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 13,
+  passage: "Psalms 13",
+  passageReading:
+    "David asks how long his trouble will continue, cries to God for help and light, and ends by rejoicing in God's salvation and goodness."
+},
 {
   title: "Psalms Chapter 12",
   image: "/banner.jpg",
