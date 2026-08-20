@@ -1,6 +1,21 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
+  
+  {
+  id: "psalm-13-prayer",
+  title: "Prayer from Psalm 13",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/xlml2IaEyVg?si=sgWE5qSfj5QOt1Es",
+  embed: "https://www.youtube.com/embed/xlml2IaEyVg",
+  description:
+    "A Scripture-based prayer from Psalm 13 for strength in waiting, renewed hope, answered prayer and confidence in God's unfailing love.",
+  scripture: "Psalm 13",
+  prayerFocus:
+    "Hope, strength, answered prayer, trust, deliverance and God's unfailing love",
+  publishedAt: "2026-08-20"
+},
+  
   {
   id: "psalm-12-prayer",
   title: "Prayer from Psalm 12",
