@@ -1,6 +1,21 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
+
+{
+  id: "psalm-14-prayer",
+  title: "Prayer from Psalm 14",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/AVLbRWhtB6s?si=azbtWJ6Vg95hhc9B",
+  embed: "https://www.youtube.com/embed/AVLbRWhtB6s",
+  description:
+    "A Scripture-based prayer from Psalm 14 for righteousness, protection, wisdom, deliverance and spiritual restoration.",
+  scripture: "Psalm 14",
+  prayerFocus:
+    "Righteousness, protection, wisdom, deliverance, salvation and restoration",
+  publishedAt: "2026-08-21"
+},
+
   
   {
   id: "psalm-13-prayer",
