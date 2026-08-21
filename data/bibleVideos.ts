@@ -1,7 +1,23 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 14",
+  image: "/banner.jpg",
+  link: "https://youtu.be/eqydb4rxBJk?si=0zh2hSaDMvUX2u4K",
+  embed: "https://www.youtube.com/embed/eqydb4rxBJk",
+  description:
+    "Psalm 14 describes the corruption of those who reject God and affirms that the Lord watches over and protects His people.",
+  lesson:
+    "Even when wickedness seems widespread, God sees everything, remains with the righteous and is able to bring salvation and restoration.",
+  
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 14,
+  passage: "Psalms 14",
+  passageReading:
+    "David describes the foolishness and corruption of those who turn away from God, declares that the Lord is with the righteous, and longs for God's salvation and restoration."
+},
 
   {
   title: "Psalms Chapter 13",
