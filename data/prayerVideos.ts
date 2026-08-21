@@ -1,7 +1,19 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
-
+{
+  id: "psalm-15-prayer",
+  title: "Prayer from Psalm 15",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/4JdJLP8c87Y?si=3u2L1rttOHeGchtt",
+  embed: "https://www.youtube.com/embed/4JdJLP8c87Y",
+  description:
+    "A Scripture-based prayer from Psalm 15 for integrity, righteous living, truthfulness and a life that pleases God.",
+  scripture: "Psalm 15",
+  prayerFocus:
+    "Integrity, righteous living, truthfulness, faithfulness and closeness with God",
+  publishedAt: "2026-08-21"
+},
 {
   id: "psalm-14-prayer",
   title: "Prayer from Psalm 14",
