@@ -1,23 +1,7 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
-{
-  title: "Psalms Chapter 15",
-  image: "/banner.jpg",
-  link: "https://youtu.be/LTovtU1aaG8",
-  embed: "https://www.youtube.com/embed/LTovtU1aaG8",
-  description:
-    "Psalm 15 describes the character of those who walk closely with God and live with integrity, truth and righteousness.",
-  lesson:
-    "Those who desire to live in God's presence should walk uprightly, speak truth, treat others well and remain faithful in their conduct.",
-  
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 15,
-  passage: "Psalms 15",
-  passageReading:
-    "David asks who may dwell in God's presence and describes a person who walks uprightly, speaks truth, avoids harming others and remains faithful to what is right."
-},
+
 {
   id: "psalm-14-prayer",
   title: "Prayer from Psalm 14",
