@@ -1,7 +1,25 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  {
+  title: "Psalms Chapter 16",
+  image: "/banner.jpg",
+  link: "https://youtu.be/v1a5CrNDb90?si=0yqFt6rPNnSTId6M",
+  embed: "https://www.youtube.com/embed/v1a5CrNDb90",
+  description:
+    "Psalm 16 is a prayer of trust in God for preservation, guidance, security and joy.",
+  lesson:
+    "When we make God our refuge and portion, we can live with confidence because He guides us and keeps us secure.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 16,
+  passage: "Psalms 16",
+  passageReading:
+    "David asks God to preserve him, declares that the Lord is his portion, rejoices in God's guidance and expresses confidence in the path of life and fullness of joy in God's presence."
+},
+  
+  {
   title: "Psalms Chapter 15",
   image: "/banner.jpg",
   link: "https://youtu.be/LTovtU1aaG8",
