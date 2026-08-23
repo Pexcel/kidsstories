@@ -3,6 +3,23 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
   {
+  title: "Psalms Chapter 17",
+  image: "/banner.jpg",
+  link: "https://youtu.be/DeJizoeiUM0",
+  embed: "https://www.youtube.com/embed/DeJizoeiUM0",
+  description:
+    "Psalm 17 is a prayer for justice, protection and deliverance, asking God to hear, examine and defend the faithful.",
+  lesson:
+    "We can bring our troubles to God with confidence, asking Him to protect us, guide us and keep us close to Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 17,
+  passage: "Psalms 17",
+  passageReading:
+    "David asks God to hear his prayer, examine his heart, protect him from wicked enemies and keep him as the apple of His eye."
+},
+
+  {
   title: "Psalms Chapter 16",
   image: "/banner.jpg",
   link: "https://youtu.be/v1a5CrNDb90?si=0yqFt6rPNnSTId6M",
