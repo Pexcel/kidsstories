@@ -65,3 +65,14 @@ export type PrayerVideo = {
   prayerFocus: string;
   publishedAt?: string;
 };
+export type SongVideo = {
+  id: string;
+  title: string;
+  image: string;
+  link: string;
+  embed: string;
+  description: string;
+  scripture: string;
+  category: string;
+  publishedAt: string;
+};
