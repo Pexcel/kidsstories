@@ -1,20 +1,6 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
-
-  {
-  id: "psalm-16-prayer",
-  title: "Prayer from Psalm 16",
-  image: "/banner.jpg",
-  link: "https://youtube.com/shorts/TiwigVOQL4I?si=eRZUTQ-ki-b3T8o6",
-  embed: "https://www.youtube.com/embed/TiwigVOQL4I",
-  description:
-    "A Scripture-based prayer from Psalm 16 for preservation, divine guidance, security, joy and confidence in God.",
-  scripture: "Psalm 16",
-  prayerFocus:
-    "Preservation, guidance, security, divine inheritance, joy and confidence in God",
-  publishedAt: "2026-08-23"
-},
   
   {
   title: "Psalms Chapter 16",
