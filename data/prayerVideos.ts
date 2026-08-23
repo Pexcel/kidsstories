@@ -2,6 +2,24 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 {
+  title: "Psalms Chapter 16",
+  image: "/banner.jpg",
+  link: "https://youtu.be/v1a5CrNDb90?si=0yqFt6rPNnSTId6M",
+  embed: "https://www.youtube.com/embed/v1a5CrNDb90",
+  description:
+    "Psalm 16 is a prayer of trust and confidence in God as our refuge, portion, guide and source of lasting joy.",
+  lesson:
+    "When God is our greatest treasure, we can live with confidence, joy and hope because He guides us and keeps us secure.",
+
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 16,
+  passage: "Psalms 16",
+  passageReading:
+    "David asks God to preserve him, declares that the Lord is his portion and inheritance, rejoices in God's guidance and ends with confidence in the path of life and fullness of joy in God's presence."
+},
+  
+  {
   id: "psalm-15-prayer",
   title: "Prayer from Psalm 15",
   image: "/banner.jpg",
