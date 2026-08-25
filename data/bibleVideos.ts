@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+{
+  title: "Psalms Chapter 18",
+  image: "/banner.jpg",
+  link: "https://youtu.be/zoWE8oN3Rzc?si=LwdCWgOohArEuhFN",
+  embed: "https://www.youtube.com/embed/zoWE8oN3Rzc",
+  description:
+    "David praises God for rescuing him from his enemies and celebrates the Lord as his rock, fortress, strength and deliverer.",
+  lesson:
+    "God is our strong refuge. We can trust Him to rescue, strengthen and guide us through difficult situations.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 18,
+  passage: "Psalm 18",
+  passageReading:
+    "Psalm 18 is a song of thanksgiving in which David praises God for deliverance, protection, strength and victory over his enemies."
+},
+  
   {
   title: "Psalms Chapter 17",
   image: "/banner.jpg",
