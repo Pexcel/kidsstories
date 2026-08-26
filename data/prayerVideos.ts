@@ -1,8 +1,32 @@
 import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
-  
-  
+
+
+  {
+  id: "psalm-18-prayer",
+  title: "Prayer from Psalm 18",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/3TX3eXLHft4?si=Dm1YZSacwySYqkkO",
+  embed: "https://www.youtube.com/embed/3TX3eXLHft4",
+  description:
+    "A powerful Scripture-based prayer from Psalm 18, trusting God for deliverance, protection, strength and victory.",
+  scripture: "Psalm 18",
+  prayerFocus:
+    "Deliverance, divine protection, strength, victory and God's intervention"
+},
+  {
+  id: "psalm-17-prayer",
+  title: "Prayer from Psalm 17",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/FsnOJS2ouA0?si=pqhsaoA0uGNDXdUR",
+  embed: "https://www.youtube.com/embed/FsnOJS2ouA0",
+  description:
+    "A Scripture-based prayer from Psalm 17, asking God to hear, protect, guide and preserve us from every danger.",
+  scripture: "Psalm 17",
+  prayerFocus:
+    "Divine protection, answered prayer, guidance, preservation and deliverance"
+},
   {
   id: "psalm-16-prayer",
   title: "Prayer from Psalm 16",
