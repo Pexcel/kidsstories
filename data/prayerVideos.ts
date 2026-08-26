@@ -3,22 +3,6 @@ import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
 {
-  title: "Psalms Chapter 19",
-  image: "/banner.jpg",
-  link: "https://youtu.be/uuan0I0w4kc?si=eAr7FIkDPMk6sAPO",
-  embed: "https://www.youtube.com/embed/uuan0I0w4kc",
-  description:
-    "Psalm 19 reveals how creation declares the glory of God and how His Word gives wisdom, joy, light and direction.",
-  lesson:
-    "God speaks to us through His creation and His Word. We should listen to Him and allow His truth to guide our lives.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 19,
-  passage: "Psalm 19",
-  passageReading:
-    "Psalm 19 celebrates God's glory revealed in creation, the perfection of His Word, and the desire to live a life that is pleasing to Him."
-},
-  {
   id: "psalm-18-prayer",
   title: "Prayer from Psalm 18",
   image: "/banner.jpg",
