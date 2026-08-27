@@ -1,7 +1,27 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  
+  {
+  title: "Psalms Chapter 20",
+  image: "/banner.jpg",
+  link: "https://youtu.be/CYLG4ptuDkY?si=cewxQeam8XarvlTc",
+  embed: "https://www.youtube.com/embed/CYLG4ptuDkY",
+  description:
+    "Psalm 20 is a prayer for God's help, protection, answered prayer and victory in times of trouble.",
+  lesson:
+    "Our confidence should not be in human strength or resources, but in the name and power of the Lord.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 20,
+  passage: "Psalms 20",
+  passageReading:
+    "David prays that God will answer in times of trouble, grant the desires of the heart, give victory and show that true confidence is found in the name of the Lord."
+},
+  
+  
+  {
   title: "Psalms Chapter 19",
   image: "/banner.jpg",
   link: "https://youtu.be/uuan0I0w4kc?si=eAr7FIkDPMk6sAPO",
