@@ -2,6 +2,21 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
+
+{
+  id: "psalm-19-prayer",
+  title: "Prayer from Psalm 19",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/GT5593MfFWg?si=u_4DWp82mYtWTwqk",
+  embed: "https://www.youtube.com/embed/GT5593MfFWg",
+  description:
+    "A Scripture-based prayer from Psalm 19 for spiritual cleansing, wisdom, obedience, acceptable words and a heart that pleases God.",
+  scripture: "Psalm 19",
+  prayerFocus:
+    "Spiritual cleansing, wisdom, obedience, pure thoughts, acceptable words and closeness with God",
+  publishedAt: "2026-08-27"
+},
+
 {
   id: "psalm-18-prayer",
   title: "Prayer from Psalm 18",
@@ -12,9 +27,11 @@ export const prayerVideos: PrayerVideo[] = [
     "A powerful Scripture-based prayer from Psalm 18, trusting God for deliverance, protection, strength and victory.",
   scripture: "Psalm 18",
   prayerFocus:
-    "Deliverance, divine protection, strength, victory and God's intervention"
+    "Deliverance, divine protection, strength, victory and God's intervention",
+  publishedAt: "2026-08-26"
 },
-  {
+
+{
   id: "psalm-17-prayer",
   title: "Prayer from Psalm 17",
   image: "/banner.jpg",
@@ -24,9 +41,11 @@ export const prayerVideos: PrayerVideo[] = [
     "A Scripture-based prayer from Psalm 17, asking God to hear, protect, guide and preserve us from every danger.",
   scripture: "Psalm 17",
   prayerFocus:
-    "Divine protection, answered prayer, guidance, preservation and deliverance"
+    "Divine protection, answered prayer, guidance, preservation and deliverance",
+  publishedAt: "2026-08-25"
 },
-  {
+
+{
   id: "psalm-16-prayer",
   title: "Prayer from Psalm 16",
   image: "/banner.jpg",
