@@ -2,7 +2,19 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
-
+{
+  id: "psalm-20-prayer",
+  title: "Prayer from Psalm 20",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/ygAnki6h02E?si=-j2xBDQvkJStQnUZ",
+  embed: "https://www.youtube.com/embed/ygAnki6h02E",
+  description:
+    "A Scripture-based prayer from Psalm 20 for divine help, protection, answered prayer, strength and victory.",
+  scripture: "Psalm 20",
+  prayerFocus:
+    "Divine help, protection, answered prayer, strength, favor and victory",
+  publishedAt: "2026-08-28"
+},
 {
   id: "psalm-19-prayer",
   title: "Prayer from Psalm 19",
