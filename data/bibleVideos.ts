@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-  
+  {
+  title: "Psalms Chapter 21",
+  image: "/banner.jpg",
+  link: "https://youtu.be/QaUP8LSG6FE?si=LpNJoSFrJMRMK3Ik",
+  embed: "https://www.youtube.com/embed/QaUP8LSG6FE",
+  description:
+    "Psalm 21 is a song of thanksgiving for God's strength, answered prayer, blessings and victory.",
+  lesson:
+    "God gives strength, answers prayer and blesses those who trust in Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 21,
+  passage: "Psalms 21",
+  passageReading:
+    "David rejoices in God's strength and salvation, gives thanks for answered prayer and blessings, and declares confidence in God's power and victory."
+},
   {
   title: "Psalms Chapter 20",
   image: "/banner.jpg",
