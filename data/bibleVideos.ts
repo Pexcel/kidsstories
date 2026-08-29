@@ -1765,15 +1765,7 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
     "David praises the greatness of God's name, marvels at the heavens and wonders why God cares for humanity, yet celebrates the honor and responsibility God has given people over His creation."
 },
   
-    lesson:
-    "God can overcome opposition and bring His work to completion at the right time.",
-  testament: "Old Testament",
-  book: "Ezra",
-  chapter: 6,
-  passage: "Ezra 6",
-  passageReading:
-    "King Darius confirms Cyrus's decree, the rebuilding continues, the temple is completed and dedicated, and the people celebrate the Passover."
-},
+    
 
   
 ];
