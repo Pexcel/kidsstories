@@ -3,7 +3,19 @@ import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
 
-
+{
+  id: "prayer-for-nigeria",
+  title: "Prayer for Nigeria",
+  image: "/banner.jpg",
+  link: "https://youtu.be/7JCQsTFCUa8?si=kXDloRhMSklISNDj",
+  embed: "https://www.youtube.com/embed/7JCQsTFCUa8",
+  description:
+    "A special prayer for Nigeria, committing the nation, its people and its future into God's hands.",
+  scripture: "Prayer for Nigeria",
+  prayerFocus:
+    "Nigeria, peace, unity, divine protection, good leadership, progress and national transformation",
+  publishedAt: "2026-08-29"
+},
  {
   id: "psalm-21-prayer",
   title: "Prayer from Psalm 21",
