@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+
+  {
+  title: "Psalms Chapter 22",
+  image: "/banner.jpg",
+  link: "https://youtu.be/AqHAahXtssc?si=EabnigkuG1XrppFZ",
+  embed: "https://www.youtube.com/embed/AqHAahXtssc",
+  description:
+    "Psalm 22 moves from deep distress and a cry for God's help to renewed trust, praise and confidence in His deliverance.",
+  lesson:
+    "Even in moments of pain and loneliness, we can continue to trust God because He hears, delivers and remains worthy of praise.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 22,
+  passage: "Psalms 22",
+  passageReading:
+    "David cries out to God in deep distress, remembers God's faithfulness, asks for deliverance and ends by declaring praise and God's rule among the nations."
+},
   {
   title: "Psalms Chapter 21",
   image: "/banner.jpg",
