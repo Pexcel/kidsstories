@@ -2,6 +2,22 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
+
+
+ {
+  id: "psalm-21-prayer",
+  title: "Prayer from Psalm 21",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/T_JGrYsGfFA?si=lRtD_6x48WP4g9yt",
+  embed: "https://www.youtube.com/embed/T_JGrYsGfFA",
+  description:
+    "A Scripture-based prayer from Psalm 21 for strength, answered prayer, divine favor, blessings and victory.",
+  scripture: "Psalm 21",
+  prayerFocus:
+    "Strength, answered prayer, divine favor, blessings, protection and victory",
+  publishedAt: "2026-08-29"
+},
+  
 {
   id: "psalm-20-prayer",
   title: "Prayer from Psalm 20",
