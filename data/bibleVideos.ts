@@ -1766,6 +1766,174 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
 },
   
     
+{
+  title: "Esther Chapter 10",
+  image: "/banner.jpg",
+  link: "https://youtu.be/wTtVSvwegm8?si=q2oPIkC8bhLWAx_u",
+  embed: "https://www.youtube.com/embed/wTtVSvwegm8",
+  description:
+    "Esther 10 concludes the story by describing Mordecai's greatness and his service to the Jewish people.",
+  lesson:
+    "God can raise faithful people into positions of influence where they can serve and protect others.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 10,
+  passage: "Esther 10",
+  passageReading:
+    "Mordecai becomes second in authority to King Ahasuerus and uses his position to promote the welfare and peace of his people."
+},
 
+{
+  title: "Esther Chapter 9",
+  image: "/banner.jpg",
+  link: "https://youtu.be/E8GEK-rTOpM?si=nhuthxiN_-NVPum-",
+  embed: "https://www.youtube.com/embed/E8GEK-rTOpM",
+  description:
+    "Esther 9 records the deliverance of the Jewish people and the establishment of the Feast of Purim.",
+  lesson:
+    "God can turn a season of fear and sorrow into deliverance, celebration and thanksgiving.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 9,
+  passage: "Esther 9",
+  passageReading:
+    "The Jews are delivered from their enemies, and Mordecai and Esther establish Purim as an annual celebration of their deliverance."
+},
+
+{
+  title: "Esther Chapter 8",
+  image: "/banner.jpg",
+  link: "https://youtu.be/uAO60dNOsuE?si=cdaFzKeEZJJKwbY2",
+  embed: "https://www.youtube.com/embed/uAO60dNOsuE",
+  description:
+    "Esther 8 shows how Esther and Mordecai act to protect the Jewish people after Haman's downfall.",
+  lesson:
+    "God can reverse dangerous circumstances and create a way of deliverance for His people.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 8,
+  passage: "Esther 8",
+  passageReading:
+    "Esther receives Haman's estate, Mordecai is promoted, and a new royal decree gives the Jewish people authority to defend themselves."
+},
+
+{
+  title: "Esther Chapter 7",
+  image: "/banner.jpg",
+  link: "https://youtu.be/7Bf1Ged_axw?si=3CfzTvvWoL4c1sLf",
+  embed: "https://www.youtube.com/embed/7Bf1Ged_axw",
+  description:
+    "Esther 7 records the moment Esther courageously reveals Haman's plot to destroy her people.",
+  lesson:
+    "Courage and truth can expose hidden evil, and God is able to bring justice at the right time.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 7,
+  passage: "Esther 7",
+  passageReading:
+    "Esther reveals her identity and Haman's plan to the king, and Haman is judged for the destruction he intended against the Jews."
+},
+
+{
+  title: "Esther Chapter 6",
+  image: "/banner.jpg",
+  link: "https://youtu.be/co5WqxIDixM?si=t0BtkVRzINqKSFeM",
+  embed: "https://www.youtube.com/embed/co5WqxIDixM",
+  description:
+    "Esther 6 shows a remarkable reversal as Mordecai is honored by the king while Haman's plans begin to collapse.",
+  lesson:
+    "God can remember faithful service and change circumstances at the very moment everything appears hopeless.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 6,
+  passage: "Esther 6",
+  passageReading:
+    "The king remembers Mordecai's loyalty and orders Haman to publicly honor the very man he had planned to destroy."
+},
+
+{
+  title: "Esther Chapter 5",
+  image: "/banner.jpg",
+  link: "https://youtu.be/t4yCxEEf9cI?si=prR6u6xYnF5kK9E5",
+  embed: "https://www.youtube.com/embed/t4yCxEEf9cI",
+  description:
+    "Esther 5 shows Esther courageously approaching the king and carefully beginning her appeal for her people.",
+  lesson:
+    "Courage should be joined with wisdom, patience and dependence on God's timing.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 5,
+  passage: "Esther 5",
+  passageReading:
+    "Esther approaches the king, receives his favor and invites the king and Haman to banquets while Haman continues plotting against Mordecai."
+},
+
+{
+  title: "Esther Chapter 4",
+  image: "/banner.jpg",
+  link: "https://youtu.be/xBW3jZS0NXk?si=-Eu1ooHA3nisYM4_",
+  embed: "https://www.youtube.com/embed/xBW3jZS0NXk",
+  description:
+    "Esther 4 records Mordecai's appeal to Esther to use her position to help save her people.",
+  lesson:
+    "God may place us in particular positions and moments so that we can courageously serve others.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 4,
+  passage: "Esther 4",
+  passageReading:
+    "Mordecai urges Esther to approach the king, and after calling for fasting she courageously decides to risk her life for her people."
+},
+
+{
+  title: "Esther Chapter 3",
+  image: "/banner.jpg",
+  link: "https://youtu.be/qIlezVjGtH4?si=S7puccnLIB5DNsBk",
+  embed: "https://www.youtube.com/embed/qIlezVjGtH4",
+  description:
+    "Esther 3 introduces Haman's hatred for Mordecai and his plan to destroy the Jewish people.",
+  lesson:
+    "Pride and hatred can lead to destructive decisions, but faithfulness to God remains important even under pressure.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 3,
+  passage: "Esther 3",
+  passageReading:
+    "Haman becomes angry when Mordecai refuses to bow to him and persuades the king to issue a decree against the Jewish people."
+},
+
+{
+  title: "Esther Chapter 2",
+  image: "/banner.jpg",
+  link: "https://youtu.be/62TIwqcXuXo?si=koUEpxNRFU1sNtfk",
+  embed: "https://www.youtube.com/embed/62TIwqcXuXo",
+  description:
+    "Esther 2 tells how Esther becomes queen and how Mordecai uncovers a plot against the king.",
+  lesson:
+    "God can quietly position people and circumstances in preparation for purposes that are not yet visible.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 2,
+  passage: "Esther 2",
+  passageReading:
+    "Esther gains favor and becomes queen, while Mordecai discovers and reports a conspiracy against King Ahasuerus."
+},
+
+{
+  title: "Esther Chapter 1",
+  image: "/banner.jpg",
+  link: "https://youtu.be/SI-HBZQ-ijc?si=jj4qx4eSMt-0Tlhw",
+  embed: "https://www.youtube.com/embed/SI-HBZQ-ijc",
+  description:
+    "Esther 1 introduces King Ahasuerus, Queen Vashti and the events that eventually open the way for Esther to become queen.",
+  lesson:
+    "Choices have consequences, and God can work through unexpected events to prepare the way for His purposes.",
+  testament: "Old Testament",
+  book: "Esther",
+  chapter: 1,
+  passage: "Esther 1",
+  passageReading:
+    "King Ahasuerus holds a great feast, Queen Vashti refuses the king's command, and she is removed from her position as queen."
+},
   
 ];
