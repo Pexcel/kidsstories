@@ -1764,4 +1764,175 @@ passageReading: "The nations and rulers plot against the Lord and His Anointed, 
   passageReading:
     "David praises the greatness of God's name, marvels at the heavens and wonders why God cares for humanity, yet celebrates the honor and responsibility God has given people over His creation."
 },
+  
+  {
+  title: "Ezra Chapter 10",
+  image: "/banner.jpg",
+  link: "https://youtu.be/RZk5TKTmrNQ?si=wtXFsBG1LeGrwdlz",
+  embed: "https://www.youtube.com/embed/RZk5TKTmrNQ",
+  description:
+    "Ezra 10 records the people's response to their unfaithfulness and their decision to correct what had gone wrong.",
+  lesson:
+    "True repentance involves more than feeling sorry; it requires sincere confession and a willingness to make things right.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 10,
+  passage: "Ezra 10",
+  passageReading:
+    "Ezra mourns and prays, the people gather in repentance, and steps are taken to address the unfaithfulness that had developed among them."
+},
+
+{
+  title: "Ezra Chapter 9",
+  image: "/banner.jpg",
+  link: "https://youtu.be/u2k-jz89L-k?si=1L9ymseBBK_aZXbr",
+  embed: "https://www.youtube.com/embed/u2k-jz89L-k",
+  description:
+    "Ezra 9 shows Ezra's deep sorrow when he learns that the people have compromised their faithfulness to God.",
+  lesson:
+    "Sin should never be treated casually. Ezra teaches us to respond with humility, confession and dependence on God's mercy.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 9,
+  passage: "Ezra 9",
+  passageReading:
+    "Ezra learns of the people's unfaithfulness, humbles himself before God and offers a heartfelt prayer of confession and repentance."
+},
+
+{
+  title: "Ezra Chapter 8",
+  image: "/banner.jpg",
+  link: "https://youtu.be/bL0N4R8s9TU?si=FoCxYYflxOOrK4_D",
+  embed: "https://www.youtube.com/embed/bL0N4R8s9TU",
+  description:
+    "Ezra 8 describes the journey to Jerusalem, the gathering of the returning exiles and their dependence on God's protection.",
+  lesson:
+    "When we seek God sincerely and trust Him, He can guide and protect us through difficult journeys.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 8,
+  passage: "Ezra 8",
+  passageReading:
+    "Ezra gathers the returning families, calls for fasting and prayer, entrusts the temple treasures to faithful men and journeys safely to Jerusalem."
+},
+
+{
+  title: "Ezra Chapter 7",
+  image: "/banner.jpg",
+  link: "https://youtu.be/glmJrQtyeqk?si=81aQOhn1p66bPQwi",
+  embed: "https://www.youtube.com/embed/glmJrQtyeqk",
+  description:
+    "Ezra 7 introduces Ezra as a skilled teacher of God's law who is sent to Jerusalem with the king's support.",
+  lesson:
+    "Ezra's life shows the importance of studying God's Word, obeying it and teaching it faithfully to others.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 7,
+  passage: "Ezra 7",
+  passageReading:
+    "Ezra travels to Jerusalem with royal authorization and resources, determined to study, obey and teach the law of the Lord."
+},
+
+{
+  title: "Ezra Chapter 6",
+  image: "/banner.jpg",
+  link: "https://youtu.be/enkVDbn900w?si=X513GGe_uK1EBi5r",
+  embed: "https://www.youtube.com/embed/enkVDbn900w",
+  description:
+    "Ezra 6 records the completion of the temple after King Darius confirms the original decree supporting its reconstruction.",
+  lesson:
+    "God can overcome opposition and bring His work to completion at the right time.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 6,
+  passage: "Ezra 6",
+  passageReading:
+    "King Darius confirms Cyrus's decree, the rebuilding continues, the temple is completed and dedicated, and the people celebrate the Passover."
+},
+
+{
+  title: "Ezra Chapter 5",
+  image: "/banner.jpg",
+  link: "https://youtu.be/3AF7giYfmEc?si=zrWLQRbXU4eooKkI",
+  embed: "https://www.youtube.com/embed/3AF7giYfmEc",
+  description:
+    "Ezra 5 shows the prophets encouraging the people to resume rebuilding the temple despite opposition and questioning.",
+  lesson:
+    "God's work can continue even when obstacles arise when His people act with courage and faith.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 5,
+  passage: "Ezra 5",
+  passageReading:
+    "Haggai and Zechariah encourage the Jews to rebuild, the work resumes, and officials send a report to King Darius about the temple project."
+},
+
+{
+  title: "Ezra Chapter 4",
+  image: "/banner.jpg",
+  link: "https://youtu.be/CobCyz9PN2w?si=VGDhYZDd7Y_rdNjg",
+  embed: "https://www.youtube.com/embed/CobCyz9PN2w",
+  description:
+    "Ezra 4 describes the opposition that arose against the rebuilding of Jerusalem and the temple.",
+  lesson:
+    "Opposition does not necessarily mean God has abandoned His work; faithfulness requires perseverance through resistance.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 4,
+  passage: "Ezra 4",
+  passageReading:
+    "Enemies discourage the builders, accusations are sent to the Persian rulers, and the rebuilding work is temporarily stopped."
+},
+
+{
+  title: "Ezra Chapter 3",
+  image: "/banner.jpg",
+  link: "https://youtu.be/OcBMoQb0xng?si=mPl9DRtgTTcFV5fQ",
+  embed: "https://www.youtube.com/embed/OcBMoQb0xng",
+  description:
+    "Ezra 3 tells how the returning exiles restored worship and began rebuilding the temple in Jerusalem.",
+  lesson:
+    "Restoring worship and putting God first provides a strong foundation for rebuilding our lives.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 3,
+  passage: "Ezra 3",
+  passageReading:
+    "The people rebuild the altar, restore sacrifices and festivals, lay the foundation of the temple and respond with both praise and tears."
+},
+
+{
+  title: "Ezra Chapter 2",
+  image: "/banner.jpg",
+  link: "https://youtu.be/QeyYSSwuHGc?si=iUAWsq8qwGb2IxAY",
+  embed: "https://www.youtube.com/embed/QeyYSSwuHGc",
+  description:
+    "Ezra 2 records the families and groups who returned from exile to Jerusalem and Judah.",
+  lesson:
+    "Every person has a place in God's work, and faithful participation matters in rebuilding His community.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 2,
+  passage: "Ezra 2",
+  passageReading:
+    "The returning exiles are counted by families and groups, including priests, Levites and temple servants, and they contribute toward rebuilding the temple."
+},
+
+{
+  title: "Ezra Chapter 1",
+  image: "/banner.jpg",
+  link: "https://youtu.be/G0XTH4fAbGk?si=7FOCbwRz6d6G_RCh",
+  embed: "https://www.youtube.com/embed/G0XTH4fAbGk",
+  description:
+    "Ezra 1 records King Cyrus's decree allowing God's people to return to Jerusalem and rebuild the temple.",
+  lesson:
+    "God can use unexpected people and circumstances to accomplish His purposes and restore His people.",
+  testament: "Old Testament",
+  book: "Ezra",
+  chapter: 1,
+  passage: "Ezra 1",
+  passageReading:
+    "King Cyrus authorizes the Jews to return to Jerusalem, rebuild the temple and take back the sacred vessels that had been carried away."
+},
+  
 ];
