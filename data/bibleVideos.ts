@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-
+{
+  title: "Psalms Chapter 23",
+  image: "/banner.jpg",
+  link: "https://youtu.be/UPGQjTT762o?si=1oALvGS2evwBSkYN",
+  embed: "https://www.youtube.com/embed/UPGQjTT762o",
+  description:
+    "Psalm 23 presents the Lord as our Shepherd who provides, guides, protects and remains with us through every season of life.",
+  lesson:
+    "When the Lord is our Shepherd, we can trust Him for guidance, provision, protection, comfort and lasting hope.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 23,
+  passage: "Psalms 23",
+  passageReading:
+    "David declares that the Lord is his Shepherd, leading him beside peaceful waters, restoring his soul, guiding him in righteousness and remaining with him even through the darkest valley."
+},
   {
   title: "Psalms Chapter 22",
   image: "/banner.jpg",
