@@ -2,7 +2,33 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
+{
+  id: "psalm-23-prayer",
+  title: "Prayer from Psalm 23",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/exuy0FL6WxU?si=FKqPGbjqtc5Kf-K8",
+  embed: "https://www.youtube.com/embed/exuy0FL6WxU",
+  description:
+    "A Scripture-based prayer from Psalm 23 for divine guidance, provision, protection, peace and God's abiding presence.",
+  scripture: "Psalm 23",
+  prayerFocus:
+    "Guidance, provision, protection, peace, restoration and God's presence",
+  publishedAt: "2026-08-30"
+},
 
+{
+  id: "psalm-22-prayer",
+  title: "Prayer from Psalm 22",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/ar5YuVAv0gQ?si=aYM14rcpCJJsmqYD",
+  embed: "https://www.youtube.com/embed/ar5YuVAv0gQ",
+  description:
+    "A Scripture-based prayer from Psalm 22 for God's presence, answered prayer, deliverance, strength and renewed hope.",
+  scripture: "Psalm 22",
+  prayerFocus:
+    "God's presence, answered prayer, deliverance, strength, hope and restoration",
+  publishedAt: "2026-08-30"
+},
 {
   id: "prayer-for-nigeria",
   title: "Prayer for Nigeria",
