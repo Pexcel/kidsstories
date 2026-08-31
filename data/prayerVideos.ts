@@ -2,6 +2,21 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
+  
+  
+  {
+  id: "psalm-24-prayer",
+  title: "Prayer from Psalm 24",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/LteF-mUM0e4?si=oIE-EX7iQllhICTM",
+  embed: "https://www.youtube.com/embed/LteF-mUM0e4",
+  description:
+    "A Scripture-based prayer from Psalm 24 for purity, divine access, God's presence, open doors and the manifestation of the King of glory.",
+  scripture: "Psalm 24",
+  prayerFocus:
+    "Purity, divine access, open doors, God's presence, favor and the King of glory",
+  publishedAt: "2026-08-31"
+},
 {
   id: "psalm-23-prayer",
   title: "Prayer from Psalm 23",
