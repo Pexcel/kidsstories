@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+  
+  {
+  title: "Psalms Chapter 24",
+  image: "/banner.jpg",
+  link: "https://youtu.be/BzCVhB731_g?si=PC7_RCNHsqQyQSSR",
+  embed: "https://www.youtube.com/embed/BzCVhB731_g",
+  description:
+    "Psalm 24 declares that the earth belongs to the Lord, describes those who may stand in His holy presence and welcomes the King of glory.",
+  lesson:
+    "God calls us to live with clean hands and pure hearts, and to open every area of our lives to the King of glory.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 24,
+  passage: "Psalms 24",
+  passageReading:
+    "David declares that the earth and everything in it belong to the Lord, describes the character of those who may stand in God's holy place and calls the gates to open for the King of glory."
+},
 {
   title: "Psalms Chapter 23",
   image: "/banner.jpg",
