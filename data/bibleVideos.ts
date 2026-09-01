@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-  
+  {
+  title: "Psalms Chapter 25",
+  image: "/banner.jpg",
+  link: "https://youtu.be/VWLRle7sbuM",
+  embed: "https://www.youtube.com/embed/VWLRle7sbuM",
+  description:
+    "Psalm 25 is a prayer of trust in God for guidance, mercy, forgiveness, protection and deliverance.",
+  lesson:
+    "We can confidently ask God to teach us His ways, forgive our sins, guide our decisions and protect us from shame and trouble.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 25,
+  passage: "Psalms 25",
+  passageReading:
+    "David lifts his soul to God, asks for guidance and forgiveness, remembers God's mercy and seeks protection and deliverance from his troubles and enemies."
+},
   {
   title: "Psalms Chapter 24",
   image: "/banner.jpg",
