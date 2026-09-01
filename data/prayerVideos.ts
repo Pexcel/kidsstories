@@ -2,7 +2,19 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
-  
+{
+  id: "psalm-25-prayer",
+  title: "Prayer from Psalm 25",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/CkKCxcmNt0U",
+  embed: "https://www.youtube.com/embed/CkKCxcmNt0U",
+  description:
+    "A Scripture-based prophetic prayer from Psalm 25 for divine guidance, mercy, protection, forgiveness and victory over shame.",
+  scripture: "Psalm 25",
+  prayerFocus:
+    "Divine guidance, mercy, forgiveness, protection, wisdom, deliverance and victory over shame",
+  publishedAt: "2026-09-01"
+},  
   
   {
   id: "psalm-24-prayer",
