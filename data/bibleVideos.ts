@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+  
+  {
+  title: "Psalms Chapter 26",
+  image: "/banner.jpg",
+  link: "https://youtu.be/Y6rafCUTDTg?si=XQh4UEr-hw4ac4Z1",
+  embed: "https://www.youtube.com/embed/Y6rafCUTDTg",
+  description:
+    "Psalm 26 is a prayer of integrity, trust and devotion as David asks God to examine his heart and keep him walking faithfully.",
+  lesson:
+    "A life that pleases God is marked by integrity, trust, love for His presence and a desire to walk in truth.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 26,
+  passage: "Psalms 26",
+  passageReading:
+    "David asks God to examine his heart, declares his trust in the Lord, separates himself from wickedness and expresses his love for God's house and presence."
+},
   {
   title: "Psalms Chapter 25",
   image: "/banner.jpg",
