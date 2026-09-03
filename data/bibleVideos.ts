@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-  
+  {
+  title: "Psalms Chapter 27",
+  image: "/banner.jpg",
+  link: "https://youtu.be/ulR6xiioF-4?si=jpX9cqoJxbUERW-M",
+  embed: "https://www.youtube.com/embed/ulR6xiioF-4",
+  description:
+    "Psalm 27 is a declaration of confidence in God as our light, salvation and protection in the face of fear and opposition.",
+  lesson:
+    "When we trust God, we can face fear with courage, seek His presence and wait confidently for His help.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 27,
+  passage: "Psalms 27",
+  passageReading:
+    "David declares that the Lord is his light and salvation, expresses his desire to dwell in God's presence, asks for guidance and protection, and encourages himself to wait on the Lord with courage."
+},
   {
   title: "Psalms Chapter 26",
   image: "/banner.jpg",
