@@ -2,6 +2,22 @@ import type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
+  
+  
+  
+  {
+  id: "psalm-26-prayer",
+  title: "Prayer from Psalm 26",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/B2MbibBLlqQ?si=MhSFxBeN7oVYhySg",
+  embed: "https://www.youtube.com/embed/B2MbibBLlqQ",
+  description:
+    "A Scripture-based prayer from Psalm 26 for integrity, purity, divine examination, protection and a life that pleases God.",
+  scripture: "Psalm 26",
+  prayerFocus:
+    "Integrity, purity, divine examination, protection, righteous living and closeness with God",
+  publishedAt: "2026-09-03"
+},
 {
   id: "psalm-25-prayer",
   title: "Prayer from Psalm 25",
