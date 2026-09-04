@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 28",
+  image: "/banner.jpg",
+  link: "https://youtu.be/3sUoPKX1MsA?si=GfsrihA6gDzKWaRZ",
+  embed: "https://www.youtube.com/embed/3sUoPKX1MsA",
+  description:
+    "Psalm 28 is a heartfelt prayer for God's help, followed by thanksgiving because the Lord hears and answers prayer.",
+  lesson:
+    "We can cry to God in difficult moments and trust Him as our strength, shield and faithful helper.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 28,
+  passage: "Psalms 28",
+  passageReading:
+    "David cries to the Lord for mercy and help, trusts Him as his strength and shield, and ends by praising God for hearing his prayer."
+},
   {
   title: "Psalms Chapter 27",
   image: "/banner.jpg",
