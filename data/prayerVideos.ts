@@ -16,7 +16,19 @@ export const prayerVideos: PrayerVideo[] = [
     "Divine help, protection, answered prayer, strength, mercy and thanksgiving",
   publishedAt: "2026-09-05"
 },
-  
+  {
+  id: "psalm-27-prayer",
+  title: "Prayer from Psalm 27",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/BCc6QDYuYws?si=ZmOB5crPhtzi2Nfs",
+  embed: "https://www.youtube.com/embed/BCc6QDYuYws",
+  description:
+    "A Scripture-based prayer from Psalm 27 for courage, protection, divine guidance, confidence and God's presence.",
+  scripture: "Psalm 27",
+  prayerFocus:
+    "Courage, protection, divine guidance, confidence, deliverance and God's presence",
+  publishedAt: "2026-09-05"
+},
   {
   id: "psalm-26-prayer",
   title: "Prayer from Psalm 26",
