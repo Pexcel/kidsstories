@@ -1,5 +1,4 @@
-hiimport type { PrayerVideo } from "@/types";
-
+import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
   
