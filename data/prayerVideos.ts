@@ -1,9 +1,21 @@
-import type { PrayerVideo } from "@/types";
+hiimport type { PrayerVideo } from "@/types";
 
 export const prayerVideos: PrayerVideo[] = [
 
   
-  
+  {
+  id: "psalm-28-prayer",
+  title: "Prayer from Psalm 28",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/oRB8j8ATgPM?si=rxvOotL81-1Jx5pU",
+  embed: "https://www.youtube.com/embed/oRB8j8ATgPM",
+  description:
+    "A Scripture-based prayer from Psalm 28 for divine help, protection, answered prayer, strength and thanksgiving.",
+  scripture: "Psalm 28",
+  prayerFocus:
+    "Divine help, protection, answered prayer, strength, mercy and thanksgiving",
+  publishedAt: "2026-09-05"
+},
   
   {
   id: "psalm-26-prayer",
