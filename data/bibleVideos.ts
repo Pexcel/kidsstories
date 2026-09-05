@@ -1,7 +1,26 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  
+  
+  {
+  title: "Psalms Chapter 29",
+  image: "/banner.jpg",
+  link: "https://youtu.be/UfBgFWDsz_s?si=OdAmStjSWSm8DOup",
+  embed: "https://www.youtube.com/embed/UfBgFWDsz_s",
+  description:
+    "Psalm 29 celebrates the power, majesty and glory of God, especially through the picture of His mighty voice over creation.",
+  lesson:
+    "God is powerful, sovereign and worthy of worship, and He gives strength and peace to His people.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 29,
+  passage: "Psalms 29",
+  passageReading:
+    "David calls everyone to give glory to the Lord and describes God's powerful voice over the waters, forests and wilderness before declaring that the Lord gives strength and peace to His people."
+},
+  {
   title: "Psalms Chapter 28",
   image: "/banner.jpg",
   link: "https://youtu.be/3sUoPKX1MsA?si=GfsrihA6gDzKWaRZ",
