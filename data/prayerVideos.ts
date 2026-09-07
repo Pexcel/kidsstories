@@ -1,7 +1,19 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
-  
+  {
+  id: "psalm-29-prayer",
+  title: "Prayer from Psalm 29",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/gyu1B1hPDe0?si=FNvqkgdMFb8ZdClf",
+  embed: "https://www.youtube.com/embed/gyu1B1hPDe0",
+  description:
+    "A Scripture-based prayer from Psalm 29 for divine strength, peace, God's powerful presence and confidence in His authority.",
+  scripture: "Psalm 29",
+  prayerFocus:
+    "Divine strength, peace, God's presence, protection and confidence in His power",
+  publishedAt: "2026-09-07"
+},
   {
   id: "psalm-28-prayer",
   title: "Prayer from Psalm 28",
