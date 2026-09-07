@@ -2,6 +2,41 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+
+{
+  title: "Psalms Chapter 31",
+  image: "/banner.jpg",
+  link: "https://youtu.be/4VWxGZEJkik?si=iCYeyxR1CyD3zwwi",
+  embed: "https://www.youtube.com/embed/4VWxGZEJkik",
+  description:
+    "Psalm 31 is a prayer of trust in God during distress, danger and opposition.",
+  lesson:
+    "Even when life feels uncertain, we can place our lives in God's hands and trust His protection, mercy and faithfulness.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 31,
+  passage: "Psalms 31",
+  passageReading:
+    "David cries to God for deliverance, declares his trust in the Lord, commits himself into God's hands and ends by encouraging God's people to be strong and courageous."
+},
+  
+  {
+  title: "Psalms Chapter 30",
+  image: "/banner.jpg",
+  link: "https://youtu.be/vr19NOK2ToM?si=4L6LYBlesbafG-Pm",
+  embed: "https://www.youtube.com/embed/vr19NOK2ToM",
+  description:
+    "Psalm 30 is a song of thanksgiving in which David praises God for deliverance, healing and restoration.",
+  lesson:
+    "Difficult seasons do not last forever. God can turn sorrow into joy and give us reasons to praise Him again.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 30,
+  passage: "Psalms 30",
+  passageReading:
+    "David thanks God for lifting him up, healing him and changing his mourning into joy, and he promises to praise the Lord continually."
+},
+
   
   
   {
