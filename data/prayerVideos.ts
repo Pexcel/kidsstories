@@ -1,6 +1,18 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-
+{
+  id: "psalm-30-prayer",
+  title: "Prayer from Psalm 30",
+  image: "/banner.jpg",
+  link: "https://youtu.be/p3O9WZymjn0",
+  embed: "https://www.youtube.com/embed/p3O9WZymjn0",
+  description:
+    "A Scripture-based prayer from Psalm 30 for healing, restoration, joy, thanksgiving and divine lifting.",
+  scripture: "Psalm 30",
+  prayerFocus:
+    "Healing, restoration, joy, thanksgiving, divine lifting and renewed hope",
+  publishedAt: "2026-09-08"
+},
   {
   id: "psalm-29-prayer",
   title: "Prayer from Psalm 29",
