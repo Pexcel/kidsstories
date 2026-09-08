@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-
+{
+  title: "Psalms Chapter 32",
+  image: "/banner.jpg",
+  link: "https://youtu.be/EQlUiYIAV4k",
+  embed: "https://www.youtube.com/embed/EQlUiYIAV4k",
+  description:
+    "Psalm 32 teaches the joy of forgiveness, the importance of confessing sin and the blessing of trusting God.",
+  lesson:
+    "Hiding sin brings inner pain, but confession, forgiveness and trust in God bring peace and restoration.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 32,
+  passage: "Psalms 32",
+  passageReading:
+    "David describes the happiness of those whose sins are forgiven, explains the burden of keeping silent about sin and encourages everyone to confess, trust God and rejoice in Him."
+},
 {
   title: "Psalms Chapter 31",
   image: "/banner.jpg",
