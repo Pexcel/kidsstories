@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+
+  {
+  title: "Psalms Chapter 33",
+  image: "/banner.jpg",
+  link: "https://youtu.be/s73J-wJyS3Y",
+  embed: "https://www.youtube.com/embed/s73J-wJyS3Y",
+  description:
+    "Psalm 33 calls God's people to praise Him for His powerful word, faithful character, creation and sovereign rule over the nations.",
+  lesson:
+    "Our confidence should not rest in human strength, but in the Lord whose plans stand firm and whose faithful love watches over those who trust Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 33,
+  passage: "Psalms 33",
+  passageReading:
+    "The psalm calls the righteous to praise God, celebrates His creative power and justice, declares that His plans cannot be defeated and ends with hope in His unfailing love."
+},
+  
 {
   title: "Psalms Chapter 32",
   image: "/banner.jpg",
