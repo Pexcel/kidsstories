@@ -1,6 +1,20 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-{
+
+  {
+  id: "psalm-31-prayer",
+  title: "Prayer from Psalm 31",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/YTGPIOTcUpU?feature=share",
+  embed: "https://www.youtube.com/embed/YTGPIOTcUpU",
+  description:
+    "A Scripture-based prayer from Psalm 31 for refuge, protection, courage, divine guidance and complete trust in God.",
+  scripture: "Psalm 31",
+  prayerFocus:
+    "Refuge, protection, courage, divine guidance, deliverance and trust in God",
+  publishedAt: "2026-09-09"
+},
+  {
   id: "psalm-30-prayer",
   title: "Prayer from Psalm 30",
   image: "/banner.jpg",
