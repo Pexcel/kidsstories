@@ -1,6 +1,18 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-
+{
+  id: "psalm-32-prayer",
+  title: "Prayer from Psalm 32",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/RiiXnWS2Co8?si=fVoM3KTv9DX4Ddfv",
+  embed: "https://www.youtube.com/embed/RiiXnWS2Co8",
+  description:
+    "A Scripture-based prayer from Psalm 32 for forgiveness, restoration, divine guidance, protection and renewed joy.",
+  scripture: "Psalm 32",
+  prayerFocus:
+    "Forgiveness, restoration, divine guidance, protection, peace and renewed joy",
+  publishedAt: "2026-09-10"
+},
   {
   id: "psalm-31-prayer",
   title: "Prayer from Psalm 31",
