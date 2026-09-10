@@ -2,7 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
-
+{
+  title: "Psalms Chapter 34",
+  image: "/banner.jpg",
+  link: "https://youtu.be/4EmGY7cSn6U?si=0d9zh4m04st9WlHd",
+  embed: "https://www.youtube.com/embed/4EmGY7cSn6U",
+  description:
+    "Psalm 34 is a song of praise in which David celebrates God's deliverance and encourages others to trust and seek the Lord.",
+  lesson:
+    "God hears those who call on Him, stays close to the brokenhearted and delivers those who trust Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 34,
+  passage: "Psalms 34",
+  passageReading:
+    "David praises the Lord for answering him, invites others to taste and see that God is good, and teaches that the Lord is near to the brokenhearted and delivers His people from their troubles."
+},
   {
   title: "Psalms Chapter 33",
   image: "/banner.jpg",
