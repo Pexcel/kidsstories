@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 35",
+  image: "/banner.jpg",
+  link: "https://youtu.be/qXI5v84iPGI",
+  embed: "https://www.youtube.com/embed/qXI5v84iPGI",
+  description:
+    "Psalm 35 is David's prayer for God's help and justice when he is attacked, falsely accused and opposed by people who repay good with evil.",
+  lesson:
+    "When people treat us unfairly, we can take our pain to God, trust Him to defend us and continue to praise Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 35,
+  passage: "Psalms 35",
+  passageReading:
+    "David asks God to defend him against those who attack and falsely accuse him, while expressing confidence that he will rejoice and praise the Lord for His justice and deliverance."
+},
 {
   title: "Psalms Chapter 34",
   image: "/banner.jpg",
