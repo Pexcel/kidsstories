@@ -1,7 +1,59 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+  {
+  title: "Psalms Chapter 36",
+  image: "/banner.jpg",
+  link: "https://youtu.be/EL19wLWubqc?si=LqOFbJgaKvXpehPD",
+  embed: "https://www.youtube.com/embed/EL19wLWubqc",
+  description:
+    "Psalm 36 contrasts the wickedness of sinful people with the unfailing love, faithfulness and righteousness of God.",
+  lesson:
+    "Human wickedness may be great, but God's love and faithfulness are far greater, and those who trust Him find protection and life.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 36,
+  passage: "Psalms 36",
+  passageReading:
+    "The psalm describes the wickedness of those who reject God, then celebrates God's unfailing love, faithfulness, righteousness and protection."
+},
+
 {
+  title: "Psalms Chapter 37",
+  image: "/banner.jpg",
+  link: "https://youtu.be/uM-Kg8TJkZE?si=OIxfdG04xzUHHaPY",
+  embed: "https://www.youtube.com/embed/uM-Kg8TJkZE",
+  description:
+    "Psalm 37 teaches us not to be troubled by the temporary success of wicked people but to trust, obey and wait patiently for the Lord.",
+  lesson:
+    "The wicked may appear to prosper for a time, but they will fade like grass, while those who trust God will be sustained by Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 37,
+  passage: "Psalms 37",
+  passageReading:
+    "The psalm tells God's people not to envy evildoers because they will soon fade like grass, but to trust the Lord, do good, commit their way to Him and wait patiently for His justice."
+},
+
+{
+  title: "Psalms Chapter 38",
+  image: "/banner.jpg",
+  link: "https://youtu.be/YjhYxizRezQ?si=_WWCIFVNoHnzfsB0",
+  embed: "https://www.youtube.com/embed/YjhYxizRezQ",
+  description:
+    "Psalm 38 is a deeply personal prayer in which the writer acknowledges his sin, pain and loneliness while crying to God for help.",
+  lesson:
+    "We should be honest with God about our sins and struggles, confess our wrongs and continue looking to Him for forgiveness and help.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 38,
+  passage: "Psalms 38",
+  passageReading:
+    "The writer describes his suffering, acknowledges his sin, feels abandoned by those around him and ends by asking the Lord not to forsake him but to come quickly to his help."
+},
+  
+  {
   title: "Psalms Chapter 35",
   image: "/banner.jpg",
   link: "https://youtu.be/qXI5v84iPGI",
