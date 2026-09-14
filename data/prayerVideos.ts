@@ -1,6 +1,63 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
+
+  {
+  id: "psalm-34-prayer",
+  title: "Prayer from Psalm 34",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/ErX_fSBMmBI?si=NZ6w2oMRFh4S-ge1",
+  embed: "https://www.youtube.com/embed/ErX_fSBMmBI",
+  description:
+    "A Scripture-based prayer from Psalm 34 for deliverance, protection, answered prayer and God's presence.",
+  scripture: "Psalm 34",
+  prayerFocus:
+    "Deliverance, protection, answered prayer, God's presence and freedom from fear",
+  publishedAt: "2026-09-14"
+},
+
 {
+  id: "psalm-33-prayer",
+  title: "Prayer from Psalm 33",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/mBA353ZVBOw?si=cONGhqD-PCzbWS2L",
+  embed: "https://www.youtube.com/embed/mBA353ZVBOw",
+  description:
+    "A Scripture-based prayer from Psalm 33 for God's mercy, protection, guidance and confident hope in Him.",
+  scripture: "Psalm 33",
+  prayerFocus:
+    "God's mercy, protection, guidance, hope, strength and divine help",
+  publishedAt: "2026-09-14"
+},
+
+{
+  id: "psalm-36-prayer",
+  title: "Prayer from Psalm 36",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/zcw9IGhLM-g?si=7bfjlz0z7HRxsbjC",
+  embed: "https://www.youtube.com/embed/zcw9IGhLM-g",
+  description:
+    "A Scripture-based prayer from Psalm 36 for God's unfailing love, protection, guidance and continued faithfulness.",
+  scripture: "Psalm 36",
+  prayerFocus:
+    "God's unfailing love, protection, guidance, faithfulness and abundant mercy",
+  publishedAt: "2026-09-14"
+},
+
+{
+  id: "psalm-35-prayer",
+  title: "Prayer from Psalm 35",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/BO1Q1QCON-U?si=litD7kFO6QUBnd0t",
+  embed: "https://www.youtube.com/embed/BO1Q1QCON-U",
+  description:
+    "A Scripture-based prayer from Psalm 35 for divine defense, protection, deliverance and victory.",
+  scripture: "Psalm 35",
+  prayerFocus:
+    "Divine defense, protection, deliverance, justice and victory",
+  publishedAt: "2026-09-14"
+},
+  
+  {
   id: "psalm-32-prayer",
   title: "Prayer from Psalm 32",
   image: "/banner.jpg",
