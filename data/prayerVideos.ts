@@ -1,56 +1,33 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
-  {
-  title: "Psalms Chapter 41",
+{
+  id: "psalm-36-prayer",
+  title: "Prayer from Psalm 36",
   image: "/banner.jpg",
-  link: "https://youtu.be/J6epA-qi7HA",
-  embed: "https://www.youtube.com/embed/J6epA-qi7HA",
+  link: "https://youtube.com/shorts/zcw9IGhLM-g?si=7bfjlz0z7HRxsbjC",
+  embed: "https://www.youtube.com/embed/zcw9IGhLM-g",
   description:
-    "Psalm 41 speaks about God's care for those who show kindness to the weak, while also describing sickness, betrayal and a prayer for mercy.",
-  lesson:
-    "God values compassion, remains near in times of weakness and can sustain us even when people disappoint or betray us.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 41,
-  passage: "Psalms 41",
-  passageReading:
-    "The psalm begins with a blessing for those who care for the weak, then describes sickness and betrayal, before ending with confidence in God's mercy and sustaining presence."
+    "A Scripture-based prayer from Psalm 36 for God's unfailing love, protection, guidance and continued faithfulness.",
+  scripture: "Psalm 36",
+  prayerFocus:
+    "God's unfailing love, protection, guidance, faithfulness and abundant mercy",
+  publishedAt: "2026-09-14"
 },
 
 {
-  title: "Psalms Chapter 40",
+  id: "psalm-35-prayer",
+  title: "Prayer from Psalm 35",
   image: "/banner.jpg",
-  link: "https://youtu.be/tWqF8SuTAY4",
-  embed: "https://www.youtube.com/embed/tWqF8SuTAY4",
+  link: "https://youtube.com/shorts/BO1Q1QCON-U?si=litD7kFO6QUBnd0t",
+  embed: "https://www.youtube.com/embed/BO1Q1QCON-U",
   description:
-    "Psalm 40 moves from patiently waiting for God and celebrating His deliverance to a fresh prayer for help.",
-  lesson:
-    "God hears those who wait for Him, lifts them from trouble and desires willing obedience rather than empty religious actions.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 40,
-  passage: "Psalms 40",
-  passageReading:
-    "The writer remembers how God lifted him from a deep pit, gave him a new song and inspired him to proclaim God's faithfulness, yet he ends by asking God once again to come quickly to his help."
-},
-
-{
-  title: "Psalms Chapter 39",
-  image: "/banner.jpg",
-  link: "https://youtu.be/HOtAJiZRFzE",
-  embed: "https://www.youtube.com/embed/HOtAJiZRFzE",
-  description:
-    "Psalm 39 reflects on the shortness of human life and turns to God as the true source of hope.",
-  lesson:
-    "Life is brief, so we should recognize our dependence on God and place our hope in Him rather than in temporary possessions.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 39,
-  passage: "Psalms 39",
-  passageReading:
-    "The writer struggles to remain silent, reflects on how brief human life is and how temporary earthly wealth can be, then turns to God in prayer and declares that his hope is in Him."
-},
+    "A Scripture-based prayer from Psalm 35 for divine defense, protection, deliverance and victory.",
+  scripture: "Psalm 35",
+  prayerFocus:
+    "Divine defense, protection, deliverance, justice and victory",
+  publishedAt: "2026-09-14"
+},  
   {
   id: "psalm-34-prayer",
   title: "Prayer from Psalm 34",
@@ -79,33 +56,7 @@ export const prayerVideos: PrayerVideo[] = [
   publishedAt: "2026-09-14"
 },
 
-{
-  id: "psalm-36-prayer",
-  title: "Prayer from Psalm 36",
-  image: "/banner.jpg",
-  link: "https://youtube.com/shorts/zcw9IGhLM-g?si=7bfjlz0z7HRxsbjC",
-  embed: "https://www.youtube.com/embed/zcw9IGhLM-g",
-  description:
-    "A Scripture-based prayer from Psalm 36 for God's unfailing love, protection, guidance and continued faithfulness.",
-  scripture: "Psalm 36",
-  prayerFocus:
-    "God's unfailing love, protection, guidance, faithfulness and abundant mercy",
-  publishedAt: "2026-09-14"
-},
 
-{
-  id: "psalm-35-prayer",
-  title: "Prayer from Psalm 35",
-  image: "/banner.jpg",
-  link: "https://youtube.com/shorts/BO1Q1QCON-U?si=litD7kFO6QUBnd0t",
-  embed: "https://www.youtube.com/embed/BO1Q1QCON-U",
-  description:
-    "A Scripture-based prayer from Psalm 35 for divine defense, protection, deliverance and victory.",
-  scripture: "Psalm 35",
-  prayerFocus:
-    "Divine defense, protection, deliverance, justice and victory",
-  publishedAt: "2026-09-14"
-},
   
   {
   id: "psalm-32-prayer",
