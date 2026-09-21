@@ -2,7 +2,73 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+{
+  title: "Psalms Chapter 42",
+  image: "/banner.jpg",
+  link: "https://youtu.be/G0vb5EidMxs?si=zSB7vrsgfOPb9TZC",
+  embed: "https://www.youtube.com/embed/G0vb5EidMxs",
+  description:
+    "Psalm 42 expresses a deep longing for God during a season of sadness, discouragement and spiritual thirst.",
+  lesson:
+    "Even when your heart is heavy, keep looking to God and reminding yourself that there is still a reason to hope in Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 42,
+  passage: "Psalms 42",
+  passageReading:
+    "The writer longs for God like a deer longs for water, remembers better days, speaks honestly about his sorrow and repeatedly encourages himself to put his hope in God."
+},
 
+{
+  title: "Psalms Chapter 43",
+  image: "/banner.jpg",
+  link: "https://youtu.be/nYiqbN2DmAY?si=QOqEhPzSpco9MNr5",
+  embed: "https://www.youtube.com/embed/nYiqbN2DmAY",
+  description:
+    "Psalm 43 is a prayer for justice, guidance and restoration from someone who feels rejected and surrounded by unfair treatment.",
+  lesson:
+    "When you are treated unfairly, take your case to God, ask Him to guide you and keep your hope fixed on Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 43,
+  passage: "Psalms 43",
+  passageReading:
+    "The writer asks God to defend him, send His light and truth to guide him, restore him to worship and help him continue hoping in God."
+},
+
+{
+  title: "Psalms Chapter 44",
+  image: "/banner.jpg",
+  link: "https://youtu.be/1I9-j5DJA4g?si=puWC8VzqRXxBvW_3",
+  embed: "https://www.youtube.com/embed/1I9-j5DJA4g",
+  description:
+    "Psalm 44 remembers God's past victories while honestly crying out over present defeat, shame and confusion.",
+  lesson:
+    "Remember what God has done before, remain faithful to Him and continue calling on Him even when you do not understand what is happening.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 44,
+  passage: "Psalms 44",
+  passageReading:
+    "God's people remember how He helped their ancestors, acknowledge that victory came from Him, describe their present suffering and ask Him to rise and help them again."
+},
+
+{
+  title: "Psalms Chapter 45",
+  image: "/banner.jpg",
+  link: "https://youtu.be/gNAjvG_qMaU?si=T4tVigs4RzNOHEnD",
+  embed: "https://www.youtube.com/embed/gNAjvG_qMaU",
+  description:
+    "Psalm 45 celebrates a royal king, his righteousness, his kingdom and the beauty and honor of the royal bride.",
+  lesson:
+    "True greatness is connected with truth, humility, righteousness and a life that honors God.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 45,
+  passage: "Psalms 45",
+  passageReading:
+    "The psalm praises the king for truth, humility and righteousness, describes the glory of his throne and kingdom, and celebrates the royal bride as she enters with honor and joy."
+},
   {
   title: "Psalms Chapter 41",
   image: "/banner.jpg",
