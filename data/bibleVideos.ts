@@ -3,6 +3,74 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
 {
+  title: "Psalms Chapter 46",
+  image: "/banner.jpg",
+  link: "https://youtu.be/M9LYzz1maYw?si=VRAdxqWF1UI8OgUh",
+  embed: "https://www.youtube.com/embed/M9LYzz1maYw",
+  description:
+    "Psalm 46 declares that God is our refuge and strength, always ready to help in times of trouble.",
+  lesson:
+    "Even when everything around us seems unstable, we can remain confident because God is with us and He is in control.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 46,
+  passage: "Psalms 46",
+  passageReading:
+    "The psalm describes God as our refuge and strength, speaks of His presence among His people and calls us to be still and know that He is God."
+},
+
+{
+  title: "Psalms Chapter 47",
+  image: "/banner.jpg",
+  link: "https://youtu.be/N6N1SVyPhZs?si=M4vUjbSYgs3ooxnB",
+  embed: "https://www.youtube.com/embed/N6N1SVyPhZs",
+  description:
+    "Psalm 47 is a joyful call for all people to praise God because He is the great King over all the earth.",
+  lesson:
+    "God deserves joyful praise because His authority is greater than every nation, ruler and power.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 47,
+  passage: "Psalms 47",
+  passageReading:
+    "The psalm calls everyone to clap, shout and sing praises to God, declaring that He reigns as King over all the earth."
+},
+
+{
+  title: "Psalms Chapter 48",
+  image: "/banner.jpg",
+  link: "https://youtu.be/4NPM90r4iY4?si=YVt6lOZWvlhy1Xyt",
+  embed: "https://www.youtube.com/embed/4NPM90r4iY4",
+  description:
+    "Psalm 48 celebrates the greatness of God and His protection over Jerusalem, the city associated with His presence.",
+  lesson:
+    "Our true security does not come from strong walls or human power but from the presence and faithfulness of God.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 48,
+  passage: "Psalms 48",
+  passageReading:
+    "The psalm praises God in His holy city, remembers how He protected Jerusalem and encourages future generations to remember that God will guide His people."
+},
+
+{
+  title: "Psalms Chapter 49",
+  image: "/banner.jpg",
+  link: "https://youtu.be/QoyH56-zH6I?si=GgsEduyyyhu44bGE",
+  embed: "https://www.youtube.com/embed/QoyH56-zH6I",
+  description:
+    "Psalm 49 teaches that wealth, status and possessions cannot save anyone from death or give lasting security.",
+  lesson:
+    "Do not build your confidence on money or possessions because true security and lasting hope are found in God.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 49,
+  passage: "Psalms 49",
+  passageReading:
+    "The psalm warns both rich and poor that wealth cannot redeem a life from death, while expressing confidence that God is able to redeem and receive those who trust Him."
+},
+  
+{
   title: "Psalms Chapter 42",
   image: "/banner.jpg",
   link: "https://youtu.be/G0vb5EidMxs?si=zSB7vrsgfOPb9TZC",
