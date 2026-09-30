@@ -1,6 +1,172 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
+{
+  id: "psalm-54-prayer",
+  title: "Prayer from Psalm 54",
+  image: "/banner.jpg",
+  link: "https://youtu.be/xO1m67odfFc",
+  embed: "https://www.youtube.com/embed/xO1m67odfFc",
+  description:
+    "A Scripture-based prayer from Psalm 54 for divine help, protection, deliverance and victory.",
+  scripture: "Psalm 54",
+  prayerFocus:
+    "Divine help, protection, deliverance, strength and victory",
+  publishedAt: "2026-09-30"
+},
 
+{
+  id: "psalm-53-prayer",
+  title: "Prayer from Psalm 53",
+  image: "/banner.jpg",
+  link: "https://youtu.be/MDEKWstBuSk",
+  embed: "https://www.youtube.com/embed/MDEKWstBuSk",
+  description:
+    "A Scripture-based prayer from Psalm 53 for wisdom, righteousness, restoration and God's intervention.",
+  scripture: "Psalm 53",
+  prayerFocus:
+    "Wisdom, righteousness, restoration, salvation and divine intervention",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-52-prayer",
+  title: "Prayer from Psalm 52",
+  image: "/banner.jpg",
+  link: "https://youtu.be/vHLqi8bahnU",
+  embed: "https://www.youtube.com/embed/vHLqi8bahnU",
+  description:
+    "A Scripture-based prayer from Psalm 52 for protection from evil, steadfast faith and confidence in God's unfailing love.",
+  scripture: "Psalm 52",
+  prayerFocus:
+    "Protection, steadfast faith, God's mercy, righteousness and stability",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-51-prayer",
+  title: "Prayer from Psalm 51",
+  image: "/banner.jpg",
+  link: "https://youtu.be/TyY0G-b90ok",
+  embed: "https://www.youtube.com/embed/TyY0G-b90ok",
+  description:
+    "A Scripture-based prayer from Psalm 51 for mercy, cleansing, forgiveness, renewal and a restored relationship with God.",
+  scripture: "Psalm 51",
+  prayerFocus:
+    "Mercy, forgiveness, cleansing, renewal and restoration",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-50-prayer",
+  title: "Prayer from Psalm 50",
+  image: "/banner.jpg",
+  link: "https://youtu.be/GUs6Mb4zGm0",
+  embed: "https://www.youtube.com/embed/GUs6Mb4zGm0",
+  description:
+    "A Scripture-based prayer from Psalm 50 for sincere worship, thanksgiving, obedience and divine deliverance.",
+  scripture: "Psalm 50",
+  prayerFocus:
+    "True worship, thanksgiving, obedience, deliverance and God's presence",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-49-prayer",
+  title: "Prayer from Psalm 49",
+  image: "/banner.jpg",
+  link: "https://youtu.be/5uE-G0f7VUk",
+  embed: "https://www.youtube.com/embed/5uE-G0f7VUk",
+  description:
+    "A Scripture-based prayer from Psalm 49 for wisdom, eternal security and freedom from trusting in earthly wealth.",
+  scripture: "Psalm 49",
+  prayerFocus:
+    "Wisdom, eternal security, contentment, trust in God and divine redemption",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-48-prayer",
+  title: "Prayer from Psalm 48",
+  image: "/banner.jpg",
+  link: "https://youtu.be/zL61cJJ5U_4",
+  embed: "https://www.youtube.com/embed/zL61cJJ5U_4",
+  description:
+    "A Scripture-based prayer from Psalm 48 for God's presence, protection, guidance and security.",
+  scripture: "Psalm 48",
+  prayerFocus:
+    "God's presence, protection, guidance, security and faithfulness",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-47-prayer",
+  title: "Prayer from Psalm 47",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/VhtOFYhyPaM?feature=share",
+  embed: "https://www.youtube.com/embed/VhtOFYhyPaM",
+  description:
+    "A Scripture-based prayer from Psalm 47 celebrating God's authority, victory and reign over every situation.",
+  scripture: "Psalm 47",
+  prayerFocus:
+    "Victory, God's authority, joyful praise, dominion and divine intervention",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-46-prayer",
+  title: "Prayer from Psalm 46",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/taSwVESxw7w?feature=share",
+  embed: "https://www.youtube.com/embed/taSwVESxw7w",
+  description:
+    "A Scripture-based prayer from Psalm 46 for refuge, strength, peace and confidence in God's presence.",
+  scripture: "Psalm 46",
+  prayerFocus:
+    "Refuge, strength, peace, protection and God's presence",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-45-prayer",
+  title: "Prayer from Psalm 45",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/twfyLXYEIgw?feature=share",
+  embed: "https://www.youtube.com/embed/twfyLXYEIgw",
+  description:
+    "A Scripture-based prayer from Psalm 45 for divine favor, righteousness, honor and God's blessing.",
+  scripture: "Psalm 45",
+  prayerFocus:
+    "Divine favor, righteousness, honor, blessing and grace",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-38-prayer",
+  title: "Prayer from Psalm 38",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/IDuQnATe5Pg?feature=share",
+  embed: "https://www.youtube.com/embed/IDuQnATe5Pg",
+  description:
+    "A Scripture-based prayer from Psalm 38 for mercy, healing, forgiveness, restoration and God's help.",
+  scripture: "Psalm 38",
+  prayerFocus:
+    "Mercy, healing, forgiveness, restoration and divine help",
+  publishedAt: "2026-09-30"
+},
+
+{
+  id: "psalm-37-prayer",
+  title: "Prayer from Psalm 37",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/rkl7-6G4GQQ?feature=share",
+  embed: "https://www.youtube.com/embed/rkl7-6G4GQQ",
+  description:
+    "A Scripture-based prayer from Psalm 37 for trust, patience, divine direction, provision and victory.",
+  scripture: "Psalm 37",
+  prayerFocus:
+    "Trust, patience, divine direction, provision, protection and victory",
+  publishedAt: "2026-09-30"
+},
 {
   id: "psalm-36-prayer",
   title: "Prayer from Psalm 36",
