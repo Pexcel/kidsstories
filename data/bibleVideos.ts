@@ -1,7 +1,90 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+{
+  title: "Psalms Chapter 50",
+  image: "/banner.jpg",
+  link: "https://youtu.be/4Z2D1WRHlN8",
+  embed: "https://www.youtube.com/embed/4Z2D1WRHlN8",
+  description:
+    "Psalm 50 reminds us that God desires sincere worship, obedience and thanksgiving rather than empty religious activity.",
+  lesson:
+    "God wants our worship to come from a sincere heart that honors Him through gratitude and obedience.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 50,
+  passage: "Psalms 50",
+  passageReading:
+    "God calls His people to account, reminds them that everything belongs to Him and teaches that true worship includes thanksgiving, obedience and calling on Him in times of trouble."
+},
 
+{
+  title: "Psalms Chapter 51",
+  image: "/banner.jpg",
+  link: "https://youtu.be/jhmxRONQGaw",
+  embed: "https://www.youtube.com/embed/jhmxRONQGaw",
+  description:
+    "Psalm 51 is David's heartfelt prayer of repentance, asking God for mercy, cleansing and spiritual renewal.",
+  lesson:
+    "True repentance means honestly confessing our sin and asking God to cleanse our hearts and restore us.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 51,
+  passage: "Psalms 51",
+  passageReading:
+    "David asks God for mercy, confesses his sin, prays for a clean heart and a renewed spirit, and asks for the joy of salvation to be restored."
+},
+
+{
+  title: "Psalms Chapter 52",
+  image: "/banner.jpg",
+  link: "https://youtu.be/k4o8EO5kWx4",
+  embed: "https://www.youtube.com/embed/k4o8EO5kWx4",
+  description:
+    "Psalm 52 contrasts the temporary power of evil people with the lasting goodness and faithfulness of God.",
+  lesson:
+    "Do not depend on power, wealth or wrongdoing; place your trust in God's unfailing love.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 52,
+  passage: "Psalms 52",
+  passageReading:
+    "David describes the destructive ways of the wicked but declares that he will remain like a flourishing olive tree because he trusts in God's unfailing love."
+},
+
+{
+  title: "Psalms Chapter 53",
+  image: "/banner.jpg",
+  link: "https://youtu.be/L6yCy21nyBY",
+  embed: "https://www.youtube.com/embed/L6yCy21nyBY",
+  description:
+    "Psalm 53 describes the foolishness of rejecting God and the corruption that follows when people turn away from Him.",
+  lesson:
+    "Rejecting God leads people away from wisdom, but salvation and restoration come from Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 53,
+  passage: "Psalms 53",
+  passageReading:
+    "The psalm describes humanity's corruption and lack of understanding while expressing hope that salvation and restoration will come from God."
+},
+
+{
+  title: "Psalms Chapter 54",
+  image: "/banner.jpg",
+  link: "https://youtu.be/5eQJBI8UsB8",
+  embed: "https://www.youtube.com/embed/5eQJBI8UsB8",
+  description:
+    "Psalm 54 is a short prayer for help and deliverance when David is surrounded by people who seek to harm him.",
+  lesson:
+    "When people rise against you, call on God confidently because He is your helper and protector.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 54,
+  passage: "Psalms 54",
+  passageReading:
+    "David asks God to save and defend him, declares that God is his helper and ends with thanksgiving for God's deliverance."
+},
 {
   title: "Psalms Chapter 46",
   image: "/banner.jpg",
