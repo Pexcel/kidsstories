@@ -1,7 +1,109 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+  {
+  title: "Psalms Chapter 55",
+  image: "/banner.jpg",
+  link: "https://youtu.be/521lzQ7Q1UY",
+  embed: "https://www.youtube.com/embed/521lzQ7Q1UY",
+  description:
+    "Psalm 55 is a deeply personal prayer from someone overwhelmed by fear, betrayal and trouble, yet still choosing to call on God.",
+  lesson:
+    "When people disappoint or betray you, bring the pain to God and cast your burden on Him because He will sustain you.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 55,
+  passage: "Psalms 55",
+  passageReading:
+    "David describes his fear and distress, mourns the betrayal of a close companion and ends by declaring his trust in God and encouraging us to cast our burdens on the Lord."
+},
+
 {
+  title: "Psalms Chapter 56",
+  image: "/banner.jpg",
+  link: "https://youtu.be/nC5xnlIJ3P0",
+  embed: "https://www.youtube.com/embed/nC5xnlIJ3P0",
+  description:
+    "Psalm 56 is a prayer of confidence in God during a time of fear, opposition and danger.",
+  lesson:
+    "Fear does not have to control us because we can choose to trust God and remember that He sees every tear.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 56,
+  passage: "Psalms 56",
+  passageReading:
+    "David asks God for mercy while surrounded by enemies and repeatedly declares that when he is afraid, he will put his trust in God."
+},
+
+{
+  title: "Psalms Chapter 57",
+  image: "/banner.jpg",
+  link: "https://youtu.be/GNEXwKCVEXM",
+  embed: "https://www.youtube.com/embed/GNEXwKCVEXM",
+  description:
+    "Psalm 57 is a prayer for mercy and protection while David is hiding from danger, yet his heart remains fixed on praising God.",
+  lesson:
+    "Even while you are waiting for trouble to pass, you can remain confident in God's protection and continue praising Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 57,
+  passage: "Psalms 57",
+  passageReading:
+    "David seeks refuge under God's wings, asks for protection from his enemies and declares that his heart is steadfast and ready to praise the Lord."
+},
+
+{
+  title: "Psalms Chapter 58",
+  image: "/banner.jpg",
+  link: "https://youtu.be/VJshrC99eT4",
+  embed: "https://www.youtube.com/embed/VJshrC99eT4",
+  description:
+    "Psalm 58 confronts injustice and corruption and expresses confidence that God will ultimately judge evil rightly.",
+  lesson:
+    "When injustice seems powerful, remember that God sees what is happening and His righteous judgment will prevail.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 58,
+  passage: "Psalms 58",
+  passageReading:
+    "David confronts corrupt rulers and wickedness, asks God to stop their evil and expresses confidence that righteous judgment belongs to God."
+},
+
+{
+  title: "Psalms Chapter 59",
+  image: "/banner.jpg",
+  link: "https://youtu.be/kCfcXT8kTHk",
+  embed: "https://www.youtube.com/embed/kCfcXT8kTHk",
+  description:
+    "Psalm 59 is David's prayer for deliverance when enemies are watching and waiting to attack him.",
+  lesson:
+    "When people rise against you, God can be your fortress, strength and safe place.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 59,
+  passage: "Psalms 59",
+  passageReading:
+    "David asks God to rescue him from violent enemies, describes their attacks and ends by praising God as his strength, fortress and loving protector."
+},
+
+{
+  title: "Psalms Chapter 60",
+  image: "/banner.jpg",
+  link: "https://youtu.be/VsxoK-DsHHw",
+  embed: "https://www.youtube.com/embed/VsxoK-DsHHw",
+  description:
+    "Psalm 60 is a national prayer for restoration after defeat, expressing renewed confidence that victory comes through God.",
+  lesson:
+    "Human strength alone is not enough; when setbacks come, turn back to God and trust Him to lead you into victory.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 60,
+  passage: "Psalms 60",
+  passageReading:
+    "David acknowledges the nation's troubles, asks God to restore His people and declares that with God they will gain the victory."
+},
+  {
   title: "Psalms Chapter 50",
   image: "/banner.jpg",
   link: "https://youtu.be/4Z2D1WRHlN8",
