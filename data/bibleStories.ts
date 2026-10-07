@@ -1,6 +1,29 @@
 import type { BibleStory } from "@/types";
 
 export const bibleStories: BibleStory[] = [
+  
+  
+  {
+  id: "in-the-beginning-how-god-created-the-world",
+  title: "IN THE BEGINNING: HOW GOD CREATED THE WORLD",
+  image: "/banner.jpg",
+  link: "https://youtu.be/QakdzBjHCZQ",
+  embed: "https://www.youtube.com/embed/QakdzBjHCZQ",
+  description:
+    "The Bible begins with the powerful story of how God created the heavens, the earth, light, land, seas, plants, animals and human beings, and then rested on the seventh day.",
+  lesson:
+    "God is our Creator. Everything He made had purpose, order and beauty, and humanity was created in His image.",
+  memoryVerse:
+    "In the beginning God created the heaven and the earth. — Genesis 1:1",
+  prayer:
+    "Lord, thank You for creating us and the beautiful world around us. Help us to honor You as our Creator and live according to Your purpose. Amen.",
+  age: "All Ages",
+  testament: "Old Testament",
+  book: "Genesis",
+  passage: "Genesis 1:1–31; Genesis 2:1–3",
+  passageReading:
+    "God creates the world in six days, including humanity in His image, declares His creation very good, and rests on the seventh day."
+},
   {
     id: "david-and-goliath",
     title: "David and Goliath",
