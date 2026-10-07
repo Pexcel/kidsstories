@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+
+  {
+  title: "Psalms Chapter 61",
+  image: "/banner.jpg",
+  link: "https://youtu.be/stD1gggybp4",
+  embed: "https://www.youtube.com/embed/stD1gggybp4",
+  description:
+    "Psalm 61 is David's prayer when his heart feels overwhelmed, asking God to lead him to the Rock that is higher than himself.",
+  lesson:
+    "When your heart is overwhelmed, do not depend only on your own strength. Run to God, your refuge and strong tower.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 61,
+  passage: "Psalms 61",
+  passageReading:
+    "David cries out to God from an overwhelmed heart, remembers that God has been his refuge and strong tower, and asks to remain safely in God's presence."
+},
+  
   {
   title: "Psalms Chapter 55",
   image: "/banner.jpg",
