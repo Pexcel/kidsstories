@@ -1,6 +1,22 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-{
+
+  
+  {
+  id: "psalm-61-prayer",
+  title: "Prayer from Psalm 61",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/UAFXaq_lwlo?feature=share",
+  embed: "https://www.youtube.com/embed/UAFXaq_lwlo",
+  description:
+    "A Scripture-based prayer from Psalm 61 for strength when overwhelmed, divine protection, refuge, stability and God's presence.",
+  scripture: "Psalm 61",
+  prayerFocus:
+    "Strength, divine protection, refuge, stability, answered prayer and God's presence",
+  publishedAt: "2026-10-07"
+},
+  
+  {
   id: "psalm-54-prayer",
   title: "Prayer from Psalm 54",
   image: "/banner.jpg",
