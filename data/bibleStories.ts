@@ -17,7 +17,7 @@ export const bibleStories: BibleStory[] = [
     "In the beginning God created the heaven and the earth. — Genesis 1:1",
   prayer:
     "Lord, thank You for creating us and the beautiful world around us. Help us to honor You as our Creator and live according to Your purpose. Amen.",
-  age: "All Ages",
+  
   testament: "Old Testament",
   book: "Genesis",
   passage: "Genesis 1:1–31; Genesis 2:1–3",
