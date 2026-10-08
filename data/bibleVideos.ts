@@ -2,6 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+  {
+  title: "Psalms Chapter 62",
+  image: "/banner.jpg",
+  link: "https://youtu.be/TGUhtwo7kWY?si=KHI2NMlZLa1craQ2",
+  embed: "https://www.youtube.com/embed/TGUhtwo7kWY",
+  description:
+    "Psalm 62 is a strong declaration of trust in God alone as our salvation, strength, refuge and security.",
+  lesson:
+    "Do not build your confidence on people, wealth or circumstances. Put your trust in God, because He alone is your rock and refuge.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 62,
+  passage: "Psalms 62",
+  passageReading:
+    "David declares that his soul waits quietly for God, describes the Lord as his rock and salvation, warns against trusting in riches or human strength, and encourages everyone to pour out their hearts before God."
+},
 
   {
   title: "Psalms Chapter 61",
