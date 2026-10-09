@@ -16,7 +16,7 @@ export const bibleVideos: Video[] = [
   passage: "Psalms 63",
   passageReading:
     "David longs for God in a dry and weary land, remembers His power and glory, praises Him for His lovingkindness and declares that his soul follows closely after God."
-}, ll
+},
   {
   title: "Psalms Chapter 62",
   image: "/banner.jpg",
