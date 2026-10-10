@@ -1,6 +1,25 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+
+  {
+  title: "Psalms Chapter 64",
+  image: "/banner.jpg",
+  link: "https://youtu.be/ZggLY3EXXvI",
+  embed: "https://www.youtube.com/embed/ZggLY3EXXvI",
+  description:
+    "Psalm 64 is a prayer for protection from secret plots, harmful words and hidden attacks, with confidence that God will ultimately defend the righteous.",
+  lesson:
+    "When people speak against you or secretly plan harm, take your fears to God and trust Him to expose evil and protect you.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 64,
+  passage: "Psalms 64",
+  passageReading:
+    "David asks God to hear his prayer and protect him from hidden schemes and destructive words, then declares that God will act and the righteous will rejoice in Him."
+},
+  
 {
   title: "Psalms Chapter 63",
   image: "/banner.jpg",
