@@ -1,6 +1,23 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
+
+  {
+  title: "Psalms Chapter 65",
+  image: "/banner.jpg",
+  link: "https://youtu.be/EaMnp2isVcw",
+  embed: "https://www.youtube.com/embed/EaMnp2isVcw",
+  description:
+    "Psalm 65 is a joyful song of praise celebrating God's forgiveness, answered prayer, power over creation and abundant provision.",
+  lesson:
+    "God deserves our praise because He forgives, answers prayer, cares for His creation and faithfully provides for our needs.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 65,
+  passage: "Psalms 65",
+  passageReading:
+    "David praises God for hearing prayer and forgiving sin, celebrates His mighty power over the earth and seas, and gives thanks for the abundant blessings He provides."
+},
   
   {
   id: "psalm-61-prayer",
