@@ -2,6 +2,22 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+  {
+  title: "Psalms Chapter 66",
+  image: "/banner.jpg",
+  link: "https://youtu.be/XcpaQhzoNLE",
+  embed: "https://www.youtube.com/embed/XcpaQhzoNLE",
+  description:
+    "Psalm 66 is a joyful call for all the earth to praise God for His mighty works, deliverance, testing and answered prayer.",
+  lesson:
+    "Remember what God has done, praise Him through every season and trust that He hears the sincere prayers of His people.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 66,
+  passage: "Psalms 66",
+  passageReading:
+    "The psalm calls all people to praise God, remembers His powerful acts of deliverance, reflects on seasons of testing and ends with thanksgiving because God has heard and answered prayer."
+},
 {
   title: "Psalms Chapter 65",
   image: "/banner.jpg",
