@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+{
+  title: "Psalms Chapter 67",
+  image: "/banner.jpg",
+  link: "https://youtu.be/MhbW5MNh28E?si=fGgExyU5cE5rxSIm",
+  embed: "https://www.youtube.com/embed/MhbW5MNh28E",
+  description:
+    "Psalm 67 is a prayer for God's mercy and blessing so that His ways and salvation may be known among all nations.",
+  lesson:
+    "God blesses us not only for ourselves, but so that others can see His goodness and come to know Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 67,
+  passage: "Psalms 67",
+  passageReading:
+    "The psalm asks God to be gracious and bless His people, calls the nations to praise Him, celebrates His righteous rule and declares that the earth will yield its increase under His blessing."
+},
+
+  
   {
   title: "Psalms Chapter 66",
   image: "/banner.jpg",
