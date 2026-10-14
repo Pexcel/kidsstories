@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 68",
+  image: "/banner.jpg",
+  link: "https://youtu.be/chGd9034ykY",
+  embed: "https://www.youtube.com/embed/chGd9034ykY",
+  description:
+    "Psalm 68 celebrates God as the victorious King who rises to defend His people, cares for the vulnerable and leads His people in triumph.",
+  lesson:
+    "God is powerful enough to defeat every enemy, yet compassionate enough to care for the lonely, weak and vulnerable.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 68,
+  passage: "Psalms 68",
+  passageReading:
+    "The psalm celebrates God's victory over His enemies, His care for the fatherless and lonely, His mighty presence among His people and His power as the God who gives strength and victory."
+},
 {
   title: "Psalms Chapter 67",
   image: "/banner.jpg",
