@@ -1,7 +1,24 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  {
+  title: "Psalms Chapter 69",
+  image: "/banner.jpg",
+  link: "https://youtu.be/vHmPMiZSO1M?si=5SIFaeDv9DNlxUd6",
+  embed: "https://www.youtube.com/embed/vHmPMiZSO1M",
+  description:
+    "Psalm 69 is a heartfelt cry for help from someone overwhelmed by trouble, rejection and pain, yet still trusting God for deliverance.",
+  lesson:
+    "When you feel surrounded by trouble or misunderstood, keep calling on God. He hears the brokenhearted and is able to rescue and restore.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 69,
+  passage: "Psalms 69",
+  passageReading:
+    "David cries out to God from deep distress, describes rejection and suffering, asks for rescue and justice, and ends by praising God with confidence that He hears the needy."
+},
+  {
   title: "Psalms Chapter 68",
   image: "/banner.jpg",
   link: "https://youtu.be/chGd9034ykY",
