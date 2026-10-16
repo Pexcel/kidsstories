@@ -3,6 +3,23 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
   {
+  title: "Psalms Chapter 70",
+  image: "/banner.jpg",
+  link: "https://youtu.be/WpSVVYQPcdQ",
+  embed: "https://www.youtube.com/embed/WpSVVYQPcdQ",
+  description:
+    "Psalm 70 is a short and urgent prayer asking God to come quickly with help, deliverance and protection.",
+  lesson:
+    "When you need help urgently, you can call on God directly and confidently, trusting Him to come to your rescue.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 70,
+  passage: "Psalms 70",
+  passageReading:
+    "David urgently asks God to deliver him, bring shame upon those seeking his harm, give joy to those who seek the Lord and come quickly to help him."
+},
+  
+  {
   title: "Psalms Chapter 69",
   image: "/banner.jpg",
   link: "https://youtu.be/vHmPMiZSO1M?si=5SIFaeDv9DNlxUd6",
