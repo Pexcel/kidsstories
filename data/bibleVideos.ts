@@ -3,6 +3,23 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
   {
+  title: "Psalms Chapter 71",
+  image: "/banner.jpg",
+  link: "https://youtu.be/aaI4Oxd7WNc?si=qDpP6umdAXT04253",
+  embed: "https://www.youtube.com/embed/aaI4Oxd7WNc",
+  description:
+    "Psalm 71 is a prayer of lifelong trust in God, asking Him for protection, strength and continued help even in old age.",
+  lesson:
+    "Keep trusting God through every stage of life. The God who has helped you before is still able to protect, strengthen and sustain you.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 71,
+  passage: "Psalms 71",
+  passageReading:
+    "The psalmist asks God for refuge and deliverance, remembers His faithfulness from youth, prays not to be forsaken in old age and promises to continue declaring God's righteousness and mighty works."
+},
+  
+  {
   title: "Psalms Chapter 70",
   image: "/banner.jpg",
   link: "https://youtu.be/WpSVVYQPcdQ",
