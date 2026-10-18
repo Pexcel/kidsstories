@@ -1,7 +1,23 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+  
+{
+  title: "Psalms Chapter 72",
+  image: "/banner.jpg",
+  link: "https://youtu.be/iQvo_rTDl4w",
+  embed: "https://www.youtube.com/embed/iQvo_rTDl4w",
+  description:
+    "Psalm 72 is a prayer for a righteous king who rules with justice, defends the poor, brings peace and causes the people to flourish.",
+  lesson:
+    "True leadership should reflect God's justice, compassion and concern for the weak, bringing peace and blessing to others.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 72,
+  passage: "Psalms 72",
+  passageReading:
+    "The psalm asks God to give the king wisdom and righteousness so he can judge fairly, defend the poor, bring peace and rule with justice, while God's name is praised forever."
+},
   {
   title: "Psalms Chapter 71",
   image: "/banner.jpg",
