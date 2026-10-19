@@ -1,6 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+ {
+  title: "Psalms Chapter 73",
+  image: "/banner.jpg",
+  link: "https://youtu.be/zQyVqiNTlOk?si=gi7-xNvn8fncYQ14",
+  embed: "https://www.youtube.com/embed/zQyVqiNTlOk",
+  description:
+    "Psalm 73 describes the struggle of seeing wicked people prosper and the renewed understanding that comes from entering God's presence.",
+  lesson:
+    "Do not judge life only by what you see around you. God's presence gives clarity, and being close to Him is greater than temporary success.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 73,
+  passage: "Psalms 73",
+  passageReading:
+    "Asaph admits that he almost lost his footing when he envied the prosperity of the wicked, but in God's presence he understood their end and rediscovered that God is his strength, portion and greatest good."
+},
   
 {
   title: "Psalms Chapter 72",
