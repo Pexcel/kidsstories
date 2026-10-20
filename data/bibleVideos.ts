@@ -1,6 +1,24 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+ {
+  title: "Psalms Chapter 74",
+  image: "/banner.jpg",
+  link: "https://youtu.be/hVOiQCHcFuQ",
+  embed: "https://www.youtube.com/embed/hVOiQCHcFuQ",
+  description:
+    "Psalm 74 is a prayer of lament during a time of destruction, asking God to remember His people and act against those who dishonor Him.",
+  lesson:
+    "When circumstances seem hopeless, keep bringing your pain to God and remember His power, His covenant and His faithfulness.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 74,
+  passage: "Psalms 74",
+  passageReading:
+    "Asaph describes the destruction of God's sanctuary, cries out over the suffering of God's people, remembers God's mighty works and asks Him to rise and defend His cause."
+},
+ 
  {
   title: "Psalms Chapter 73",
   image: "/banner.jpg",
