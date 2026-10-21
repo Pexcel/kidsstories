@@ -2,39 +2,6 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
- {
-  title: "Psalms Chapter 74",
-  image: "/banner.jpg",
-  link: "https://youtu.be/hVOiQCHcFuQ",
-  embed: "https://www.youtube.com/embed/hVOiQCHcFuQ",
-  description:
-    "Psalm 74 is a prayer of lament during a time of destruction, asking God to remember His people and act against those who dishonor Him.",
-  lesson:
-    "When circumstances seem hopeless, keep bringing your pain to God and remember His power, His covenant and His faithfulness.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 74,
-  passage: "Psalms 74",
-  passageReading:
-    "Asaph describes the destruction of God's sanctuary, cries out over the suffering of God's people, remembers God's mighty works and asks Him to rise and defend His cause."
-},
- 
- {
-  title: "Psalms Chapter 73",
-  image: "/banner.jpg",
-  link: "https://youtu.be/zQyVqiNTlOk?si=gi7-xNvn8fncYQ14",
-  embed: "https://www.youtube.com/embed/zQyVqiNTlOk",
-  description:
-    "Psalm 73 describes the struggle of seeing wicked people prosper and the renewed understanding that comes from entering God's presence.",
-  lesson:
-    "Do not judge life only by what you see around you. God's presence gives clarity, and being close to Him is greater than temporary success.",
-  testament: "Old Testament",
-  book: "Psalms",
-  chapter: 73,
-  passage: "Psalms 73",
-  passageReading:
-    "Asaph admits that he almost lost his footing when he envied the prosperity of the wicked, but in God's presence he understood their end and rediscovered that God is his strength, portion and greatest good."
-},
   
 {
   title: "Psalms Chapter 72",
