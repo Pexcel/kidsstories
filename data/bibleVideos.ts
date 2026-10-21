@@ -3,6 +3,23 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
  {
+  title: "Psalms Chapter 75",
+  image: "/banner.jpg",
+  link: "https://youtu.be/mao9yzEc7QY?si=HtbITg6dXXuw5Y7U",
+  embed: "https://www.youtube.com/embed/mao9yzEc7QY",
+  description:
+    "Psalm 75 is a song of thanksgiving that declares God's appointed time for judgment and reminds us that promotion and justice ultimately come from Him.",
+  lesson:
+    "Do not become discouraged when evil seems to prosper. God sees everything, judges at the right time and remains in control.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 75,
+  passage: "Psalms 75",
+  passageReading:
+    "The psalm gives thanks to God for His nearness, warns the proud and wicked, declares that God alone is the Judge and affirms that He will bring down the wicked and lift up the righteous."
+},
+ 
+ {
   title: "Psalms Chapter 74",
   image: "/banner.jpg",
   link: "https://youtu.be/hVOiQCHcFuQ",
