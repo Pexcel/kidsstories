@@ -3,6 +3,22 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
  {
+  title: "Psalms Chapter 76",
+  image: "/banner.jpg",
+  link: "https://youtu.be/lP5C-xarxIM?si=0V8uNoVjv_ryfgbe",
+  embed: "https://www.youtube.com/embed/lP5C-xarxIM",
+  description:
+    "Psalm 76 celebrates God's power, majesty and victory, showing that no enemy can stand before Him when He rises to judge.",
+  lesson:
+    "God is greater than every force that rises against His people. His power brings victory, and His presence deserves reverence and praise.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 76,
+  passage: "Psalms 76",
+  passageReading:
+    "The psalm declares that God is known among His people, celebrates His victory over powerful enemies and reminds everyone that He alone is worthy to be feared and honored."
+},
+ {
   title: "Psalms Chapter 75",
   image: "/banner.jpg",
   link: "https://youtu.be/mao9yzEc7QY?si=HtbITg6dXXuw5Y7U",
