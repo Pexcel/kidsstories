@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 
+{
+  title: "Psalms Chapter 77",
+  image: "/banner.jpg",
+  link: "https://youtu.be/Dnd9BQMd458?si=DZHscXt-veERdeM6",
+  embed: "https://www.youtube.com/embed/Dnd9BQMd458",
+  description:
+    "Psalm 77 describes a season of deep distress in which the writer cries to God, remembers His past works and regains hope by reflecting on His faithfulness.",
+  lesson:
+    "When you feel discouraged or confused, remember what God has done before. His past faithfulness can strengthen your trust in Him today.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 77,
+  passage: "Psalms 77",
+  passageReading:
+    "Asaph cries to God in distress, struggles with troubling questions, then deliberately remembers God's mighty works, His holiness and the way He led His people through the sea."
+},
+ 
+ 
  {
   title: "Psalms Chapter 76",
   image: "/banner.jpg",
