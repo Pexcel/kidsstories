@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 78",
+  image: "/banner.jpg",
+  link: "https://youtu.be/xBYOyd1zXYw?si=mjOeLThYDv9CSakz",
+  embed: "https://www.youtube.com/embed/xBYOyd1zXYw",
+  description:
+    "Psalm 78 retells the history of God's people, showing His faithfulness even when they repeatedly forgot His works and disobeyed Him.",
+  lesson:
+    "Remember what God has done, teach His works to the next generation and do not repeat the mistakes of those who forgot Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 78,
+  passage: "Psalms 78",
+  passageReading:
+    "Asaph recounts how God guided, provided for and protected His people, while they repeatedly rebelled and forgot His wonders. The psalm calls each generation to remember God and faithfully teach His works to their children."
+},
 {
   title: "Psalms Chapter 77",
   image: "/banner.jpg",
