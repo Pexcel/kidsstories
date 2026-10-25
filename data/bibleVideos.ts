@@ -1,7 +1,25 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  {
+  title: "Psalms Chapter 79",
+  image: "/banner.jpg",
+  link: "https://youtu.be/N6SVCoRnZ-s?si=JgZTBJpcaPYfoEm9",
+  embed: "https://www.youtube.com/embed/N6SVCoRnZ-s",
+  description:
+    "Psalm 79 is a prayer of sorrow and repentance after Jerusalem was devastated, asking God for mercy, forgiveness and deliverance.",
+  lesson:
+    "When trouble comes, we can confess our sins, ask God for mercy and trust Him to defend His name and restore His people.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 79,
+  passage: "Psalms 79",
+  passageReading:
+    "Asaph describes the destruction of Jerusalem, cries out over the suffering of God's people, asks for forgiveness and help, and promises that the people will give thanks to God from generation to generation."
+},
+  
+  {
   title: "Psalms Chapter 78",
   image: "/banner.jpg",
   link: "https://youtu.be/xBYOyd1zXYw?si=mjOeLThYDv9CSakz",
