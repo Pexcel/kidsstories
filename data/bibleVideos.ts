@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 80",
+  image: "/banner.jpg",
+  link: "https://youtu.be/er24xKOFmMs?si=9lbrzQIalXvlG5hy",
+  embed: "https://www.youtube.com/embed/er24xKOFmMs",
+  description:
+    "Psalm 80 is a heartfelt prayer asking God to restore His people, show His favor again and make His face shine upon them.",
+  lesson:
+    "When life feels broken or distant from God, we can ask Him for restoration, renewed strength and the light of His presence.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 80,
+  passage: "Psalms 80",
+  passageReading:
+    "Asaph asks the Shepherd of Israel to restore His people, remembers how God brought Israel out of Egypt like a vine, and repeatedly prays for God to revive them and make His face shine upon them."
+},
   {
   title: "Psalms Chapter 79",
   image: "/banner.jpg",
