@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 81",
+  image: "/banner.jpg",
+  link: "https://youtu.be/i9FQYWSBbhE?si=XypTf3FeIZoIU0jB",
+  embed: "https://www.youtube.com/embed/i9FQYWSBbhE",
+  description:
+    "Psalm 81 calls God's people to joyful worship while reminding them to listen to His voice and avoid the mistakes of disobedience.",
+  lesson:
+    "God desires our worship, but He also wants our obedience. Listening to Him opens the way for His guidance, protection and blessing.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 81,
+  passage: "Psalms 81",
+  passageReading:
+    "The psalm begins with a call to joyful praise, remembers how God delivered His people from bondage, warns them against turning to other gods and expresses God's desire that His people would listen and obey Him."
+},
+  
+  
+  {
   title: "Psalms Chapter 80",
   image: "/banner.jpg",
   link: "https://youtu.be/er24xKOFmMs?si=9lbrzQIalXvlG5hy",
