@@ -1,7 +1,24 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-{
+
+  {
+  title: "Psalms Chapter 82",
+  image: "/banner.jpg",
+  link: "https://youtu.be/mry6p9LdpqQ?si=5N9593ZhbhI6pFPT",
+  embed: "https://www.youtube.com/embed/mry6p9LdpqQ",
+  description:
+    "Psalm 82 presents God as the righteous Judge who confronts unjust leaders and calls them to defend the weak, poor and oppressed.",
+  lesson:
+    "God cares deeply about justice. Those given responsibility should protect the vulnerable, act fairly and remember that everyone is accountable to God.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 82,
+  passage: "Psalms 82",
+  passageReading:
+    "Asaph describes God standing in judgment, rebuking unjust rulers for showing partiality and failing to defend the weak, and ends by calling on God to judge the earth."
+},
+  {
   title: "Psalms Chapter 81",
   image: "/banner.jpg",
   link: "https://youtu.be/i9FQYWSBbhE?si=XypTf3FeIZoIU0jB",
