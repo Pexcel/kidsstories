@@ -1,7 +1,22 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
-
+{
+  title: "Psalms Chapter 83",
+  image: "/banner.jpg",
+  link: "https://youtu.be/J5z8K_CXwxk?si=DCbH69g7ko8axRMs",
+  embed: "https://www.youtube.com/embed/J5z8K_CXwxk",
+  description:
+    "Psalm 83 is a prayer asking God to intervene when enemies unite against His people and secretly plan their destruction.",
+  lesson:
+    "When people conspire against you, bring the battle to God and trust Him to defend, expose and frustrate every evil plan.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 83,
+  passage: "Psalms 83",
+  passageReading:
+    "Asaph describes enemies joining together against God's people, asks God not to remain silent, and prays for Him to defeat their plans so that people may know that the Lord alone is Most High over all the earth."
+},
   {
   title: "Psalms Chapter 82",
   image: "/banner.jpg",
