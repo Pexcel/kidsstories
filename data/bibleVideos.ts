@@ -2,6 +2,25 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 84",
+  image: "/banner.jpg",
+  link: "https://youtu.be/AD5y1aV48yQ?si=aDL_tca0uLTwWn9Y",
+  embed: "https://www.youtube.com/embed/AD5y1aV48yQ",
+  description:
+    "Psalm 84 expresses a deep longing for God's presence and celebrates the joy, strength and blessing found in dwelling near Him.",
+  lesson:
+    "Nothing compares with being close to God. Those who trust Him and draw strength from His presence are truly blessed.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 84,
+  passage: "Psalms 84",
+  passageReading:
+    "The psalmist longs for the courts of the Lord, celebrates those who dwell in God's house, describes the strength of those whose hearts are set on Him and declares that the Lord gives grace, glory and every good thing."
+},
+  
+  
+  
+  {
   title: "Psalms Chapter 83",
   image: "/banner.jpg",
   link: "https://youtu.be/J5z8K_CXwxk?si=DCbH69g7ko8axRMs",
