@@ -2,7 +2,19 @@ import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
 
-  
+  {
+  id: "psalm-84-prayer",
+  title: "Prayer from Psalm 84",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/SM8397rVHms?si=iO-5czMO99aFgFtp",
+  embed: "https://www.youtube.com/embed/SM8397rVHms",
+  description:
+    "A Scripture-based prayer from Psalm 84 for God's presence, strength, favor, protection and renewed longing for His dwelling place.",
+  scripture: "Psalm 84",
+  prayerFocus:
+    "God's presence, strength, favor, protection, spiritual renewal and deeper fellowship with Him",
+  publishedAt: "2026-10-30"
+},
   {
   id: "psalm-61-prayer",
   title: "Prayer from Psalm 61",
