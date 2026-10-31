@@ -2,6 +2,24 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 85",
+  image: "/banner.jpg",
+  link: "https://youtu.be/YPDy1cyBjxM?si=iljvzMwkiidFzrff",
+  embed: "https://www.youtube.com/embed/YPDy1cyBjxM",
+  description:
+    "Psalm 85 is a prayer for restoration, mercy and renewed favor, remembering how God forgave His people in the past and asking Him to revive them again.",
+  lesson:
+    "When we need restoration, we can return to God with confidence because His mercy, truth, righteousness and peace bring renewal and hope.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 85,
+  passage: "Psalms 85",
+  passageReading:
+    "The psalm remembers God's past restoration, asks Him to revive His people again and looks forward to a time when mercy, truth, righteousness and peace come together under His blessing."
+},
+  
+  
+  {
   title: "Psalms Chapter 84",
   image: "/banner.jpg",
   link: "https://youtu.be/AD5y1aV48yQ?si=aDL_tca0uLTwWn9Y",
