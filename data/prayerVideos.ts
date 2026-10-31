@@ -1,7 +1,19 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
-
+{
+  id: "psalm-85-prayer",
+  title: "Prayer from Psalm 85",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/NhB6AkM5q04?si=v48rAVoDG0kxfqO6",
+  embed: "https://www.youtube.com/embed/NhB6AkM5q04",
+  description:
+    "A Scripture-based prayer from Psalm 85 for restoration, mercy, revival, peace and renewed favor from God.",
+  scripture: "Psalm 85",
+  prayerFocus:
+    "Restoration, mercy, revival, peace, forgiveness, favor and renewed hope",
+  publishedAt: "2026-10-31"
+},
   {
   id: "psalm-84-prayer",
   title: "Prayer from Psalm 84",
