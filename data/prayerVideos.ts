@@ -1,6 +1,18 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-
+{
+  id: "psalm-82-prayer",
+  title: "Prayer from Psalm 82",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/d0u6cr01zoQ?si=Lb8mOMC_cWzi1NHn",
+  embed: "https://www.youtube.com/embed/d0u6cr01zoQ",
+  description:
+    "A Scripture-based prayer from Psalm 82 for justice, protection of the vulnerable, righteous leadership and divine intervention.",
+  scripture: "Psalm 82",
+  prayerFocus:
+    "Justice, righteous leadership, protection of the weak, divine intervention and fairness",
+  publishedAt: "2026-11-01"
+},
 {
   id: "psalm-85-prayer",
   title: "Prayer from Psalm 85",
