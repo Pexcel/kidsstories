@@ -2,6 +2,21 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 86",
+  image: "/banner.jpg",
+  link: "https://youtu.be/qmFy78uIZ24?si=jFyZLmriNZRo58w4",
+  embed: "https://www.youtube.com/embed/qmFy78uIZ24",
+  description:
+    "Psalm 86 is a heartfelt prayer for mercy, guidance, strength and protection, declaring God's goodness and unmatched greatness.",
+  lesson:
+    "We can come to God honestly in times of need, ask Him to teach us His way and trust in His mercy, strength and faithfulness.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 86,
+  passage: "Psalms 86",
+  passageReading:
+    "David asks God to hear his prayer, show mercy, teach him His way and give him an undivided heart. He praises God as compassionate, gracious and abundant in mercy, and asks for strength and a sign of His goodness."
+},{
   title: "Psalms Chapter 85",
   image: "/banner.jpg",
   link: "https://youtu.be/YPDy1cyBjxM?si=iljvzMwkiidFzrff",
