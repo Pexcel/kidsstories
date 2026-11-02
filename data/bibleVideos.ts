@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 87",
+  image: "/banner.jpg",
+  link: "https://youtu.be/XCOlIT-fCXE?si=4U7Ov9r9UhMyoXeY",
+  embed: "https://www.youtube.com/embed/XCOlIT-fCXE",
+  description:
+    "Psalm 87 celebrates Zion as the city founded and loved by God, where people from many nations are counted as belonging to Him.",
+  lesson:
+    "God knows His people personally and welcomes those who belong to Him. Our true identity and lasting joy are found in Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 87,
+  passage: "Psalms 87",
+  passageReading:
+    "The psalm celebrates Zion as God's beloved city, speaks of people from different nations being counted as born there, and ends by declaring that every source of life and joy is found in God."
+},
+  
+  {
   title: "Psalms Chapter 86",
   image: "/banner.jpg",
   link: "https://youtu.be/qmFy78uIZ24?si=jFyZLmriNZRo58w4",
