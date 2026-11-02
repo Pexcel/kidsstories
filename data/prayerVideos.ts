@@ -1,6 +1,20 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 {
+  id: "psalm-87-prayer",
+  title: "Prayer from Psalm 87",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/0ZC7pwphpMM?si=sxw8caRMGhT4uofJ",
+  embed: "https://www.youtube.com/embed/0ZC7pwphpMM",
+  description:
+    "A Scripture-based prayer from Psalm 87 for divine establishment, favor, stability, restoration and lasting blessings.",
+  scripture: "Psalm 87",
+  prayerFocus:
+    "Divine establishment, favor, stability, restoration, protection and lasting blessings",
+  publishedAt: "2026-11-02"
+},
+  
+  {
   id: "psalm-82-prayer",
   title: "Prayer from Psalm 82",
   image: "/banner.jpg",
