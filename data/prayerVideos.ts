@@ -1,6 +1,22 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-{
+
+  
+  {
+  id: "psalm-88-prayer",
+  title: "Prayer from Psalm 88",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/T7ZuIbP9QT4?si=hYesiXdIBZ8DyN4f",
+  embed: "https://www.youtube.com/embed/T7ZuIbP9QT4",
+  description:
+    "A Scripture-based prayer from Psalm 88 for God's presence, comfort, strength, hope and divine help during difficult seasons.",
+  scripture: "Psalm 88",
+  prayerFocus:
+    "God's presence, comfort, strength, hope, restoration, protection and divine help",
+  publishedAt: "2026-11-03"
+},
+  
+  {
   id: "psalm-87-prayer",
   title: "Prayer from Psalm 87",
   image: "/banner.jpg",
