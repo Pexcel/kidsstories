@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 88",
+  image: "/banner.jpg",
+  link: "https://youtu.be/4ZOsc8hi1Ns?si=HYm3C1jrW4z4Siw1",
+  embed: "https://www.youtube.com/embed/4ZOsc8hi1Ns",
+  description:
+    "Psalm 88 is a deeply honest prayer from someone surrounded by sorrow, loneliness and darkness who continues crying out to God.",
+  lesson:
+    "Even when life feels dark and God seems silent, keep praying. Honest prayer is still an expression of faith.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 88,
+  passage: "Psalms 88",
+  passageReading:
+    "Heman cries to God day and night, describes deep suffering, loneliness and fear, and continues bringing his pain before the Lord even though the psalm ends without an immediate answer."
+},
+  
+  {
   title: "Psalms Chapter 87",
   image: "/banner.jpg",
   link: "https://youtu.be/XCOlIT-fCXE?si=4U7Ov9r9UhMyoXeY",
