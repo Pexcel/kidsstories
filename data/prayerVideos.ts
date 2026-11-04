@@ -1,6 +1,19 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
 
+  {
+  id: "psalm-89-prayer",
+  title: "Prayer from Psalm 89",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/w1yr5Oq0upQ?si=VqlQ8RZq9Et-T96h",
+  embed: "https://www.youtube.com/embed/w1yr5Oq0upQ",
+  description:
+    "A Scripture-based prayer from Psalm 89 for God's faithfulness, covenant promises, mercy, restoration and divine fulfillment.",
+  scripture: "Psalm 89",
+  prayerFocus:
+    "Faithfulness, covenant promises, mercy, restoration, divine fulfillment and lasting favor",
+  publishedAt: "2026-11-04"
+},
   
   {
   id: "psalm-88-prayer",
