@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 89",
+  image: "/banner.jpg",
+  link: "https://youtu.be/-mW3Ap3XtOo?si=TSUUj4zG5d-jnNvR",
+  embed: "https://www.youtube.com/embed/-mW3Ap3XtOo",
+  description:
+    "Psalm 89 celebrates God's mercy, faithfulness and covenant promises, while honestly bringing questions to Him during a season of disappointment.",
+  lesson:
+    "Even when circumstances seem to contradict God's promises, we can still remember His faithfulness, hold on to His covenant and continue praising Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 89,
+  passage: "Psalms 89",
+  passageReading:
+    "Ethan praises God's mercy and faithfulness, remembers His covenant with David, reflects on God's power and righteousness, then brings the pain of present troubles before Him while ending with praise."
+},
+  
+  {
   title: "Psalms Chapter 88",
   image: "/banner.jpg",
   link: "https://youtu.be/4ZOsc8hi1Ns?si=HYm3C1jrW4z4Siw1",
