@@ -1,7 +1,41 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+
+  {
+  title: "Psalms Chapter 90",
+  image: "/banner.jpg",
+  link: "https://youtu.be/2WoQIcsryd0",
+  embed: "https://www.youtube.com/embed/2WoQIcsryd0",
+  description:
+    "Psalm 90 reflects on God's eternal nature, the brevity of human life and our need for wisdom, mercy and divine favor.",
+  lesson:
+    "Life is short, so ask God for wisdom to use your days well and depend on His mercy to establish the work of your hands.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 90,
+  passage: "Psalms 90",
+  passageReading:
+    "Moses declares that God has been the dwelling place of His people through every generation, reflects on the shortness of life and asks God to teach us to number our days, satisfy us with mercy and establish the work of our hands."
+},
+
 {
+  title: "Psalms Chapter 91",
+  image: "/banner.jpg",
+  link: "https://youtu.be/_6pT6cpEd8M",
+  embed: "https://www.youtube.com/embed/_6pT6cpEd8M",
+  description:
+    "Psalm 91 is a powerful declaration of trust in God's protection, presence and faithfulness in times of fear and danger.",
+  lesson:
+    "Make God your dwelling place and trust Him daily. His presence gives courage, security and hope even when trouble surrounds you.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 91,
+  passage: "Psalms 91",
+  passageReading:
+    "The psalm describes the security of those who dwell in God's presence, declares His protection from danger and fear, speaks of His angels guarding His people and ends with God's promise to answer, deliver and honor those who love Him."
+},
+  {
   title: "Psalms Chapter 89",
   image: "/banner.jpg",
   link: "https://youtu.be/-mW3Ap3XtOo?si=TSUUj4zG5d-jnNvR",
