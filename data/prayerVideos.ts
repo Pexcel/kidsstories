@@ -1,6 +1,33 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
+{
+  id: "psalm-90-prayer",
+  title: "Prayer from Psalm 90",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/orBtkF88J2A?feature=share",
+  embed: "https://www.youtube.com/embed/orBtkF88J2A",
+  description:
+    "A Scripture-based prayer from Psalm 90 for wisdom, mercy, restoration, divine favor and lasting success in the work of our hands.",
+  scripture: "Psalm 90",
+  prayerFocus:
+    "Wisdom, mercy, restoration, divine favor, fruitful years and established work",
+  publishedAt: "2026-11-06"
+},
 
+{
+  id: "psalm-91-prayer",
+  title: "Prayer from Psalm 91",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/_YrEnejezVw?feature=share",
+  embed: "https://www.youtube.com/embed/_YrEnejezVw",
+  description:
+    "A Scripture-based prayer from Psalm 91 for divine protection, safety, deliverance, angelic guidance and confidence in God's presence.",
+  scripture: "Psalm 91",
+  prayerFocus:
+    "Divine protection, safety, deliverance, angelic guidance, peace and God's presence",
+  publishedAt: "2026-11-06"
+},
+  
   {
   id: "psalm-89-prayer",
   title: "Prayer from Psalm 89",
