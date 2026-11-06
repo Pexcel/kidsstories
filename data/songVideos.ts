@@ -3,6 +3,31 @@ import type { SongVideo } from "@/types";
 export const songVideos: SongVideo[] = [
 
   {
+  id: "psalm-90-song",
+  title: "Psalm 90 Song",
+  image: "/banner.jpg",
+  link: "https://youtu.be/j9jm5_F1jiI",
+  embed: "https://www.youtube.com/embed/j9jm5_F1jiI",
+  description:
+    "A Scripture-inspired song from Psalm 90 about God's eternal presence, wisdom, mercy and the blessing of a life guided by Him.",
+  scripture: "Psalm 90",
+  category: "Scripture Song",
+  publishedAt: "2026-11-06"
+},
+
+{
+  id: "psalm-91-song",
+  title: "Psalm 91 Song",
+  image: "/banner.jpg",
+  link: "https://youtu.be/imp1Sde4f-0",
+  embed: "https://www.youtube.com/embed/imp1Sde4f-0",
+  description:
+    "A Scripture-inspired song from Psalm 91 celebrating God's protection, refuge, faithfulness and abiding presence.",
+  scripture: "Psalm 91",
+  category: "Scripture Song",
+  publishedAt: "2026-11-06"
+},
+  {
     id: "greater-love-yoruba-song",
     title: "Ìfẹ́ Ńlá (Greater Love)",
     image: "/banner.jpg",
