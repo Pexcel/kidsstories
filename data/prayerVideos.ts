@@ -1,6 +1,21 @@
 import type { PrayerVideo } from "@/types";
 export const prayerVideos: PrayerVideo[] = [
-{
+
+  {
+  id: "psalm-92-prayer",
+  title: "Prayer from Psalm 92",
+  image: "/banner.jpg",
+  link: "https://youtube.com/shorts/YmYMhoL5YMc?si=qOBwCN8m1RuUfVmp",
+  embed: "https://www.youtube.com/embed/YmYMhoL5YMc",
+  description:
+    "A Scripture-based prayer from Psalm 92 for thanksgiving, strength, fruitfulness, stability and continued flourishing in God.",
+  scripture: "Psalm 92",
+  prayerFocus:
+    "Thanksgiving, strength, fruitfulness, stability, protection and flourishing",
+  publishedAt: "2026-11-09"
+},
+  
+  {
   id: "psalm-90-prayer",
   title: "Prayer from Psalm 90",
   image: "/banner.jpg",
