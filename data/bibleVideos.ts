@@ -3,6 +3,57 @@ import type { Video } from "@/types";
 export const bibleVideos: Video[] = [
 
   {
+  title: "Psalms Chapter 92",
+  image: "/banner.jpg",
+  link: "https://youtu.be/LzZJEu3CFg4?si=52BaXKCwb_CUwjS1",
+  embed: "https://www.youtube.com/embed/LzZJEu3CFg4",
+  description:
+    "Psalm 92 is a song of praise for the Sabbath, celebrating God's goodness, faithfulness and righteous works.",
+  lesson:
+    "It is good to praise God, remember His faithfulness and remain rooted in Him. Those who trust Him can continue to grow and bear fruit.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 92,
+  passage: "Psalms 92",
+  passageReading:
+    "The psalm celebrates giving thanks to God, declaring His lovingkindness and faithfulness, rejoicing in His works and describing the righteous as flourishing like strong trees."
+},
+
+{
+  title: "Psalms Chapter 93",
+  image: "/banner.jpg",
+  link: "https://youtu.be/3qlMRWlLtzY?si=qOueFeuFYY05F6lB",
+  embed: "https://www.youtube.com/embed/3qlMRWlLtzY",
+  description:
+    "Psalm 93 declares that the Lord reigns in majesty and that His throne and authority are established forever.",
+  lesson:
+    "No matter how powerful the troubles around us seem, God remains greater, stronger and firmly in control.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 93,
+  passage: "Psalms 93",
+  passageReading:
+    "The psalm declares that the Lord reigns, describes His eternal throne and proclaims that He is mightier than the roaring waters and waves."
+},
+
+{
+  title: "Psalms Chapter 94",
+  image: "/banner.jpg",
+  link: "https://youtu.be/c41kyBFloPw?si=01c79TDoXqDpq9Hh",
+  embed: "https://www.youtube.com/embed/c41kyBFloPw",
+  description:
+    "Psalm 94 is a prayer for God's justice against wickedness and a declaration that the Lord protects and comforts His people.",
+  lesson:
+    "God sees injustice and will judge rightly. When anxiety and trouble increase, His mercy, comfort and protection can sustain us.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 94,
+  passage: "Psalms 94",
+  passageReading:
+    "The psalm calls on God to judge the wicked, reminds them that God sees everything, celebrates His correction and declares that the Lord is the defense and rock of His people."
+},
+  
+  {
   title: "Psalms Chapter 90",
   image: "/banner.jpg",
   link: "https://youtu.be/2WoQIcsryd0",
