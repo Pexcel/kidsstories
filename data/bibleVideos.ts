@@ -1,7 +1,74 @@
 import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
+{
+  title: "Psalms Chapter 95",
+  image: "/banner.jpg",
+  link: "https://youtu.be/mCu6NZwbsao?si=wOHf7Nk5mmjTtdGF",
+  embed: "https://www.youtube.com/embed/mCu6NZwbsao",
+  description:
+    "Psalm 95 is a joyful call to worship God as our Creator and Shepherd, while also warning us not to harden our hearts against His voice.",
+  lesson:
+    "Worship God with joy, listen when He speaks and keep your heart open and obedient to Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 95,
+  passage: "Psalms 95",
+  passageReading:
+    "The psalm invites everyone to sing, rejoice and bow before the Lord our Maker, then warns God's people not to harden their hearts as Israel did in the wilderness."
+},
 
+{
+  title: "Psalms Chapter 96",
+  image: "/banner.jpg",
+  link: "https://youtu.be/f8wCEgxU28M?si=pUVv1aXRP4Nw6enq",
+  embed: "https://www.youtube.com/embed/f8wCEgxU28M",
+  description:
+    "Psalm 96 calls all the earth to sing to the Lord, proclaim His salvation and declare His glory among the nations.",
+  lesson:
+    "God's goodness is too great to keep to ourselves. Worship Him and share the good news of His salvation with others.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 96,
+  passage: "Psalms 96",
+  passageReading:
+    "The psalm calls everyone to sing a new song, proclaim God's salvation, worship Him in holiness and rejoice because He comes to judge the world with righteousness and truth."
+},
+
+{
+  title: "Psalms Chapter 97",
+  image: "/banner.jpg",
+  link: "https://youtu.be/ZH-VZCo-8HQ?si=Cn95S7ChaQ7Pht8n",
+  embed: "https://www.youtube.com/embed/ZH-VZCo-8HQ",
+  description:
+    "Psalm 97 celebrates the Lord as King over all the earth and describes His righteousness, power and victory over idols and evil.",
+  lesson:
+    "God reigns above every power. Love what is right, reject evil and rejoice because the Lord protects those who belong to Him.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 97,
+  passage: "Psalms 97",
+  passageReading:
+    "The psalm declares that the Lord reigns, describes His glory and righteousness, exposes the weakness of idols and calls those who love God to hate evil and rejoice in Him."
+},
+
+{
+  title: "Psalms Chapter 98",
+  image: "/banner.jpg",
+  link: "https://youtu.be/NdyLGgjhXEE?si=p2Qy7tkmYXLVLaBw",
+  embed: "https://www.youtube.com/embed/NdyLGgjhXEE",
+  description:
+    "Psalm 98 is a joyful song celebrating God's marvelous works, salvation and righteous rule over the earth.",
+  lesson:
+    "Remember what God has done and praise Him joyfully. His salvation and faithfulness give everyone a reason to celebrate.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 98,
+  passage: "Psalms 98",
+  passageReading:
+    "The psalm calls God's people and all creation to sing, shout and rejoice because the Lord has revealed His salvation and comes to judge the world with righteousness."
+},
+  
   {
   title: "Psalms Chapter 92",
   image: "/banner.jpg",
