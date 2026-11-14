@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 99",
+  image: "/banner.jpg",
+  link: "https://youtu.be/gAmmVMloVGY?si=crrQCUB5diT6laJP",
+  embed: "https://www.youtube.com/embed/gAmmVMloVGY",
+  description:
+    "Psalm 99 declares that the Lord reigns, celebrates His holiness and justice, and remembers how He answered those who called upon Him.",
+  lesson:
+    "God is holy, just and worthy of reverence. We can call on Him with confidence because He hears and answers His people.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 99,
+  passage: "Psalms 99",
+  passageReading:
+    "The psalm declares that the Lord reigns, praises His holiness and justice, remembers Moses, Aaron and Samuel calling on Him, and emphasizes that God answered them."
+},
+  
+  {
   title: "Psalms Chapter 95",
   image: "/banner.jpg",
   link: "https://youtu.be/mCu6NZwbsao?si=wOHf7Nk5mmjTtdGF",
