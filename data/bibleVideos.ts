@@ -2,6 +2,57 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 100",
+  image: "/banner.jpg",
+  link: "https://youtu.be/GOhTbRNSjw8?si=TDCmOP0pJOdNTQCu",
+  embed: "https://www.youtube.com/embed/GOhTbRNSjw8",
+  description:
+    "Psalm 100 is a joyful call for everyone to worship the Lord with gladness, thanksgiving and praise.",
+  lesson:
+    "Serve God with joy, remember that you belong to Him and always thank Him because He is good and His mercy lasts forever.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 100,
+  passage: "Psalms 100",
+  passageReading:
+    "The psalm calls all people to make a joyful noise to the Lord, serve Him with gladness, enter His presence with thanksgiving and remember that He made us and faithfully cares for His people."
+},
+
+{
+  title: "Psalms Chapter 101",
+  image: "/banner.jpg",
+  link: "https://youtu.be/0TYZzTqg3JA?si=xjc-jb16zaWZPfRN",
+  embed: "https://www.youtube.com/embed/0TYZzTqg3JA",
+  description:
+    "Psalm 101 is a personal commitment to live with integrity, reject wickedness and surround oneself with faithful people.",
+  lesson:
+    "Choose integrity in private and public life. Reject dishonesty and pride, and value people who walk faithfully with God.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 101,
+  passage: "Psalms 101",
+  passageReading:
+    "The psalmist promises to walk with integrity, refuse wicked influences, reject deceit and slander, and give honor to faithful people who live uprightly."
+},
+
+{
+  title: "Psalms Chapter 102",
+  image: "/banner.jpg",
+  link: "https://youtu.be/dM0P8N-DS5s?si=W2mSt8txKxTwhfHL",
+  embed: "https://www.youtube.com/embed/dM0P8N-DS5s",
+  description:
+    "Psalm 102 is a prayer from someone deeply afflicted who pours out his pain before God while holding on to God's eternal faithfulness.",
+  lesson:
+    "You can speak honestly to God in painful seasons. Your circumstances may change, but God remains the same and His faithfulness continues.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 102,
+  passage: "Psalms 102",
+  passageReading:
+    "The writer describes deep suffering and loneliness, asks God to hear his prayer, looks forward to Zion's restoration and declares that God remains forever even when everything else changes."
+},
+  
+  {
   title: "Psalms Chapter 99",
   image: "/banner.jpg",
   link: "https://youtu.be/gAmmVMloVGY?si=crrQCUB5diT6laJP",
