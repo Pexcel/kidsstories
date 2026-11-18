@@ -2,6 +2,23 @@ import type { Video } from "@/types";
 
 export const bibleVideos: Video[] = [
 {
+  title: "Psalms Chapter 103",
+  image: "/banner.jpg",
+  link: "https://youtu.be/h3KQyczKhaY",
+  embed: "https://www.youtube.com/embed/h3KQyczKhaY",
+  description:
+    "Psalm 103 is a joyful song of praise that remembers God's forgiveness, healing, mercy, compassion and faithful love.",
+  lesson:
+    "Do not forget God's benefits. Thank Him for His forgiveness, mercy, healing, protection and loving care.",
+  testament: "Old Testament",
+  book: "Psalms",
+  chapter: 103,
+  passage: "Psalms 103",
+  passageReading:
+    "David calls his soul to bless the Lord and remember His benefits. He praises God for forgiveness, healing, redemption, mercy and compassion, and declares that God's lovingkindness endures toward those who fear Him."
+},
+  
+  {
   title: "Psalms Chapter 100",
   image: "/banner.jpg",
   link: "https://youtu.be/GOhTbRNSjw8?si=TDCmOP0pJOdNTQCu",
